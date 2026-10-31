@@ -8,56 +8,118 @@
         {
           "net": "Net-(U1-DISCH)",
           "pads": 4,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              7,
+              8,
+              18,
+              32
+            ]
+          ]
         },
         {
           "net": "GND",
           "pads": 8,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              2,
+              12,
+              17,
+              22,
+              25,
+              27,
+              30,
+              33
+            ]
+          ]
         },
         {
           "net": "Net-(U1-CONT)",
           "pads": 2,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              6,
+              26
+            ]
+          ]
         },
         {
           "net": "Net-(D1-K)",
           "pads": 2,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              13,
+              14
+            ]
+          ]
         },
         {
           "net": "/+5V",
           "pads": 5,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              1,
+              9,
+              11,
+              19,
+              24
+            ]
+          ]
         },
         {
           "net": "/Trigger",
           "pads": 3,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              3,
+              10,
+              29
+            ]
+          ]
         },
         {
           "net": "/RST",
           "pads": 3,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              0,
+              5,
+              16
+            ]
+          ]
         },
         {
           "net": "/CLK_Out",
           "pads": 3,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              4,
+              15,
+              21
+            ]
+          ]
         }
       ],
       "minimum_extra_clearance_mm": 0.13518911952561324,
-      "segments": 166,
-      "arcs": 133,
+      "segments": 163,
+      "arcs": 291,
       "vias": 10,
-      "track_length_mm": 210.51547035556067,
+      "track_length_mm": 208.1647267945176,
       "layers_used": {
-        "0": 215,
-        "1": 84
+        "0": 319,
+        "1": 135
       },
       "spacing_samples": {
-        "count": 107,
-        "mean_gap_mm": 2.6800404390916013
+        "count": 43,
+        "mean_gap_mm": 2.6569083980107506
       },
       "geometry_error_counts": {}
     },
@@ -74,13 +136,13 @@
       }
     },
     "uniform_spacing": {
-      "mean_gap_mm": 2.30748221535559,
-      "sampled_length_mm": 140.8005443750299,
-      "sample_count": 569,
+      "mean_gap_mm": 2.2919131654352283,
+      "sampled_length_mm": 138.09310999860057,
+      "sample_count": 559,
       "pitch_mm": 0.25,
       "pad_escape_exclusion_mm": 0.35
     },
-    "engine_elapsed_seconds": null
+    "engine_elapsed_seconds": 11.268272638320923
   },
   "kreisel": {
     "independent": {
@@ -91,42 +153,104 @@
         {
           "net": "Net-(U1-DISCH)",
           "pads": 4,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              7,
+              8,
+              18,
+              32
+            ]
+          ]
         },
         {
           "net": "GND",
           "pads": 8,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              2,
+              12,
+              17,
+              22,
+              25,
+              27,
+              30,
+              33
+            ]
+          ]
         },
         {
           "net": "Net-(U1-CONT)",
           "pads": 2,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              6,
+              26
+            ]
+          ]
         },
         {
           "net": "Net-(D1-K)",
           "pads": 2,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              13,
+              14
+            ]
+          ]
         },
         {
           "net": "/+5V",
           "pads": 5,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              1,
+              9,
+              11,
+              19,
+              24
+            ]
+          ]
         },
         {
           "net": "/Trigger",
           "pads": 3,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              3,
+              10,
+              29
+            ]
+          ]
         },
         {
           "net": "/RST",
           "pads": 3,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              0,
+              5,
+              16
+            ]
+          ]
         },
         {
           "net": "/CLK_Out",
           "pads": 3,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              4,
+              15,
+              21
+            ]
+          ]
         }
       ],
       "minimum_extra_clearance_mm": 0.017150503787927263,
@@ -174,42 +298,104 @@
         {
           "net": "Net-(U1-DISCH)",
           "pads": 4,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              7,
+              8,
+              18,
+              32
+            ]
+          ]
         },
         {
           "net": "GND",
           "pads": 8,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              2,
+              12,
+              17,
+              22,
+              25,
+              27,
+              30,
+              33
+            ]
+          ]
         },
         {
           "net": "Net-(U1-CONT)",
           "pads": 2,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              6,
+              26
+            ]
+          ]
         },
         {
           "net": "Net-(D1-K)",
           "pads": 2,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              13,
+              14
+            ]
+          ]
         },
         {
           "net": "/+5V",
           "pads": 5,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              1,
+              9,
+              11,
+              19,
+              24
+            ]
+          ]
         },
         {
           "net": "/Trigger",
           "pads": 3,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              3,
+              10,
+              29
+            ]
+          ]
         },
         {
           "net": "/RST",
           "pads": 3,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              0,
+              5,
+              16
+            ]
+          ]
         },
         {
           "net": "/CLK_Out",
           "pads": 3,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              4,
+              15,
+              21
+            ]
+          ]
         }
       ],
       "minimum_extra_clearance_mm": 0.0011680794836847475,
@@ -293,42 +479,104 @@
         {
           "net": "Net-(U1-DISCH)",
           "pads": 4,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              7,
+              8,
+              18,
+              32
+            ]
+          ]
         },
         {
           "net": "GND",
           "pads": 8,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              2,
+              12,
+              17,
+              22,
+              25,
+              27,
+              30,
+              33
+            ]
+          ]
         },
         {
           "net": "Net-(U1-CONT)",
           "pads": 2,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              6,
+              26
+            ]
+          ]
         },
         {
           "net": "Net-(D1-K)",
           "pads": 2,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              13,
+              14
+            ]
+          ]
         },
         {
           "net": "/+5V",
           "pads": 5,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              1,
+              9,
+              11,
+              19,
+              24
+            ]
+          ]
         },
         {
           "net": "/Trigger",
           "pads": 3,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              3,
+              10,
+              29
+            ]
+          ]
         },
         {
           "net": "/RST",
           "pads": 3,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              0,
+              5,
+              16
+            ]
+          ]
         },
         {
           "net": "/CLK_Out",
           "pads": 3,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              4,
+              15,
+              21
+            ]
+          ]
         }
       ],
       "minimum_extra_clearance_mm": -0.1500209812054415,
@@ -433,42 +681,104 @@
         {
           "net": "Net-(U1-DISCH)",
           "pads": 4,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              7,
+              8,
+              18,
+              32
+            ]
+          ]
         },
         {
           "net": "GND",
           "pads": 8,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              2,
+              12,
+              17,
+              22,
+              25,
+              27,
+              30,
+              33
+            ]
+          ]
         },
         {
           "net": "Net-(U1-CONT)",
           "pads": 2,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              6,
+              26
+            ]
+          ]
         },
         {
           "net": "Net-(D1-K)",
           "pads": 2,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              13,
+              14
+            ]
+          ]
         },
         {
           "net": "/+5V",
           "pads": 5,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              1,
+              9,
+              11,
+              19,
+              24
+            ]
+          ]
         },
         {
           "net": "/Trigger",
           "pads": 3,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              3,
+              10,
+              29
+            ]
+          ]
         },
         {
           "net": "/RST",
           "pads": 3,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              0,
+              5,
+              16
+            ]
+          ]
         },
         {
           "net": "/CLK_Out",
           "pads": 3,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              4,
+              15,
+              21
+            ]
+          ]
         }
       ],
       "minimum_extra_clearance_mm": -0.022313346882921456,
@@ -689,42 +999,104 @@
         {
           "net": "Net-(U1-DISCH)",
           "pads": 4,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              7,
+              8,
+              18,
+              32
+            ]
+          ]
         },
         {
           "net": "GND",
           "pads": 8,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              2,
+              12,
+              17,
+              22,
+              25,
+              27,
+              30,
+              33
+            ]
+          ]
         },
         {
           "net": "Net-(U1-CONT)",
           "pads": 2,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              6,
+              26
+            ]
+          ]
         },
         {
           "net": "Net-(D1-K)",
           "pads": 2,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              13,
+              14
+            ]
+          ]
         },
         {
           "net": "/+5V",
           "pads": 5,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              1,
+              9,
+              11,
+              19,
+              24
+            ]
+          ]
         },
         {
           "net": "/Trigger",
           "pads": 3,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              3,
+              10,
+              29
+            ]
+          ]
         },
         {
           "net": "/RST",
           "pads": 3,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              0,
+              5,
+              16
+            ]
+          ]
         },
         {
           "net": "/CLK_Out",
           "pads": 3,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              4,
+              15,
+              21
+            ]
+          ]
         }
       ],
       "minimum_extra_clearance_mm": -0.0005000189685369638,
@@ -782,42 +1154,104 @@
         {
           "net": "Net-(U1-DISCH)",
           "pads": 4,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              7,
+              8,
+              18,
+              32
+            ]
+          ]
         },
         {
           "net": "GND",
           "pads": 8,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              2,
+              12,
+              17,
+              22,
+              25,
+              27,
+              30,
+              33
+            ]
+          ]
         },
         {
           "net": "Net-(U1-CONT)",
           "pads": 2,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              6,
+              26
+            ]
+          ]
         },
         {
           "net": "Net-(D1-K)",
           "pads": 2,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              13,
+              14
+            ]
+          ]
         },
         {
           "net": "/+5V",
           "pads": 5,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              1,
+              9,
+              11,
+              19,
+              24
+            ]
+          ]
         },
         {
           "net": "/Trigger",
           "pads": 3,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              3,
+              10,
+              29
+            ]
+          ]
         },
         {
           "net": "/RST",
           "pads": 3,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              0,
+              5,
+              16
+            ]
+          ]
         },
         {
           "net": "/CLK_Out",
           "pads": 3,
-          "components": 1
+          "components": 1,
+          "pad_groups": [
+            [
+              4,
+              15,
+              21
+            ]
+          ]
         }
       ],
       "minimum_extra_clearance_mm": 0.004653507068851204,

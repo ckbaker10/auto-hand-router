@@ -33,6 +33,7 @@ def main():
                        copper={k:validation[k] for k in ("passed","arcs","segments","vias","track_length_mm",
                                                         "unconnected_components","minimum_extra_clearance_mm")},
                        kicad_drc=report["kicad_drc"], project_audit=report["project_audit"],
+                       shaping=report.get("shaping",{}),
                        tangency=tangency_audit(board),
                        via_policy=dict(mode=mode,allowed_module_interiors=modules,
                                        pad_hole_and_mechanical_keepouts="always enforced"),

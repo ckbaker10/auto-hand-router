@@ -57,6 +57,33 @@ def polygon_svg(shape):
     return " ".join(f"{x},{y}" for x, y in shape.exterior.coords)
 
 
+def label_positions(board, primitives, vias, layer):
+    """Place diagram annotations in free space; never erase copper with halos."""
+    from shapely.geometry import Point, box
+    from shapely.strtree import STRtree
+    shapes = [p.line().buffer(p.width/2) for p in primitives if p.layer==layer]
+    shapes += [p.shape for p in board.pads if layer in p.layers]
+    shapes += [Point(v.center).buffer(v.diameter/2) for v in vias]
+    tree = STRtree(shapes)
+    placed, boxes = [], []
+    for ref,region in board.display_regions or board.via_keepouts:
+        x,y = region.representative_point().coords[0]
+        width,height = max(.8,len(ref)*.62),1.1
+        offsets = sorted(((dx*.7,dy*.7) for dx in range(-4,5) for dy in range(-4,5)),
+                         key=lambda p:p[0]*p[0]+p[1]*p[1])
+        for dx,dy in offsets:
+            xx,yy = x+dx,y+dy
+            area = box(xx-width/2-.15,yy-height-.15,xx+width/2+.15,yy+.2)
+            if not board.boundary.covers(area) or len(tree.query(area,predicate="intersects")):
+                continue
+            if any(area.intersects(other) for other in boxes):
+                continue
+            boxes.append(area)
+            placed.append((ref,(xx,yy),area))
+            break
+    return placed
+
+
 def svg(board, panels, destination, labels=False):
     """Panels: [(title, primitives, vias)], each rendered with layers separately."""
     minx, miny, maxx, maxy = board.boundary.bounds
@@ -92,7 +119,7 @@ def svg(board, panels, destination, labels=False):
                                  'stroke-linecap="round" stroke-linejoin="round"/>')
             for pad in board.pads:
                 if layer in pad.layers and pad.plated:
-                    parts.append(f'<polygon points="{polygon_svg(pad.shape)}" fill="{color}" stroke="#303f37" stroke-width="0.035"/>')
+                    parts.append(f'<polygon points="{polygon_svg(pad.shape)}" fill="{color}"/>')
                 if pad.drill_shape is not None:
                     parts.append(f'<polygon points="{polygon_svg(pad.drill_shape)}" fill="#eef2f5" stroke="#85908a" stroke-width="0.05"/>')
                 elif pad.drill:
@@ -101,10 +128,8 @@ def svg(board, panels, destination, labels=False):
                 parts.append(f'<circle cx="{v.center[0]}" cy="{v.center[1]}" r="{v.diameter/2}" fill="{color}"/>')
                 parts.append(f'<circle cx="{v.center[0]}" cy="{v.center[1]}" r="{v.drill/2}" fill="#eef2f5"/>')
             if labels:
-                for reference, region in board.display_regions or board.via_keepouts:
-                    x, y = region.representative_point().coords[0]
+                for reference,(x,y),_ in label_positions(board,primitives,vias,layer):
                     parts.append(f'<text x="{x}" y="{y}" text-anchor="middle" font-size="0.9" '
-                                 'stroke="#fbf8eb" stroke-width="0.16" paint-order="stroke" '
                                  f'fill="#334940">{escape(reference)}</text>')
             parts.append('</g>')
     parts.append('</svg>')

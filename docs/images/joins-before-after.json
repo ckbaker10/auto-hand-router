@@ -1,0 +1,9 @@
+{
+  "board": "drying-oven-compact",
+  "pad": "U3.4",
+  "net": "/SPI_MISO",
+  "layer": 1,
+  "baseline": "2b1bfda",
+  "nominal_width_mm": 0.35,
+  "stem_width_mm": 0.525
+}

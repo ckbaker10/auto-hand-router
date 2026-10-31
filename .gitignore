@@ -23,6 +23,7 @@ examples/**/report.json
 examples/drying-*/seed/
 comparison/VERGLEICH.md
 .ahr-*/
+.auto-hand-router-stage-*/
 *.previous/
 output/
 /AUTOROUTER-KONZEPT.md

@@ -19,10 +19,23 @@ historische PCB-Fotos und andere externe Referenzbilder sind nicht enthalten.
 ### 555 Referenz
 
 Spacious / curved: acht Netze, 22 geschlossene Verbindungen, zehn Vias und
-133 native Boegen. Keine offenen Verbindungen oder neuen KiCad-DRC-Befunde.
+291 native Boegen. Keine offenen Verbindungen oder neuen KiCad-DRC-Befunde.
 Der kleine Referenzlauf funktioniert ohne externen Routingkern.
 
 ![555 Spacious curved](examples/555-reference/routed.png)
+
+Die Formgebung folgt einer durchgehend glatten kubischen Spline-Zielkurve.
+Fuer KiCad wird sie adaptiv durch native Kreisboegen und kurze Geraden
+angenaehert. Jeder ausgegebene Abschnitt wird auf Freiraum geprueft;
+in engen Korridoren bleibt die sichere lokale Rundung erhalten.
+
+Gleichnamige Leiterbahnen derselben Lage koennen vor einem Pad zu einem
+breiteren gemeinsamen Stamm zusammenlaufen, sofern der Platz ausreicht.
+Padkanten und ueberfluessige Vias erzeugen dabei keine kuenstlichen
+Kurvenanker. Beschriftungen stehen in freien Bereichen ohne weisse Halos
+ueber dem Kupfer.
+
+![Gemeinsamer Padanschluss vorher und nachher](docs/images/joins-before-after.png)
 
 ### Unser Router im Vergleich
 
@@ -52,7 +65,7 @@ sind erlaubt; Pad-, Bohrungs- und mechanische Sperrabstaende bleiben aktiv.
 ### Drying Fridge
 
 120 × 100 mm, 58 Footprints und 189 Pads. Alle Verbindungen sind geschlossen.
-1.064 native Boegen und 45 Vias; keine neuen Routingfehler. Dieses Ergebnis
+2.568 native Boegen und 45 Vias; keine neuen Routingfehler. Dieses Ergebnis
 erfuellt sogar die strengere Regel ohne Vias in Bauteilumrissen.
 Kabelbinderschlitze und ihre Sperrflaechen bleiben erhalten.
 
@@ -125,7 +138,7 @@ ersetzen kein vorher erfolgreiches Ergebnis.
 | `--via-policy courtyards` | Standard: gesamte Bauteilumrisse fuer Vias sperren. |
 | `--via-policy module-interiors` | Vias unter grossen bedrahteten Modulen erlauben; Pads, Bohrungen und mechanische Sperren bleiben geschuetzt. |
 | `--spacing 1.2` | Zusaetzlicher weicher Freiraumwunsch in mm; keine Abschwaechung der Mindestabstaende. |
-| `--radius 2.5` | Gewuenschter maximaler Bogenradius in mm; Engstellen verlangen kleinere Radien. |
+| `--radius 2.5` | Maximaler Radius der lokalen Ersatzrundung in mm, falls die Spline-Formgebung im Korridor keinen Platz findet. |
 | `--relax-steps 30` | Zahl der Schritte zur freien Verteilung der Leiterzuege. |
 | `--route-timeout 600` | Zeitlimit des Freerouting-Aufrufs in Sekunden. |
 

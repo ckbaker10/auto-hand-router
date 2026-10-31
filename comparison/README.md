@@ -8,7 +8,7 @@ ranking of the routing engines.
 
 | Router | Open | Vias | Copper length | Native arcs | New KiCad findings |
 |---|---:|---:|---:|---:|---:|
-| Auto-Hand-Router Spacious / curved reference | 0 | 10 | 210.52 mm | 133 | 0 |
+| Auto-Hand-Router Spacious / curved reference | 0 | 10 | 208.16 mm | 291 | 0 |
 | J-Kreisel core with body keepouts | 0 | 10 | 236.13 mm | 0 | 0 |
 | Freerouting 2.5.0 with conservative rule adapter | 0 | 4 | 217.52 mm | 0 | 0 |
 | Freerouting + mitxela rounding, 2 mm | 0 | 4 | 216.02 mm | 55 | 4 clearance errors |

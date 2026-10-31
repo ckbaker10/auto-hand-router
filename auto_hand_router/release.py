@@ -301,6 +301,8 @@ def main(argv=None):
         routed_drc = native.drc(candidate, "routed-drc")
         pruned = []
         for iteration in range(12):
+            if any(v["severity"]=="error" for v in routed_drc["violations"]):
+                break
             dangling = [v for v in routed_drc["violations"] if v["type"] in ("via_dangling", "track_dangling")]
             if not dangling:
                 break

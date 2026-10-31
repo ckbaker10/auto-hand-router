@@ -1,6 +1,6 @@
 """Deterministic two-layer A*, clearance-aware relaxation and native arc fillets."""
 
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 import heapq
 import math
 
@@ -66,9 +66,14 @@ class Scene:
             if route.net != net:
                 other = self.board.rules[route.net]
                 clearance = max(rules.clearance, other.clearance)
-                for route_layer, line in route.lines():
-                    if route_layer == layer:
-                        shapes.append(line.buffer(half + other.width / 2 + clearance + EPS, quad_segs=12))
+                if route.primitives:
+                    for primitive in route.primitives:
+                        if primitive.layer == layer:
+                            shapes.append(primitive.line().buffer(half+primitive.width/2+clearance+EPS,quad_segs=12))
+                else:
+                    for route_layer, line in route.lines():
+                        if route_layer == layer:
+                            shapes.append(line.buffer(half + other.width / 2 + clearance + EPS, quad_segs=12))
                 for v in route.vias:
                     shapes.append(Point(v.center).buffer(half + v.diameter / 2 + clearance + EPS))
             if via:
@@ -346,11 +351,26 @@ def _route_board(board, options, net_order, progress=None):
             forbidden = scene.obstacles(route.net, layer)
             paths.append((layer, relax(points, forbidden, scene.allowed(route.net), options)))
         route.paths = paths
+    if options.spacing>0 or options.relax_steps>0:
+        # Shape the physical net graph as a whole, so several connections ending
+        # at one pad can share a wider stem in the 555 reference too.
+        from .finishing import finish
+        raw = [Primitive(r.net,layer,board.rules[r.net].width,a,b)
+               for r in scene.routes for layer,points in r.paths for a,b in zip(points,points[1:])]
+        barrels = [v for r in scene.routes for v in r.vias]
+        copper,barrels,shaping = finish(board,raw,barrels,replace(options,relax_steps=0),progress)
+        grouped = [Route(net,[],[v for v in barrels if v.net==net],[p for p in copper if p.net==net])
+                   for net in nets]
+        return grouped,{"connections_routed":len(searches),"expanded_states":sum(searches),
+                        "nets":len(pads_by_net),"net_order":nets,"options":vars(options),"shaping":shaping}
     for route in scene.routes:
         primitives = []
+        from .curves import smooth_path
         for layer, points in route.paths:
             forbidden = scene.obstacles(route.net, layer)
-            primitives.extend(fillet(points, route.net, layer, board.rules[route.net].width,
+            # Retain the unspread circular-fillet control sample for comparisons.
+            shaper = fillet if options.spacing==0 and options.relax_steps==0 else smooth_path
+            primitives.extend(shaper(points, route.net, layer, board.rules[route.net].width,
                                      forbidden, scene.allowed(route.net), options.radius))
         route.primitives = primitives
         if not scene.route_legal(route):
