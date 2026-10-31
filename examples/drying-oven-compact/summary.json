@@ -1,0 +1,79 @@
+{
+  "version": "0.1.0",
+  "status": "validated routing candidate; DRAFT hardware",
+  "source_sha256": {
+    "drying-oven-compact.kicad_pcb": "9c8bde7b6d5a4a1804ecc2553648f002ad6863cca8c26f9b352d00176d1601a3",
+    "drying-oven-compact.kicad_pro": "8f907f41137707a2bada32ea58d2cfc005fad43ad44ad56e27032b291155fe4e",
+    "drying-oven-compact.kicad_sch": "632c51264e3ea3ed8ab64e00b30740c08667e1a9d7ed96f0836ee693e6f96c9c",
+    "drying-oven-compact.kicad_dru": "8c1354580113dfb4f46b83432b896484539046e4ee2e93299b08d5a7b49c1a51"
+  },
+  "kicad_version": "10.0.8",
+  "copper": {
+    "passed": true,
+    "arcs": 1165,
+    "segments": 1720,
+    "vias": 53,
+    "track_length_mm": 2135.173838161125,
+    "unconnected_components": 0,
+    "minimum_extra_clearance_mm": 0.013945927304023664
+  },
+  "kicad_drc": {
+    "passed": true,
+    "unconnected_items": 0,
+    "baseline_violation_count": 6,
+    "routed_violation_count": 6,
+    "new_violations": [],
+    "routed_violation_types": {
+      "lib_footprint_issues": 6
+    }
+  },
+  "project_audit": {
+    "passed": true,
+    "footprints": 36,
+    "pads": 130,
+    "checked_pad_nets": 124,
+    "placement_unchanged": true,
+    "outline_unchanged": true,
+    "holes_unchanged": true,
+    "rule_areas_unchanged": true,
+    "rule_areas": 6,
+    "schematic_pad_mapping": true
+  },
+  "tangency": {
+    "free_joints": 2283,
+    "free_kinks": 0,
+    "threshold_deg": 1.0,
+    "findings": [],
+    "scope": "G1 tangency at degree-two free joints; terminals and branches excluded"
+  },
+  "via_policy": {
+    "mode": "module-interiors",
+    "allowed_module_interiors": [
+      "U1",
+      "U2",
+      "U3",
+      "U4",
+      "U5"
+    ],
+    "pad_hole_and_mechanical_keepouts": "always enforced"
+  },
+  "schematic_parity": {
+    "inherited_metadata_findings": 36,
+    "new_findings": 0
+  },
+  "erc_library_findings": {
+    "lib_symbol_issues": 37,
+    "footprint_link_issues": 6
+  },
+  "artifact_sha256": {
+    "comparison.png": "6327c33752b53a4c24b5b146b48b8f97412688c035dd5ad7015e24a35c0a2f79",
+    "drying-oven-compact.kicad_dru": "8c1354580113dfb4f46b83432b896484539046e4ee2e93299b08d5a7b49c1a51",
+    "routed.svg": "df8859d024ffa8cf26a9e1b5b921949329657da8288e063e7ce95117a19a40aa",
+    "drying-oven-compact.kicad_pcb": "a3d1dcca0a8a2b1ed9943c194bab0193893719eece6b97d3b5dbd2724ede45c9",
+    "drying-oven-compact.kicad_sch": "632c51264e3ea3ed8ab64e00b30740c08667e1a9d7ed96f0836ee693e6f96c9c",
+    "comparison.svg": "5fc5bc739a893fe88df659dc6f1911ea85344a1b4418f971ef7953283b87adf2",
+    "routed.png": "7ea99c36fda23b2de731cfb1d0fce52d7696ad8b7e489bdc09496356ada4736b",
+    ".auto-hand-router": "e9dd8507f4bf0c6f42458e41aea833ad0bd3f6127272335eee9bf4d58541ed67",
+    "drying-oven-compact.kicad_pro": "7c0b53c8c341c4f9638701c4e863099464fc068003594fc01bf6fa2885a75310"
+  }
+}

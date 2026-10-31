@@ -1,0 +1,9094 @@
+(kicad_sch
+  (version 20250114)
+  (generator eeschema)
+  (generator_version "9.0")
+  (uuid b2da4eaa-4eb0-4587-9e59-d96611b77673)
+  (paper "A3")
+  (title_block
+    (title "Drying Oven - Compact 70 x 120 mm")
+    (date "2026-10-27")
+    (rev "1.3 DRAFT")
+    (comment 1 "SSR und Display extern / Netzteil mechanisch auf Traeger")
+  )
+  (lib_symbols
+    (symbol "DryingOven:S_10_5_230VAC_5V_10W_External"
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board no)
+      (property "Reference" "PS"
+        (at 0 15.24 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Value" "S_10_5_230VAC_5V_10W_External"
+        (at 0 12.7 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Footprint" ""
+        (at 0 -5.08 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "Datasheet" "~"
+        (at 0 -7.62 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "Description" "External chassis supply S-10-5, photo label DC 5V 2A 10W. Five terminals numbered here by documented left-to-right order: L N PE -V +V. Not a PCB-mount power module."
+        (at 0 -10.16 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "ki_keywords" "drying oven AliExpress module"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (symbol "S_10_5_230VAC_5V_10W_External_0_1"
+        (rectangle
+          (start -15.24 10.16)
+          (end 15.24 -10.16)
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type background)
+          )
+        )
+      )
+      (symbol "S_10_5_230VAC_5V_10W_External_1_1"
+        (pin power_in line
+          (at -17.78 5.08 0)
+          (length 2.54)
+          (name "L"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin power_in line
+          (at -17.78 0 0)
+          (length 2.54)
+          (name "N"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at -17.78 -5.08 0)
+          (length 2.54)
+          (name "PE"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "3"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin power_out line
+          (at 17.78 2.54 180)
+          (length 2.54)
+          (name "+5V"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "5"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin power_out line
+          (at 17.78 -2.54 180)
+          (length 2.54)
+          (name "-V"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "4"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "Connector_Generic:Conn_01x03"
+      (pin_names
+        (offset 1.016)
+        (hide yes)
+      )
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "J"
+        (at 0 5.08 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Value" "Conn_01x03"
+        (at 0 -5.08 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Footprint" ""
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "Datasheet" "~"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "ki_keywords" "connector"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "ki_fp_filters" "Connector*:*_1x??_*"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (symbol "Conn_01x03_1_1"
+        (rectangle
+          (start -1.27 3.81)
+          (end 1.27 -3.81)
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type background)
+          )
+        )
+        (rectangle
+          (start -1.27 2.667)
+          (end 0 2.413)
+          (stroke
+            (width 0.1524)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (rectangle
+          (start -1.27 0.127)
+          (end 0 -0.127)
+          (stroke
+            (width 0.1524)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (rectangle
+          (start -1.27 -2.413)
+          (end 0 -2.667)
+          (stroke
+            (width 0.1524)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (pin passive line
+          (at -5.08 2.54 0)
+          (length 3.81)
+          (name "Pin_1"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at -5.08 0 0)
+          (length 3.81)
+          (name "Pin_2"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at -5.08 -2.54 0)
+          (length 3.81)
+          (name "Pin_3"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "3"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "Connector_Generic:Conn_01x02"
+      (pin_names
+        (offset 1.016)
+        (hide yes)
+      )
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "J"
+        (at 0 2.54 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Value" "Conn_01x02"
+        (at 0 -5.08 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Footprint" ""
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "Datasheet" "~"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "ki_keywords" "connector"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "ki_fp_filters" "Connector*:*_1x??_*"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (symbol "Conn_01x02_1_1"
+        (rectangle
+          (start -1.27 1.27)
+          (end 1.27 -3.81)
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type background)
+          )
+        )
+        (rectangle
+          (start -1.27 0.127)
+          (end 0 -0.127)
+          (stroke
+            (width 0.1524)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (rectangle
+          (start -1.27 -2.413)
+          (end 0 -2.667)
+          (stroke
+            (width 0.1524)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (pin passive line
+          (at -5.08 0 0)
+          (length 3.81)
+          (name "Pin_1"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at -5.08 -2.54 0)
+          (length 3.81)
+          (name "Pin_2"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "Device:Polyfuse"
+      (pin_numbers
+        (hide yes)
+      )
+      (pin_names
+        (offset 0)
+      )
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "F"
+        (at -2.54 0 90)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Value" "Polyfuse"
+        (at 2.54 0 90)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Footprint" ""
+        (at 1.27 -5.08 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (justify left)
+          (hide yes)
+        )
+      )
+      (property "Datasheet" "~"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "Description" "Resettable fuse, polymeric positive temperature coefficient"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "ki_keywords" "resettable fuse PTC PPTC polyfuse polyswitch"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "ki_fp_filters" "*polyfuse* *PTC*"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (symbol "Polyfuse_0_1"
+        (polyline
+          (pts
+            (xy -1.524 2.54)
+            (xy -1.524 1.524)
+            (xy 1.524 -1.524)
+            (xy 1.524 -2.54)
+          )
+          (stroke
+            (width 0)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (rectangle
+          (start -0.762 2.54)
+          (end 0.762 -2.54)
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0 -2.54)
+          )
+          (stroke
+            (width 0)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+      )
+      (symbol "Polyfuse_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 1.27)
+          (name "~"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 1.27)
+          (name "~"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "DryingOven:AMS1117_3V3_Module_3Pin"
+      (exclude_from_sim yes)
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "U"
+        (at 0 12.7 0)
+        (effects
+          (font
+            (size 1.0 1.0)
+          )
+        )
+      )
+      (property "Value" "AMS1117_3V3_Module_3Pin"
+        (at 0 10.16 0)
+        (effects
+          (font
+            (size 1.0 1.0)
+          )
+        )
+      )
+      (property "Footprint" "DryingOven:AMS1117_Module_3Pin_DRAFT"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.0 1.0)
+          )
+          (hide yes)
+        )
+      )
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.0 1.0)
+          )
+          (hide yes)
+        )
+      )
+      (property "Description" "Small 8.6 x 12.33mm AMS1117 module, photo GND OUT IN. Pin pitch/body placement to verify."
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.0 1.0)
+          )
+          (hide yes)
+        )
+      )
+      (symbol "AMS1117_3V3_Module_3Pin_0_1"
+        (rectangle
+          (start -10.16 7.62)
+          (end 10.16 -7.62)
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type background)
+          )
+        )
+      )
+      (symbol "AMS1117_3V3_Module_3Pin_1_1"
+        (pin power_in line
+          (at -12.7 2.54 0)
+          (length 2.54)
+          (name "IN_5V"
+            (effects
+              (font
+                (size 1.0 1.0)
+              )
+            )
+          )
+          (number "3"
+            (effects
+              (font
+                (size 1.0 1.0)
+              )
+            )
+          )
+        )
+        (pin power_in line
+          (at -12.7 -2.54 0)
+          (length 2.54)
+          (name "GND"
+            (effects
+              (font
+                (size 1.0 1.0)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 1.0 1.0)
+              )
+            )
+          )
+        )
+        (pin power_out line
+          (at 12.7 0 180)
+          (length 2.54)
+          (name "OUT_3V3"
+            (effects
+              (font
+                (size 1.0 1.0)
+              )
+            )
+          )
+          (number "2"
+            (effects
+              (font
+                (size 1.0 1.0)
+              )
+            )
+          )
+        )
+      )
+    )
+    (symbol "Device:C"
+      (pin_numbers
+        (hide yes)
+      )
+      (pin_names
+        (offset 0.254)
+      )
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "C"
+        (at 0.635 2.54 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (justify left)
+        )
+      )
+      (property "Value" "C"
+        (at 0.635 -2.54 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (justify left)
+        )
+      )
+      (property "Footprint" ""
+        (at 0.9652 -3.81 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "Datasheet" "~"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "Description" "Unpolarized capacitor"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "ki_keywords" "cap capacitor"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "ki_fp_filters" "C_*"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (symbol "C_0_1"
+        (polyline
+          (pts
+            (xy -2.032 0.762)
+            (xy 2.032 0.762)
+          )
+          (stroke
+            (width 0.508)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy -2.032 -0.762)
+            (xy 2.032 -0.762)
+          )
+          (stroke
+            (width 0.508)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+      )
+      (symbol "C_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 2.794)
+          (name "~"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 2.794)
+          (name "~"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "DryingOven:S10_5_Mechanical_Mount"
+      (exclude_from_sim yes)
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "M"
+        (at 0 10.16 0)
+        (effects
+          (font
+            (size 1.0 1.0)
+          )
+        )
+      )
+      (property "Value" "S10_5_Mechanical_Mount"
+        (at 0 7.62 0)
+        (effects
+          (font
+            (size 1.0 1.0)
+          )
+        )
+      )
+      (property "Footprint" "DryingOven:S10_5_Mounting_Area_DRAFT"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.0 1.0)
+          )
+          (hide yes)
+        )
+      )
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.0 1.0)
+          )
+          (hide yes)
+        )
+      )
+      (property "Description" "Mechanical placement reserve for chassis supply on carrier; electrical connection by cable."
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.0 1.0)
+          )
+          (hide yes)
+        )
+      )
+      (symbol "S10_5_Mechanical_Mount_0_1"
+        (rectangle
+          (start -17.78 5.08)
+          (end 17.78 -5.08)
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type background)
+          )
+        )
+      )
+      (symbol "S10_5_Mechanical_Mount_1_1")
+    )
+    (symbol "power:PWR_FLAG"
+      (power)
+      (pin_numbers
+        (hide yes)
+      )
+      (pin_names
+        (offset 0)
+        (hide yes)
+      )
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "#FLG"
+        (at 0 1.905 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "Value" "PWR_FLAG"
+        (at 0 3.81 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Footprint" ""
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "Datasheet" "~"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "Description" "Special symbol for telling ERC where power comes from"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "ki_keywords" "flag power"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (symbol "PWR_FLAG_0_0"
+        (pin power_out line
+          (at 0 0 90)
+          (length 0)
+          (name "~"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+      )
+      (symbol "PWR_FLAG_0_1"
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 1.27)
+            (xy -1.016 1.905)
+            (xy 0 2.54)
+            (xy 1.016 1.905)
+            (xy 0 1.27)
+          )
+          (stroke
+            (width 0)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "DryingOven:RP2040_USB_C_16M_40Pin"
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "U"
+        (at 0 31.75 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Value" "RP2040_USB_C_16M_40Pin"
+        (at 0 29.21 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Footprint" "DryingOven:YD_RP2040_40Pin_Socket"
+        (at 0 -5.08 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "Datasheet" "https://github.com/initdc/YD-RP2040"
+        (at 0 -7.62 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "Description" "YD-RP2040 style USB-C module, confirmed 16 MiB flash. 40 edge pins from archived product pinout. Bottom debug header excluded. Vin/Vout power path requires board-revision verification."
+        (at 0 -10.16 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "ki_keywords" "drying oven AliExpress module"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (symbol "RP2040_USB_C_16M_40Pin_0_1"
+        (rectangle
+          (start -12.7 26.67)
+          (end 12.7 -26.67)
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type background)
+          )
+        )
+      )
+      (symbol "RP2040_USB_C_16M_40Pin_1_1"
+        (pin bidirectional line
+          (at -15.24 24.13 0)
+          (length 2.54)
+          (name "GP0"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin bidirectional line
+          (at -15.24 21.59 0)
+          (length 2.54)
+          (name "GP1"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin power_in line
+          (at -15.24 19.05 0)
+          (length 2.54)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "3"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin bidirectional line
+          (at -15.24 16.51 0)
+          (length 2.54)
+          (name "GP2"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "4"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin bidirectional line
+          (at -15.24 13.97 0)
+          (length 2.54)
+          (name "GP3"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "5"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin bidirectional line
+          (at -15.24 11.43 0)
+          (length 2.54)
+          (name "GP4"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "6"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin bidirectional line
+          (at -15.24 8.89 0)
+          (length 2.54)
+          (name "GP5"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "7"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin power_in line
+          (at -15.24 6.35 0)
+          (length 2.54)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "8"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin bidirectional line
+          (at -15.24 3.81 0)
+          (length 2.54)
+          (name "GP6"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "9"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin bidirectional line
+          (at -15.24 1.27 0)
+          (length 2.54)
+          (name "GP7"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "10"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin bidirectional line
+          (at -15.24 -1.27 0)
+          (length 2.54)
+          (name "GP8"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "11"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin bidirectional line
+          (at -15.24 -3.81 0)
+          (length 2.54)
+          (name "GP9"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "12"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin power_in line
+          (at -15.24 -6.35 0)
+          (length 2.54)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "13"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin bidirectional line
+          (at -15.24 -8.89 0)
+          (length 2.54)
+          (name "GP10"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "14"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin bidirectional line
+          (at -15.24 -11.43 0)
+          (length 2.54)
+          (name "GP11"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "15"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin bidirectional line
+          (at -15.24 -13.97 0)
+          (length 2.54)
+          (name "GP12"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "16"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin bidirectional line
+          (at -15.24 -16.51 0)
+          (length 2.54)
+          (name "GP13"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "17"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin power_in line
+          (at -15.24 -19.05 0)
+          (length 2.54)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "18"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin bidirectional line
+          (at -15.24 -21.59 0)
+          (length 2.54)
+          (name "GP14"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "19"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin bidirectional line
+          (at -15.24 -24.13 0)
+          (length 2.54)
+          (name "GP15"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "20"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin power_out line
+          (at 15.24 24.13 180)
+          (length 2.54)
+          (name "Vout"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "40"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin power_in line
+          (at 15.24 21.59 180)
+          (length 2.54)
+          (name "Vin"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "39"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin power_in line
+          (at 15.24 19.05 180)
+          (length 2.54)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "38"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin bidirectional line
+          (at 15.24 16.51 180)
+          (length 2.54)
+          (name "GP23"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "37"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin power_out line
+          (at 15.24 13.97 180)
+          (length 2.54)
+          (name "3V3"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "36"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin bidirectional line
+          (at 15.24 11.43 180)
+          (length 2.54)
+          (name "GP29"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "35"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin bidirectional line
+          (at 15.24 8.89 180)
+          (length 2.54)
+          (name "GP28"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "34"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin power_in line
+          (at 15.24 6.35 180)
+          (length 2.54)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "33"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin bidirectional line
+          (at 15.24 3.81 180)
+          (length 2.54)
+          (name "GP27"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "32"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin bidirectional line
+          (at 15.24 1.27 180)
+          (length 2.54)
+          (name "GP26"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "31"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin input line
+          (at 15.24 -1.27 180)
+          (length 2.54)
+          (name "RUN"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "30"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin bidirectional line
+          (at 15.24 -3.81 180)
+          (length 2.54)
+          (name "GP22"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "29"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin power_in line
+          (at 15.24 -6.35 180)
+          (length 2.54)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "28"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin bidirectional line
+          (at 15.24 -8.89 180)
+          (length 2.54)
+          (name "GP21"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "27"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin bidirectional line
+          (at 15.24 -11.43 180)
+          (length 2.54)
+          (name "GP20"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "26"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin bidirectional line
+          (at 15.24 -13.97 180)
+          (length 2.54)
+          (name "GP19"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "25"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin bidirectional line
+          (at 15.24 -16.51 180)
+          (length 2.54)
+          (name "GP18"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "24"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin power_in line
+          (at 15.24 -19.05 180)
+          (length 2.54)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "23"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin bidirectional line
+          (at 15.24 -21.59 180)
+          (length 2.54)
+          (name "GP17"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "22"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin bidirectional line
+          (at 15.24 -24.13 180)
+          (length 2.54)
+          (name "GP16"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "21"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "DryingOven:MAX31856_Breakout_8Pin"
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "U"
+        (at 0 17.78 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Value" "MAX31856_Breakout_8Pin"
+        (at 0 15.24 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Footprint" "DryingOven:MAX31856_8Pin_Socket_DRAFT"
+        (at 0 -5.08 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/MAX31856.pdf"
+        (at 0 -7.62 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "Description" "Purple MAX31856/CJMCU style breakout, 8-pin host interface in photo order VIN GND SDI SDO SCK CS FAU DRD. Thermocouple connects directly to module and is not a carrier pad. Not the Adafruit 9-pin board. Mechanics provisional."
+        (at 0 -10.16 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "ki_keywords" "drying oven AliExpress module"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (symbol "MAX31856_Breakout_8Pin_0_1"
+        (rectangle
+          (start -12.7 12.7)
+          (end 12.7 -12.7)
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type background)
+          )
+        )
+      )
+      (symbol "MAX31856_Breakout_8Pin_1_1"
+        (pin power_in line
+          (at -15.24 8.89 0)
+          (length 2.54)
+          (name "VIN"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin power_in line
+          (at -15.24 6.35 0)
+          (length 2.54)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin input line
+          (at -15.24 3.81 0)
+          (length 2.54)
+          (name "SDI"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "3"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin tri_state line
+          (at -15.24 1.27 0)
+          (length 2.54)
+          (name "SDO"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "4"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin input line
+          (at -15.24 -1.27 0)
+          (length 2.54)
+          (name "SCK"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "5"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin input line
+          (at -15.24 -3.81 0)
+          (length 2.54)
+          (name "~{CS}"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "6"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin output line
+          (at -15.24 -6.35 0)
+          (length 2.54)
+          (name "~{FAU}"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "7"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin output line
+          (at -15.24 -8.89 0)
+          (length 2.54)
+          (name "~{DRD}"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "8"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "Device:R"
+      (pin_numbers
+        (hide yes)
+      )
+      (pin_names
+        (offset 0)
+      )
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "R"
+        (at 2.032 0 90)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Value" "R"
+        (at 0 0 90)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Footprint" ""
+        (at -1.778 0 90)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "Datasheet" "~"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "Description" "Resistor"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "ki_keywords" "R res resistor"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "ki_fp_filters" "R_*"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (symbol "R_0_1"
+        (rectangle
+          (start -1.016 -2.54)
+          (end 1.016 2.54)
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+      )
+      (symbol "R_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 1.27)
+          (name "~"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 1.27)
+          (name "~"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "Transistor_FET:AO3400A"
+      (pin_names
+        (offset 0)
+        (hide yes)
+      )
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "Q"
+        (at 5.08 1.905 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (justify left)
+        )
+      )
+      (property "Value" "AO3400A"
+        (at 5.08 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (justify left)
+        )
+      )
+      (property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+        (at 5.08 -1.905 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+            (italic yes)
+          )
+          (justify left)
+          (hide yes)
+        )
+      )
+      (property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
+        (at 5.08 -3.81 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (justify left)
+          (hide yes)
+        )
+      )
+      (property "Description" "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "ki_keywords" "N-Channel MOSFET"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (symbol "AO3400A_0_1"
+        (polyline
+          (pts
+            (xy 0.254 1.905)
+            (xy 0.254 -1.905)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy 0.254 0)
+            (xy -2.54 0)
+          )
+          (stroke
+            (width 0)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy 0.762 2.286)
+            (xy 0.762 1.27)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy 0.762 0.508)
+            (xy 0.762 -0.508)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy 0.762 -1.27)
+            (xy 0.762 -2.286)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy 0.762 -1.778)
+            (xy 3.302 -1.778)
+            (xy 3.302 1.778)
+            (xy 0.762 1.778)
+          )
+          (stroke
+            (width 0)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy 1.016 0)
+            (xy 2.032 0.381)
+            (xy 2.032 -0.381)
+            (xy 1.016 0)
+          )
+          (stroke
+            (width 0)
+            (type default)
+          )
+          (fill
+            (type outline)
+          )
+        )
+        (circle
+          (center 1.651 0)
+          (radius 2.794)
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy 2.54 2.54)
+            (xy 2.54 1.778)
+          )
+          (stroke
+            (width 0)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (circle
+          (center 2.54 1.778)
+          (radius 0.254)
+          (stroke
+            (width 0)
+            (type default)
+          )
+          (fill
+            (type outline)
+          )
+        )
+        (circle
+          (center 2.54 -1.778)
+          (radius 0.254)
+          (stroke
+            (width 0)
+            (type default)
+          )
+          (fill
+            (type outline)
+          )
+        )
+        (polyline
+          (pts
+            (xy 2.54 -2.54)
+            (xy 2.54 0)
+            (xy 0.762 0)
+          )
+          (stroke
+            (width 0)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy 2.921 0.381)
+            (xy 3.683 0.381)
+          )
+          (stroke
+            (width 0)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy 3.302 0.381)
+            (xy 2.921 -0.254)
+            (xy 3.683 -0.254)
+            (xy 3.302 0.381)
+          )
+          (stroke
+            (width 0)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+      )
+      (symbol "AO3400A_1_1"
+        (pin input line
+          (at -5.08 0 0)
+          (length 2.54)
+          (name "G"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at 2.54 5.08 270)
+          (length 2.54)
+          (name "D"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "3"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at 2.54 -5.08 90)
+          (length 2.54)
+          (name "S"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+      )
+      (embedded_fonts no)
+      (property "ki_fp_filters" "SOT?23*"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+    )
+    (symbol "DryingOven:SSR_25DA_External"
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board no)
+      (property "Reference" "K"
+        (at 0 12.7 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Value" "SSR_25DA_External"
+        (at 0 10.16 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Footprint" ""
+        (at 0 -5.08 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "Datasheet" "~"
+        (at 0 -7.62 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "Description" "External chassis-mounted SSR-25DA: 1/2 AC load, 3 positive DC control, 4 negative DC control. Actual manufacturer/rating and mechanical dimensions require matching. No carrier PCB footprint."
+        (at 0 -10.16 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "ki_keywords" "drying oven AliExpress module"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (symbol "SSR_25DA_External_0_1"
+        (rectangle
+          (start -12.7 7.62)
+          (end 12.7 -7.62)
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type background)
+          )
+        )
+      )
+      (symbol "SSR_25DA_External_1_1"
+        (pin passive line
+          (at -15.24 2.54 0)
+          (length 2.54)
+          (name "DC+"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "3"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at -15.24 -2.54 0)
+          (length 2.54)
+          (name "DC-"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "4"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at 15.24 2.54 180)
+          (length 2.54)
+          (name "AC1"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at 15.24 -2.54 180)
+          (length 2.54)
+          (name "AC2"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "Connector_Generic:Conn_01x07"
+      (pin_names
+        (offset 1.016)
+        (hide yes)
+      )
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "J"
+        (at 0 10.16 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Value" "Conn_01x07"
+        (at 0 -10.16 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Footprint" ""
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "Datasheet" "~"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "Description" "Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "ki_keywords" "connector"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "ki_fp_filters" "Connector*:*_1x??_*"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (symbol "Conn_01x07_1_1"
+        (rectangle
+          (start -1.27 8.89)
+          (end 1.27 -8.89)
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type background)
+          )
+        )
+        (rectangle
+          (start -1.27 7.747)
+          (end 0 7.493)
+          (stroke
+            (width 0.1524)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (rectangle
+          (start -1.27 5.207)
+          (end 0 4.953)
+          (stroke
+            (width 0.1524)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (rectangle
+          (start -1.27 2.667)
+          (end 0 2.413)
+          (stroke
+            (width 0.1524)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (rectangle
+          (start -1.27 0.127)
+          (end 0 -0.127)
+          (stroke
+            (width 0.1524)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (rectangle
+          (start -1.27 -2.413)
+          (end 0 -2.667)
+          (stroke
+            (width 0.1524)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (rectangle
+          (start -1.27 -4.953)
+          (end 0 -5.207)
+          (stroke
+            (width 0.1524)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (rectangle
+          (start -1.27 -7.493)
+          (end 0 -7.747)
+          (stroke
+            (width 0.1524)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (pin passive line
+          (at -5.08 7.62 0)
+          (length 3.81)
+          (name "Pin_1"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at -5.08 5.08 0)
+          (length 3.81)
+          (name "Pin_2"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at -5.08 2.54 0)
+          (length 3.81)
+          (name "Pin_3"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "3"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at -5.08 0 0)
+          (length 3.81)
+          (name "Pin_4"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "4"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at -5.08 -2.54 0)
+          (length 3.81)
+          (name "Pin_5"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "5"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at -5.08 -5.08 0)
+          (length 3.81)
+          (name "Pin_6"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "6"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at -5.08 -7.62 0)
+          (length 3.81)
+          (name "Pin_7"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "7"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "Mechanical:MountingHole"
+      (pin_names
+        (offset 1.016)
+      )
+      (exclude_from_sim no)
+      (in_bom no)
+      (on_board yes)
+      (property "Reference" "H"
+        (at 0 5.08 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Value" "MountingHole"
+        (at 0 3.175 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Footprint" ""
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "Datasheet" "~"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "Description" "Mounting Hole without connection"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "ki_keywords" "mounting hole"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "ki_fp_filters" "MountingHole*"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (symbol "MountingHole_0_1"
+        (circle
+          (center 0 0)
+          (radius 1.27)
+          (stroke
+            (width 1.27)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "Connector:TestPoint"
+      (pin_numbers
+        (hide yes)
+      )
+      (pin_names
+        (offset 0.762)
+        (hide yes)
+      )
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "TP"
+        (at 0 6.858 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Value" "TestPoint"
+        (at 0 5.08 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Footprint" ""
+        (at 5.08 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "Datasheet" "~"
+        (at 5.08 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "Description" "test point"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "ki_keywords" "test point tp"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (property "ki_fp_filters" "Pin* Test*"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+          (hide yes)
+        )
+      )
+      (symbol "TestPoint_0_1"
+        (circle
+          (center 0 3.302)
+          (radius 0.762)
+          (stroke
+            (width 0)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+      )
+      (symbol "TestPoint_1_1"
+        (pin passive line
+          (at 0 0 90)
+          (length 2.54)
+          (name "1"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)
+              )
+            )
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+  )
+  (wire
+    (pts
+      (xy 30.48 48.26)
+      (xy 25.4 48.26)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 8bfe9e72-cd57-4811-8e23-6ebeebaefb95)
+  )
+  (wire
+    (pts
+      (xy 30.48 53.34)
+      (xy 25.4 53.34)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 829b1245-9d73-4282-b8ec-fb0513d6ca82)
+  )
+  (wire
+    (pts
+      (xy 30.48 58.42)
+      (xy 25.4 58.42)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid f074ec7c-333f-4847-ad50-17ac79da14af)
+  )
+  (wire
+    (pts
+      (xy 66.04 50.8)
+      (xy 71.12 50.8)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 627f8a17-1b37-4686-b218-e79a252fbd28)
+  )
+  (wire
+    (pts
+      (xy 66.04 55.88)
+      (xy 71.12 55.88)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 834b0f3c-3439-4be1-b202-0fb107163d72)
+  )
+  (wire
+    (pts
+      (xy 104.14 40.64)
+      (xy 99.06 40.64)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 41f5f1bd-0fc7-4022-a2cf-e48e7a15da77)
+  )
+  (wire
+    (pts
+      (xy 104.14 43.18)
+      (xy 99.06 43.18)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 31476c59-8224-4e16-bda8-792df8075720)
+  )
+  (wire
+    (pts
+      (xy 104.14 45.72)
+      (xy 99.06 45.72)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 20665747-d930-4177-812f-a07fbb05441e)
+  )
+  (wire
+    (pts
+      (xy 104.14 73.66)
+      (xy 99.06 73.66)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 7762b786-b7e5-48e5-b35e-9f97d9064cb6)
+  )
+  (wire
+    (pts
+      (xy 104.14 76.2)
+      (xy 99.06 76.2)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 1fd66fa8-adf9-45f5-a61f-757168552f10)
+  )
+  (wire
+    (pts
+      (xy 144.78 46.99)
+      (xy 144.78 41.91)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 5982738e-acc3-4bc1-ae4f-3cb0fc07fdb1)
+  )
+  (wire
+    (pts
+      (xy 144.78 54.61)
+      (xy 144.78 59.69)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid f4917065-16c0-474c-8c46-b3b67603d507)
+  )
+  (wire
+    (pts
+      (xy 185.42 50.8)
+      (xy 180.34 50.8)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid f625a347-a150-41cf-b9b2-53581b4e9831)
+  )
+  (wire
+    (pts
+      (xy 185.42 53.34)
+      (xy 180.34 53.34)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 3a459a88-a30e-4ccf-b221-3e55a71a28f4)
+  )
+  (wire
+    (pts
+      (xy 233.68 48.26)
+      (xy 228.6 48.26)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid ba923aba-a756-47a8-b104-3db2108db723)
+  )
+  (wire
+    (pts
+      (xy 233.68 50.8)
+      (xy 228.6 50.8)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid df2e8b1d-e516-4558-bd7e-6642c640891f)
+  )
+  (wire
+    (pts
+      (xy 233.68 53.34)
+      (xy 228.6 53.34)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid afc1ff66-ce8f-41cd-ac63-2a1979d28fa8)
+  )
+  (wire
+    (pts
+      (xy 281.94 48.26)
+      (xy 276.86 48.26)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 7e3f759d-f722-461f-b055-226b6dc893f2)
+  )
+  (wire
+    (pts
+      (xy 281.94 53.34)
+      (xy 276.86 53.34)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 6a338761-e528-4c0c-9027-67c8f2a27f1b)
+  )
+  (wire
+    (pts
+      (xy 307.34 50.8)
+      (xy 312.42 50.8)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 96f56a83-28f9-4c9a-9673-4f31c02703a6)
+  )
+  (wire
+    (pts
+      (xy 353.06 50.8)
+      (xy 347.98 50.8)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 35916dfd-44df-4c09-a213-153202067028)
+  )
+  (wire
+    (pts
+      (xy 353.06 53.34)
+      (xy 347.98 53.34)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid d3b36b5d-a5e2-4037-88d7-bd79f14fea2e)
+  )
+  (wire
+    (pts
+      (xy 144.78 82.55)
+      (xy 144.78 77.47)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 4e9525b9-ccc6-4963-aca8-de32c789642f)
+  )
+  (wire
+    (pts
+      (xy 144.78 90.17)
+      (xy 144.78 95.25)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 919605e6-ae0e-4554-ad78-9c538537e37b)
+  )
+  (wire
+    (pts
+      (xy 190.5 82.55)
+      (xy 190.5 77.47)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 7a4d27a5-cdec-4a1b-ae42-10e6536e1827)
+  )
+  (wire
+    (pts
+      (xy 190.5 90.17)
+      (xy 190.5 95.25)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid ba0aa5a0-b490-4739-968d-029918cd2dbe)
+  )
+  (wire
+    (pts
+      (xy 238.76 82.55)
+      (xy 238.76 77.47)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 6738dcd7-799b-49a8-8443-63c30057797b)
+  )
+  (wire
+    (pts
+      (xy 238.76 90.17)
+      (xy 238.76 95.25)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 5e54708f-7a7c-4e10-9f13-0b9a5713a4b3)
+  )
+  (wire
+    (pts
+      (xy 90.17 101.6)
+      (xy 90.17 106.68)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 0762fcee-d6d1-4040-86ac-94fb9cca8849)
+  )
+  (wire
+    (pts
+      (xy 124.46 101.6)
+      (xy 124.46 106.68)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid b2a9e5fd-12f0-4651-abfa-b6aeba2a950a)
+  )
+  (wire
+    (pts
+      (xy 309.88 88.9)
+      (xy 309.88 93.98)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 8cc57022-bc23-4702-9a34-51a4f733b811)
+  )
+  (wire
+    (pts
+      (xy 332.74 88.9)
+      (xy 332.74 93.98)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 67f0fe97-8c47-4944-873c-f1da6cfb8440)
+  )
+  (wire
+    (pts
+      (xy 355.6 88.9)
+      (xy 355.6 93.98)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid a737eaff-6317-4949-923e-a04740475a4e)
+  )
+  (wire
+    (pts
+      (xy 48.26 151.13)
+      (xy 43.18 151.13)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid c3f74431-bf22-41fa-8620-6151c57505e6)
+  )
+  (wire
+    (pts
+      (xy 48.26 153.67)
+      (xy 43.18 153.67)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 97853535-af8c-4df5-ac2d-5063035a6075)
+  )
+  (wire
+    (pts
+      (xy 48.26 156.21)
+      (xy 43.18 156.21)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid c15b40c7-1cf5-4282-b3b6-30ba3d4ec722)
+  )
+  (wire
+    (pts
+      (xy 48.26 158.75)
+      (xy 43.18 158.75)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 05463695-e4e4-4ab1-9720-0a26017f38f2)
+  )
+  (wire
+    (pts
+      (xy 48.26 161.29)
+      (xy 43.18 161.29)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid c2e7eab2-81f3-486a-8a99-39131c96e9ef)
+  )
+  (wire
+    (pts
+      (xy 48.26 163.83)
+      (xy 43.18 163.83)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid fa51dcd1-4bf0-4efe-88ff-63871e4b5a7d)
+  )
+  (wire
+    (pts
+      (xy 48.26 166.37)
+      (xy 43.18 166.37)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 261f9cac-729e-44af-9aa0-d50aa7b86a2c)
+  )
+  (wire
+    (pts
+      (xy 48.26 168.91)
+      (xy 43.18 168.91)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid d1142014-7722-4bb9-aae2-8264ff2daf14)
+  )
+  (no_connect
+    (at 48.26 171.45)
+    (uuid 75ba53c2-fb35-4efe-a0d3-b7682143fa83)
+  )
+  (no_connect
+    (at 48.26 173.99)
+    (uuid a9ef9e65-f055-4d38-aad1-4653fecffbaa)
+  )
+  (no_connect
+    (at 48.26 176.53)
+    (uuid 69e81be3-b196-4446-83da-53e7921fbd12)
+  )
+  (no_connect
+    (at 48.26 179.07)
+    (uuid 349bbfff-9096-4ea2-846e-f2cc1960869f)
+  )
+  (wire
+    (pts
+      (xy 48.26 181.61)
+      (xy 43.18 181.61)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid f384a5f7-d42c-4609-a117-46aa426749bf)
+  )
+  (no_connect
+    (at 48.26 184.15)
+    (uuid b488b6f2-fe7d-4ab2-bf9b-e6add32c6859)
+  )
+  (no_connect
+    (at 48.26 186.69)
+    (uuid b21997e3-d75d-4b1e-a410-2b8281ef2d84)
+  )
+  (no_connect
+    (at 48.26 189.23)
+    (uuid 25b93356-1eb1-4fdd-a8d6-af05a5f0fa48)
+  )
+  (no_connect
+    (at 48.26 191.77)
+    (uuid 5101bf6b-8cb2-4cb5-90d8-f8e99b797a0a)
+  )
+  (wire
+    (pts
+      (xy 48.26 194.31)
+      (xy 43.18 194.31)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 67e6a430-6d8a-4cda-a898-b805248ceb60)
+  )
+  (no_connect
+    (at 48.26 196.85)
+    (uuid e497cf19-fee8-4685-baf2-ee008abbb36b)
+  )
+  (no_connect
+    (at 48.26 199.39)
+    (uuid a3ba8bc3-8c44-4c33-951c-3ecd0bc5bbbe)
+  )
+  (wire
+    (pts
+      (xy 78.74 151.13)
+      (xy 83.82 151.13)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid f6a63e15-3a49-4cf4-8e5c-43302fa114ef)
+  )
+  (wire
+    (pts
+      (xy 78.74 153.67)
+      (xy 83.82 153.67)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid cf92131b-939d-4d86-b59c-21f5a808fd4a)
+  )
+  (wire
+    (pts
+      (xy 78.74 156.21)
+      (xy 83.82 156.21)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid eba05153-b86b-4403-9288-1e500a3abd7c)
+  )
+  (no_connect
+    (at 78.74 158.75)
+    (uuid 42acc89e-1402-4cb5-8a0d-a0a4098e510e)
+  )
+  (no_connect
+    (at 78.74 163.83)
+    (uuid ddfce90a-cac1-4c0f-8eb4-e225385c4cc6)
+  )
+  (no_connect
+    (at 78.74 166.37)
+    (uuid d5f91b83-5f21-4083-9d9a-53c7b8897910)
+  )
+  (wire
+    (pts
+      (xy 78.74 168.91)
+      (xy 83.82 168.91)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid a7a8d4b2-f154-42f6-bde5-85ca180d08a0)
+  )
+  (no_connect
+    (at 78.74 171.45)
+    (uuid 95817706-84ea-4fbf-8caa-d94a0becf9b5)
+  )
+  (no_connect
+    (at 78.74 173.99)
+    (uuid 8c38a443-a34b-4fea-a1bc-c2a28ada773b)
+  )
+  (no_connect
+    (at 78.74 176.53)
+    (uuid 0733a291-73d1-43b1-9a32-1cc2fabed179)
+  )
+  (no_connect
+    (at 78.74 179.07)
+    (uuid f0e9a81c-331b-4785-82fc-fd57c6f4011a)
+  )
+  (wire
+    (pts
+      (xy 78.74 181.61)
+      (xy 83.82 181.61)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid bc32e4f7-7b4c-43b2-b63d-6b99744777cc)
+  )
+  (wire
+    (pts
+      (xy 78.74 184.15)
+      (xy 83.82 184.15)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 9dd40e6f-22fd-4149-986b-29edfcd97d44)
+  )
+  (wire
+    (pts
+      (xy 78.74 186.69)
+      (xy 83.82 186.69)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid c5e11903-0fb5-4d07-9517-d154e220c13d)
+  )
+  (wire
+    (pts
+      (xy 78.74 189.23)
+      (xy 83.82 189.23)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid b9163587-3308-45cd-a239-02d3f392e80f)
+  )
+  (wire
+    (pts
+      (xy 78.74 191.77)
+      (xy 83.82 191.77)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 332548ed-c734-4d75-9e0e-e5b3a00d2bbb)
+  )
+  (wire
+    (pts
+      (xy 78.74 194.31)
+      (xy 83.82 194.31)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid c0ee9adc-4f55-4d5b-a076-c05a0d859880)
+  )
+  (wire
+    (pts
+      (xy 78.74 196.85)
+      (xy 83.82 196.85)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 7e4a4902-b25a-43b8-a61e-52c3f4d57787)
+  )
+  (wire
+    (pts
+      (xy 78.74 199.39)
+      (xy 83.82 199.39)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid ada64efe-efc7-4975-8b53-b00a8a344b18)
+  )
+  (wire
+    (pts
+      (xy 154.94 151.13)
+      (xy 149.86 151.13)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 042f0835-2425-4c73-9304-bcbd61884c08)
+  )
+  (wire
+    (pts
+      (xy 154.94 153.67)
+      (xy 149.86 153.67)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 2ce9c3ea-5dc6-4812-a451-bd0c41354404)
+  )
+  (wire
+    (pts
+      (xy 154.94 156.21)
+      (xy 149.86 156.21)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 534b2372-5366-490f-bc26-55d852994680)
+  )
+  (wire
+    (pts
+      (xy 154.94 158.75)
+      (xy 149.86 158.75)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid c68db641-c1ce-4862-a23e-5565b4c82260)
+  )
+  (wire
+    (pts
+      (xy 154.94 161.29)
+      (xy 149.86 161.29)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 4d14bf39-d7c5-42f5-b342-55013c93c820)
+  )
+  (wire
+    (pts
+      (xy 154.94 163.83)
+      (xy 149.86 163.83)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 852671c7-e303-4ce4-acc9-e46adf1b4fe9)
+  )
+  (no_connect
+    (at 154.94 166.37)
+    (uuid 4c8045f9-3991-4862-be36-9f08ed01e300)
+  )
+  (no_connect
+    (at 154.94 168.91)
+    (uuid 8afc9324-12de-49ef-80ed-8818e7074d2b)
+  )
+  (wire
+    (pts
+      (xy 200.66 184.15)
+      (xy 200.66 179.07)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 279b0d65-7f27-4202-b2f0-378291683b86)
+  )
+  (wire
+    (pts
+      (xy 200.66 191.77)
+      (xy 200.66 196.85)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid a6149c24-ba30-4733-aac5-2ccff0caf11c)
+  )
+  (wire
+    (pts
+      (xy 236.22 151.13)
+      (xy 231.14 151.13)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 2fbe58d6-d553-4499-9eee-0b08473f6ff0)
+  )
+  (wire
+    (pts
+      (xy 236.22 153.67)
+      (xy 231.14 153.67)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid ae40f83c-5530-4d66-b891-4d56d5b2e2d0)
+  )
+  (wire
+    (pts
+      (xy 236.22 156.21)
+      (xy 231.14 156.21)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 9a428c86-8a50-4fe9-879e-424043e03bf2)
+  )
+  (wire
+    (pts
+      (xy 236.22 158.75)
+      (xy 231.14 158.75)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid d0fa61d8-e43e-4f86-ab7f-7376c33a48ad)
+  )
+  (wire
+    (pts
+      (xy 236.22 161.29)
+      (xy 231.14 161.29)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid c0f5801c-a906-4e78-bc2c-915edbd59468)
+  )
+  (wire
+    (pts
+      (xy 236.22 163.83)
+      (xy 231.14 163.83)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid d96c45c7-bd40-4237-9ffd-7e2efb6df8f6)
+  )
+  (no_connect
+    (at 236.22 166.37)
+    (uuid 067f47cf-175b-4914-a2a5-5f0f5d185eb2)
+  )
+  (no_connect
+    (at 236.22 168.91)
+    (uuid ad785ed9-9f7d-43e8-8c66-e14da8f526fd)
+  )
+  (wire
+    (pts
+      (xy 281.94 184.15)
+      (xy 281.94 179.07)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 165b7121-65ae-47f2-9329-4066753c9748)
+  )
+  (wire
+    (pts
+      (xy 281.94 191.77)
+      (xy 281.94 196.85)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 52ee0146-fa5d-4209-8ba2-058932c180b8)
+  )
+  (wire
+    (pts
+      (xy 317.5 151.13)
+      (xy 312.42 151.13)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid d2cafd6f-281f-4fcd-b390-cea9d465d448)
+  )
+  (wire
+    (pts
+      (xy 317.5 153.67)
+      (xy 312.42 153.67)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 85a71fae-9542-425b-9eed-9b9fc7ab8d11)
+  )
+  (wire
+    (pts
+      (xy 317.5 156.21)
+      (xy 312.42 156.21)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 5360157f-60d3-4f8d-a8e5-9beb4ce6cb84)
+  )
+  (wire
+    (pts
+      (xy 317.5 158.75)
+      (xy 312.42 158.75)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid e11d416b-54e8-4773-99bd-a85047f92ab5)
+  )
+  (wire
+    (pts
+      (xy 317.5 161.29)
+      (xy 312.42 161.29)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid f59e7032-b918-46f3-adfe-3effa33b516e)
+  )
+  (wire
+    (pts
+      (xy 317.5 163.83)
+      (xy 312.42 163.83)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 9ea77002-91e1-4fc1-a03a-b18916f4764f)
+  )
+  (no_connect
+    (at 317.5 166.37)
+    (uuid 02f7c1c9-789f-4fb6-9d38-464b33283525)
+  )
+  (no_connect
+    (at 317.5 168.91)
+    (uuid 620735bb-dd41-4d63-bfae-dbed4edd16be)
+  )
+  (wire
+    (pts
+      (xy 363.22 184.15)
+      (xy 363.22 179.07)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid bb446490-8afb-421a-9a43-9a541c345a8a)
+  )
+  (wire
+    (pts
+      (xy 363.22 191.77)
+      (xy 363.22 196.85)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid d8e27272-bbc4-4660-9c86-ac771c6ae6f2)
+  )
+  (wire
+    (pts
+      (xy 43.18 245.11)
+      (xy 43.18 240.03)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid cd73ce61-1c25-483f-a81e-df144b6785ca)
+  )
+  (wire
+    (pts
+      (xy 43.18 252.73)
+      (xy 43.18 257.81)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid e8a73c50-8e59-48ca-869e-5282d69e0e9b)
+  )
+  (wire
+    (pts
+      (xy 81.28 248.92)
+      (xy 76.2 248.92)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 51c2a480-e283-4ab1-a774-26625ec99c20)
+  )
+  (wire
+    (pts
+      (xy 88.9 243.84)
+      (xy 88.9 238.76)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 687a735d-e9a1-4406-9ca2-88cf07dea94d)
+  )
+  (wire
+    (pts
+      (xy 88.9 254.0)
+      (xy 88.9 259.08)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 95dd17d9-fcc9-4c43-a6a0-73b214a2e1ac)
+  )
+  (wire
+    (pts
+      (xy 124.46 245.11)
+      (xy 124.46 240.03)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 8e9efcdf-0e93-4cc0-ac6d-08141d3e8998)
+  )
+  (wire
+    (pts
+      (xy 124.46 252.73)
+      (xy 124.46 257.81)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 0e40d18b-a78d-42ae-8d52-d00941c583c5)
+  )
+  (wire
+    (pts
+      (xy 175.26 241.3)
+      (xy 170.18 241.3)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 6b3db58a-2a2d-4fbd-9692-872d933e2092)
+  )
+  (wire
+    (pts
+      (xy 175.26 243.84)
+      (xy 170.18 243.84)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid a51cf037-66f8-4b2b-aa92-0be103700781)
+  )
+  (wire
+    (pts
+      (xy 208.28 243.84)
+      (xy 203.2 243.84)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 4c2f3097-4e43-437d-aff9-569da092cc00)
+  )
+  (wire
+    (pts
+      (xy 208.28 248.92)
+      (xy 203.2 248.92)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid bcf297d9-9c02-4cf3-b4dd-fb404c6bfc9e)
+  )
+  (wire
+    (pts
+      (xy 238.76 243.84)
+      (xy 243.84 243.84)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 747a77ec-4aeb-4d3c-85a4-8eae5c5397b7)
+  )
+  (wire
+    (pts
+      (xy 238.76 248.92)
+      (xy 243.84 248.92)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 78ce5f0e-cd1c-4258-8930-3e10eb03e7b5)
+  )
+  (wire
+    (pts
+      (xy 271.78 246.38)
+      (xy 266.7 246.38)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid a937daa5-75e1-4cf1-a580-4882cfc1b050)
+  )
+  (wire
+    (pts
+      (xy 271.78 248.92)
+      (xy 266.7 248.92)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid ff0e7b6a-1534-4563-8784-64b0d8937adb)
+  )
+  (wire
+    (pts
+      (xy 345.44 224.79)
+      (xy 340.36 224.79)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid a592aa17-f8d8-43de-bf1a-822d85bef80e)
+  )
+  (wire
+    (pts
+      (xy 345.44 227.33)
+      (xy 340.36 227.33)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid d013bd15-7ee8-4608-af2b-2723a3558bc7)
+  )
+  (wire
+    (pts
+      (xy 345.44 229.87)
+      (xy 340.36 229.87)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 28f05315-fe10-4d81-ae45-537a3e94aa6f)
+  )
+  (wire
+    (pts
+      (xy 345.44 232.41)
+      (xy 340.36 232.41)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 2b1004c1-030b-4cfd-b777-b55056343b96)
+  )
+  (wire
+    (pts
+      (xy 345.44 234.95)
+      (xy 340.36 234.95)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 61dbadb4-38a4-4ec3-beeb-307a2bb813b8)
+  )
+  (wire
+    (pts
+      (xy 345.44 237.49)
+      (xy 340.36 237.49)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid d8244efe-81a0-4831-986f-ca0d0a285803)
+  )
+  (wire
+    (pts
+      (xy 345.44 240.03)
+      (xy 340.36 240.03)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid e36cc08b-f11b-4708-8707-0aa9e733d50f)
+  )
+  (wire
+    (pts
+      (xy 391.16 224.79)
+      (xy 386.08 224.79)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 38ee4329-b890-4237-a862-05e723cd6317)
+  )
+  (wire
+    (pts
+      (xy 391.16 227.33)
+      (xy 386.08 227.33)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid da889797-2a56-4c73-a48c-04bbbef69121)
+  )
+  (wire
+    (pts
+      (xy 391.16 229.87)
+      (xy 386.08 229.87)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 267cb23e-1142-428f-ab68-0b64de7f8afe)
+  )
+  (wire
+    (pts
+      (xy 391.16 232.41)
+      (xy 386.08 232.41)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 7e3e1c97-610e-4485-9c88-83439aa95c6f)
+  )
+  (wire
+    (pts
+      (xy 391.16 234.95)
+      (xy 386.08 234.95)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid fd157fdc-1fc0-45c2-88a3-81f2e2f0122c)
+  )
+  (wire
+    (pts
+      (xy 391.16 237.49)
+      (xy 386.08 237.49)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 23c347d0-22ea-49f9-ad64-4f92f23f9509)
+  )
+  (wire
+    (pts
+      (xy 391.16 240.03)
+      (xy 386.08 240.03)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 22c27baa-2c39-48e0-a669-6e6ca25d0cd0)
+  )
+  (wire
+    (pts
+      (xy 391.16 189.23)
+      (xy 391.16 184.15)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 1d9b28f3-93c8-4db5-bac3-3fdfaa0fa67b)
+  )
+  (wire
+    (pts
+      (xy 391.16 196.85)
+      (xy 391.16 201.93)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid f9d6cf32-a568-48fa-9c72-92f15c376129)
+  )
+  (wire
+    (pts
+      (xy 287.02 107.95)
+      (xy 287.02 113.03)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid f9f80ce0-538b-42c5-9d9a-2a1f37413ad0)
+  )
+  (wire
+    (pts
+      (xy 320.04 107.95)
+      (xy 320.04 113.03)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 92303fcd-6925-4430-8572-f0e683abb309)
+  )
+  (wire
+    (pts
+      (xy 353.06 107.95)
+      (xy 353.06 113.03)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 2b7324ce-312d-4dcb-99d7-9e0e1bbb8a2c)
+  )
+  (label "EXT_L"
+    (at 25.4 48.26 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 33c213d9-ba19-4381-b726-4b054bf5b1ef)
+  )
+  (label "EXT_N"
+    (at 25.4 53.34 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 4c3c1a61-0d2e-444d-99ac-7da4630e56a4)
+  )
+  (label "EXT_PE"
+    (at 25.4 58.42 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid d57bb5f9-d7ce-4ca9-8ab3-f10dab350155)
+  )
+  (label "PSU_5V_RAW"
+    (at 71.12 50.8 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid 6d0fc289-b8ca-4949-b4f1-9ee9eb0b7842)
+  )
+  (label "GND"
+    (at 71.12 55.88 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid 2a81ad59-1d18-4faf-aaf7-b0f7e6eb3ef9)
+  )
+  (label "EXT_L"
+    (at 99.06 40.64 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 36944e6c-1b8b-48cd-9afd-b2429d809fc3)
+  )
+  (label "EXT_N"
+    (at 99.06 43.18 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 027ca4c3-0888-401c-9494-2ee9b43fadda)
+  )
+  (label "EXT_PE"
+    (at 99.06 45.72 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 493dbc07-f7d7-4876-8395-aceed7537505)
+  )
+  (label "PSU_5V_RAW"
+    (at 99.06 73.66 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid b0c154b5-7512-4c5d-8f35-08beab9c2de0)
+  )
+  (label "GND"
+    (at 99.06 76.2 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid c20ef9c6-ba76-45b8-8634-06a9958ae3a0)
+  )
+  (label "PSU_5V_RAW"
+    (at 144.78 41.91 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid 58a2bb5c-b150-40a4-a385-1a0e451f50fc)
+  )
+  (label "+5V_MAIN"
+    (at 144.78 59.69 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid 083dd582-498c-4c48-997b-e757f2ec40ac)
+  )
+  (label "+5V_MAIN"
+    (at 180.34 50.8 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid bc524ad3-f03a-4dea-994e-bb8df2447be4)
+  )
+  (label "MCU_VIN"
+    (at 180.34 53.34 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 63a58d90-7e4a-4e16-9c9d-aceea311eeb6)
+  )
+  (label "+5V_MAIN"
+    (at 228.6 48.26 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 9e84c69a-7ac9-405f-8be6-1476e7136923)
+  )
+  (label "REG_5V_IN"
+    (at 228.6 50.8 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 0fff75c7-6348-428a-96e7-8a704919585d)
+  )
+  (label "MCU_VOUT"
+    (at 228.6 53.34 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 1df687d0-bb07-4783-8bf7-e7ae2575a30e)
+  )
+  (label "REG_5V_IN"
+    (at 276.86 48.26 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 1919dbb4-d3d7-4392-a22e-5a16ec879432)
+  )
+  (label "GND"
+    (at 276.86 53.34 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 980e2e81-556e-4e77-9cfa-e756bac92921)
+  )
+  (label "+3V3_EXT"
+    (at 312.42 50.8 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid 352ef15d-aa66-4862-91cb-41a6766b099b)
+  )
+  (label "+5V_MAIN"
+    (at 347.98 50.8 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 956e089c-0d0d-434a-9a52-3ae4b884ca72)
+  )
+  (label "SSR_POS"
+    (at 347.98 53.34 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 9f6d005a-4a04-44d6-aee2-0a4f0693c010)
+  )
+  (label "+5V_MAIN"
+    (at 144.78 77.47 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid 14c6cbdc-ec3e-45c8-8468-6c43d824a350)
+  )
+  (label "GND"
+    (at 144.78 95.25 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid e265fd1d-1d51-43c6-ac0c-d38fb7efb0c2)
+  )
+  (label "REG_5V_IN"
+    (at 190.5 77.47 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid 79cfbd81-6591-4637-8a10-fdc5374da96d)
+  )
+  (label "GND"
+    (at 190.5 95.25 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid dba9b812-29bf-49b3-982f-8b8226119b2d)
+  )
+  (label "+3V3_EXT"
+    (at 238.76 77.47 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid 488582b4-6e81-4724-97a0-4e90d493dc77)
+  )
+  (label "GND"
+    (at 238.76 95.25 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid f0c18d51-8bfd-4cf0-9bd0-fdfbe97f2682)
+  )
+  (label "EXT_L"
+    (at 90.17 106.68 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid 2adf125a-b25f-4fc6-93fa-cbbcdd77b365)
+  )
+  (label "EXT_N"
+    (at 124.46 106.68 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid 32b29e01-708d-4b0d-9e8a-bab0ae595bea)
+  )
+  (label "+5V_MAIN"
+    (at 309.88 93.98 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid fda200dd-5a0d-47c0-b4ba-2bddba20f0dd)
+  )
+  (label "MCU_VIN"
+    (at 332.74 93.98 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid ff549a82-a5ba-416c-bca1-7b8b25426d78)
+  )
+  (label "REG_5V_IN"
+    (at 355.6 93.98 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid 87a62e0d-3d2d-4162-9303-05518e33fda6)
+  )
+  (label "I2C_SDA"
+    (at 43.18 151.13 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 0864c1ca-2b15-4e3c-b639-77370b5987ed)
+  )
+  (label "I2C_SCL"
+    (at 43.18 153.67 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid a3fd962f-f4dc-4cea-926b-48072a8c22ca)
+  )
+  (label "GND"
+    (at 43.18 156.21 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 3ba5e048-e53b-4e14-b615-6a15b9aae8f6)
+  )
+  (label "ENC_A"
+    (at 43.18 158.75 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid b85314a1-b0f2-4080-99c8-a01c5e35e990)
+  )
+  (label "ENC_B"
+    (at 43.18 161.29 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 93d91baa-b2e6-4942-9d51-413691f30c77)
+  )
+  (label "ENC_SW"
+    (at 43.18 163.83 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 322537a9-6419-4b7d-8258-10642b9c4be4)
+  )
+  (label "SSR_CMD"
+    (at 43.18 166.37 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 680ea3ca-d35b-440a-bb17-68c485a243c5)
+  )
+  (label "GND"
+    (at 43.18 168.91 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 1c03b28b-5232-4a89-9afa-f01f92625794)
+  )
+  (label "GND"
+    (at 43.18 181.61 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid b9aa8032-33c1-4612-9920-e2bce68467db)
+  )
+  (label "GND"
+    (at 43.18 194.31 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 59f51eca-2828-4f9e-b399-768e6d1290ae)
+  )
+  (label "MCU_VOUT"
+    (at 83.82 151.13 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid 825b36af-0bdc-4683-9872-9b75009bf28d)
+  )
+  (label "MCU_VIN"
+    (at 83.82 153.67 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid 84653577-183b-447e-9d1a-9d5849d2cff6)
+  )
+  (label "GND"
+    (at 83.82 156.21 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid 94561ba8-c94f-46e4-93bd-7f45d7990a50)
+  )
+  (label "GND"
+    (at 83.82 168.91 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid b0206597-9cd6-444c-b019-eccf4a3f402a)
+  )
+  (label "GND"
+    (at 83.82 181.61 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid a5db5ac7-d135-4db8-a112-f48bfff8ec21)
+  )
+  (label "TC_CS3"
+    (at 83.82 184.15 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid 9a919af3-4af3-4281-84c4-1ce802ea5e10)
+  )
+  (label "TC_CS2"
+    (at 83.82 186.69 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid 6c2cc1dc-4178-40dc-9282-0dec8b0b785c)
+  )
+  (label "SPI_MOSI"
+    (at 83.82 189.23 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid c1dfafca-5057-4eba-ba9a-b5c4d3a69529)
+  )
+  (label "SPI_SCK"
+    (at 83.82 191.77 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid 4a525139-111b-46b3-a86e-b852d807f3a2)
+  )
+  (label "GND"
+    (at 83.82 194.31 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid ab290d9a-ccad-407e-8924-9773dc994947)
+  )
+  (label "TC_CS1"
+    (at 83.82 196.85 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid ecdb8ae1-4695-4471-88e1-fd4aecfcb125)
+  )
+  (label "SPI_MISO"
+    (at 83.82 199.39 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid 201d40aa-5397-4969-967d-89f69a83dec4)
+  )
+  (label "+3V3_EXT"
+    (at 149.86 151.13 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 27393e72-9263-43a3-b3b9-0acba4242738)
+  )
+  (label "GND"
+    (at 149.86 153.67 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 4efcb288-811d-4b8f-a489-cedb2a5ec9c7)
+  )
+  (label "SPI_MOSI"
+    (at 149.86 156.21 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 229ed995-663c-4ae6-a212-902a68003e77)
+  )
+  (label "SPI_MISO"
+    (at 149.86 158.75 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 27d235f6-9ad7-45e8-9c65-1e3f50fbf9dc)
+  )
+  (label "SPI_SCK"
+    (at 149.86 161.29 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid db3fde90-7380-4358-8463-a4bee34cb5ae)
+  )
+  (label "TC_CS1"
+    (at 149.86 163.83 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 903f3436-23ec-47ee-8ebb-b8df96f2e1da)
+  )
+  (label "+3V3_EXT"
+    (at 200.66 179.07 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid 0e0e2459-2b4a-4609-9d43-48bd6a16b16f)
+  )
+  (label "GND"
+    (at 200.66 196.85 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid 5f48ac10-6405-4b00-9178-14b95cd1195b)
+  )
+  (label "+3V3_EXT"
+    (at 231.14 151.13 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 150544b0-bb76-4bd4-bf20-eb252ba33f5e)
+  )
+  (label "GND"
+    (at 231.14 153.67 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 12d2a432-1927-4f54-a0b5-ea806576417b)
+  )
+  (label "SPI_MOSI"
+    (at 231.14 156.21 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid f6acae39-85f0-467d-9517-8fd1dcbd5cc3)
+  )
+  (label "SPI_MISO"
+    (at 231.14 158.75 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 7bbd5abf-fc55-4f7e-8d20-a22ab0774f1d)
+  )
+  (label "SPI_SCK"
+    (at 231.14 161.29 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid ca056991-4d47-4eb0-8aef-85c92e0afcfe)
+  )
+  (label "TC_CS2"
+    (at 231.14 163.83 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 1577d5b0-0edf-4476-b064-7f2e1e0feefe)
+  )
+  (label "+3V3_EXT"
+    (at 281.94 179.07 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid 23780ac8-5787-4130-bf7b-3b8db8861d01)
+  )
+  (label "GND"
+    (at 281.94 196.85 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid 8bc805fa-d745-4de5-ac36-bb90eadf8c75)
+  )
+  (label "+3V3_EXT"
+    (at 312.42 151.13 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid af8f96d3-7d39-405a-8cec-1979e086eb30)
+  )
+  (label "GND"
+    (at 312.42 153.67 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid b0cb0752-0e73-439e-b663-f5a7dce26a31)
+  )
+  (label "SPI_MOSI"
+    (at 312.42 156.21 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 02c3d271-e02c-4735-a7fd-80f613bdb99f)
+  )
+  (label "SPI_MISO"
+    (at 312.42 158.75 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid fa1331eb-1197-4069-ae12-af2939e0d82a)
+  )
+  (label "SPI_SCK"
+    (at 312.42 161.29 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 85d6e70f-71c2-41b7-9a8d-f8d8d7696d92)
+  )
+  (label "TC_CS3"
+    (at 312.42 163.83 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid cdd1c409-8a36-464c-a870-1d709bb4ba71)
+  )
+  (label "+3V3_EXT"
+    (at 363.22 179.07 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid 7fb39849-b558-47b9-9334-90409160877b)
+  )
+  (label "GND"
+    (at 363.22 196.85 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid c5c02138-c369-439b-be98-a70c8619afba)
+  )
+  (label "SSR_CMD"
+    (at 43.18 240.03 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid 828ed78f-3feb-40e0-b4e8-efc9b6871a7d)
+  )
+  (label "SSR_GATE"
+    (at 43.18 257.81 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid e72791e0-632c-482e-933e-8b3e40bb57ec)
+  )
+  (label "SSR_GATE"
+    (at 76.2 248.92 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid ce83381a-b1d6-4453-8564-dc0952d80e30)
+  )
+  (label "SSR_NEG"
+    (at 88.9 238.76 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid e27e6d26-44a4-470f-8d7c-4ff5139c4b94)
+  )
+  (label "GND"
+    (at 88.9 259.08 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid 1bbca543-9958-41d1-96df-f585b3e24d29)
+  )
+  (label "SSR_GATE"
+    (at 124.46 240.03 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid 425dd9d4-effc-44e9-bc75-72314044fdc7)
+  )
+  (label "GND"
+    (at 124.46 257.81 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid e1fb5aac-ab59-4593-a2a7-03a3c0961ceb)
+  )
+  (label "SSR_POS"
+    (at 170.18 241.3 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 9d33737a-79e5-4f1e-b076-c56ad6384ed6)
+  )
+  (label "SSR_NEG"
+    (at 170.18 243.84 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid c59571d0-5490-47da-9a94-759056897d36)
+  )
+  (label "SSR_POS"
+    (at 203.2 243.84 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 23876c43-92ad-4760-a630-5626e0313230)
+  )
+  (label "SSR_NEG"
+    (at 203.2 248.92 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 53053102-c6d6-44b5-92b1-88135eadcb91)
+  )
+  (label "EXT_SSR_LOAD1"
+    (at 243.84 243.84 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid f9b2afe2-2a32-4d16-8ac4-6a4c6fcc37c4)
+  )
+  (label "EXT_SSR_LOAD2"
+    (at 243.84 248.92 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid 6855a018-ebcb-42ba-ad25-ef6c0042e234)
+  )
+  (label "EXT_SSR_LOAD1"
+    (at 266.7 246.38 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 84d2ed6f-40e8-4e7c-885b-84487fef345b)
+  )
+  (label "EXT_SSR_LOAD2"
+    (at 266.7 248.92 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid ad271ea5-fb4b-4a4a-a15f-e6e879161f84)
+  )
+  (label "GND"
+    (at 340.36 224.79 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 30f5828d-2db3-4acb-931e-fa6e2d337855)
+  )
+  (label "+3V3_EXT"
+    (at 340.36 227.33 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 154a5f18-9dd3-4940-a719-b72914c320af)
+  )
+  (label "I2C_SDA"
+    (at 340.36 229.87 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid bd185a4c-b689-4731-919d-ad1ea8c2ce88)
+  )
+  (label "I2C_SCL"
+    (at 340.36 232.41 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 2a9404d8-5ff9-4e79-8fef-0253c8dc0aa2)
+  )
+  (label "ENC_A"
+    (at 340.36 234.95 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 443ea3fc-39fe-4c64-aa37-2ca9384e3b69)
+  )
+  (label "ENC_B"
+    (at 340.36 237.49 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 0df59076-90dc-4b78-a978-019091a21a8c)
+  )
+  (label "ENC_SW"
+    (at 340.36 240.03 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 94a95fef-64f3-4e9c-9133-5bdee2850111)
+  )
+  (label "GND"
+    (at 386.08 224.79 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 2c437a61-995b-469c-a312-2a7cd7880f23)
+  )
+  (label "+3V3_EXT"
+    (at 386.08 227.33 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid f783875b-ffe0-4355-a366-f380a8579e4e)
+  )
+  (label "I2C_SDA"
+    (at 386.08 229.87 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 41e66626-ff55-47ef-8716-d5d0237ae573)
+  )
+  (label "I2C_SCL"
+    (at 386.08 232.41 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 26829aa5-da50-4293-9efc-d69bd695f24c)
+  )
+  (label "ENC_A"
+    (at 386.08 234.95 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 10976b80-10e1-483f-bd3f-f42aac0f8cd4)
+  )
+  (label "ENC_B"
+    (at 386.08 237.49 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid d8b0d381-437a-42de-8c41-6f7498193268)
+  )
+  (label "ENC_SW"
+    (at 386.08 240.03 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify right bottom)
+    )
+    (uuid 3bb80557-04de-4759-9d86-d27bd1baa261)
+  )
+  (label "+3V3_EXT"
+    (at 391.16 184.15 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid 3fcd6a20-e8a2-4cfd-8fe1-28c94f0ec6b6)
+  )
+  (label "GND"
+    (at 391.16 201.93 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid cda7a3c2-4e6d-46fc-a0e9-33162b4f6326)
+  )
+  (label "+5V_MAIN"
+    (at 287.02 113.03 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid 758a9a3e-7afe-4eea-8959-c86e49c4b66f)
+  )
+  (label "+3V3_EXT"
+    (at 320.04 113.03 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid 79a412cc-64af-47c9-a3dc-51b83046de5d)
+  )
+  (label "GND"
+    (at 353.06 113.03 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid 82a927c2-d0ee-4692-a439-968af9961362)
+  )
+  (text "1  VERSORGUNG / COMPACT 70x120 / PSU-FLAECHE KUPFERFREI"
+    (at 20.32 20.32 0)
+    (effects
+      (font
+        (size 1.8 1.8)
+      )
+      (justify left)
+    )
+    (uuid 5e1c9626-9ab8-4349-bb8a-511be014dc97)
+  )
+  (text "JP1 erst nach Vin/USB-Abgleich schliessen. JP2 nie beide Quellen bruecken."
+    (at 20.32 115.57 0)
+    (effects
+      (font
+        (size 1.1 1.1)
+      )
+      (justify left)
+    )
+    (uuid f1bab7a0-6acd-46cb-a761-a17d035b1f0a)
+  )
+  (text "PS1: L/N/PE bleiben Schraubverdrahtung. Keine Netzspannungs-Leiterbahnen."
+    (at 20.32 120.65 0)
+    (effects
+      (font
+        (size 1.1 1.1)
+      )
+      (justify left)
+    )
+    (uuid d97ec88c-7548-46d1-a1f3-26f8e2dd91ab)
+  )
+  (text "Getrennte 3V3-Regler: MCU_3V3 und +3V3_EXT NICHT verbinden."
+    (at 20.32 125.73 0)
+    (effects
+      (font
+        (size 1.1 1.1)
+      )
+      (justify left)
+    )
+    (uuid f5ac99be-e12a-4920-82bf-bcf57f1c73ca)
+  )
+  (text "2  RP2040 / BESTEHENDE FIRMWARE-PINS"
+    (at 20.32 137.16 0)
+    (effects
+      (font
+        (size 1.8 1.8)
+      )
+      (justify left)
+    )
+    (uuid 771e4e59-74e1-4045-b53e-8eda5473b32e)
+  )
+  (text "3  DREI MAX31856 / THERMOELEMENTE DIREKT AN MODULEN"
+    (at 137.16 137.16 0)
+    (effects
+      (font
+        (size 1.8 1.8)
+      )
+      (justify left)
+    )
+    (uuid 9bb76789-28af-4da1-a31b-699d2f17a7f1)
+  )
+  (text "SPI direkt wie getesteter Aufbau: keine externen Pull-ups an CS, SDI oder SDO."
+    (at 137.16 208.28 0)
+    (effects
+      (font
+        (size 1.1 1.1)
+      )
+      (justify left)
+    )
+    (uuid 0823d32b-2263-4bdf-a076-13320ef9dd9c)
+  )
+  (text "4  SSR: DIREKT ODER AO3400A / LAST EXTERN"
+    (at 20.32 223.52 0)
+    (effects
+      (font
+        (size 1.8 1.8)
+      )
+      (justify left)
+    )
+    (uuid fc592d80-a412-4b25-a2d4-efe6f9f65407)
+  )
+  (text "DIREKT: R11+R12 bruecken, JP3 OFFEN. FET: JP3 zu, R11+R12 OFFEN. Aktiv HIGH."
+    (at 20.32 271.78 0)
+    (effects
+      (font
+        (size 1.0 1.0)
+      )
+      (justify left)
+    )
+    (uuid d3e1fba3-9c9e-4ef3-adc3-630b03efbcd8)
+  )
+  (text "Keine Freigabe der externen Ofen-Leistungsverdrahtung durch diesen Plan."
+    (at 20.32 276.86 0)
+    (effects
+      (font
+        (size 1.0 1.0)
+      )
+      (justify left)
+    )
+    (uuid 17b43f86-002a-47aa-b54c-6f3846c9f1c1)
+  )
+  (text "5  DISPLAY / ENCODER PER LOETKABEL"
+    (at 304.8 215.9 0)
+    (effects
+      (font
+        (size 1.8 1.8)
+      )
+      (justify left)
+    )
+    (uuid 266f632d-ff4c-485c-a4ab-dfc996b8829e)
+  )
+  (text "J3 = Kabel anloeten. J4 = paralleler, optionaler Stecker."
+    (at 289.56 246.38 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left)
+    )
+    (uuid a1379fa5-e1e9-4d32-81c3-0d2ac1d9ea51)
+  )
+  (text "Display/Encoder direkt an GPIOs; keine externen Pull-up-Widerstaende."
+    (at 289.56 250.19 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left)
+    )
+    (uuid 9c489ae8-96e1-4862-bb8f-a55167492e27)
+  )
+  (symbol
+    (lib_id "DryingOven:S_10_5_230VAC_5V_10W_External")
+    (at 48.26 53.34 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board no)
+    (dnp no)
+    (uuid 57b992c5-c549-422d-844a-af50d6313560)
+    (property "Reference" "PS1"
+      (at 48.26 38.1 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "S-10-5 / 5V 2A"
+      (at 48.26 40.64 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Footprint" ""
+      (at 48.26 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" "~"
+      (at 48.26 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Description" "External chassis supply S-10-5, photo label DC 5V 2A 10W. Five terminals numbered here by documented left-to-right order: L N PE -V +V. Not a PCB-mount power module."
+      (at 48.26 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid 157cda69-e28a-4646-9ee5-d6faa6c78798)
+    )
+    (pin "2"
+      (uuid ad38c3db-4fce-43a5-a276-c2c67bbc1a86)
+    )
+    (pin "3"
+      (uuid 1eb1b463-1d0d-484a-a2ea-29b17dcd6871)
+    )
+    (pin "5"
+      (uuid 93683554-8f5f-41ae-b004-681c53c3bec4)
+    )
+    (pin "4"
+      (uuid 9074acbc-7ce4-4ba0-8976-76bb802379ce)
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "PS1")
+          (unit 1)
+        )
+      )
+    )
+    (property "BodyDimensions" "70 x 40 mm (L x B); Nutzer 2026-10-27"
+      (at 48.26 53.34 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+  )
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x03")
+    (at 109.22 43.18 0)
+    (unit 1)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (uuid 0b75ecb4-28e3-48fc-a3a2-191e0b7eae31)
+    (property "Reference" "J7"
+      (at 109.22 38.1 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "PS1: 230V-KLEMMEN EXTERN"
+      (at 109.22 48.26 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Footprint" ""
+      (at 109.22 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" "~"
+      (at 109.22 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+      (at 109.22 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid 71b24b82-168d-4ff8-b1ed-88c5f34c6159)
+    )
+    (pin "2"
+      (uuid b7302bca-ce22-4d90-8d13-4adc88caa777)
+    )
+    (pin "3"
+      (uuid d2a4b2c3-a159-4497-bbd4-99b8bc01ed25)
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "J7")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x02")
+    (at 109.22 73.66 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 9ec996ec-83a7-46c5-bd5e-c16a77e16ca9)
+    (property "Reference" "J1"
+      (at 109.22 71.12 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "PS1 -> TRAEGER / 5V"
+      (at 109.22 78.74 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Footprint" "DryingOven:TerminalBlock_1x02_P5.08_SilkClear"
+      (at 109.22 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" "~"
+      (at 109.22 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+      (at 109.22 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid dd470b8d-b4ef-4c08-883a-926a9f28369a)
+    )
+    (pin "2"
+      (uuid 88972494-4938-4c4e-bfe8-c28de6aa8b0a)
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "J1")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:Polyfuse")
+    (at 144.78 50.8 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 56e041a8-fad8-4205-923c-0ca777c38ff9)
+    (property "Reference" "F1"
+      (at 149.86 49.529999999999994 0)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "0.5A HOLD / >=6V"
+      (at 149.86 52.07 0)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "DryingOven:JLC_Fuse_0805_2012Metric"
+      (at 146.05 55.88 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (justify left)
+        (hide yes)
+      )
+    )
+    (property "Datasheet" "~"
+      (at 144.78 50.8 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Description" "Resettable fuse, polymeric positive temperature coefficient"
+      (at 144.78 50.8 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid 80f4717d-501d-4bcb-8564-6a9f3131e708)
+    )
+    (pin "2"
+      (uuid f8bf7e66-2580-4b52-b401-b44d06b08fa2)
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "F1")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x02")
+    (at 190.5 50.8 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 3d8e71f6-3069-40d3-a813-1de5cde28716)
+    (property "Reference" "JP1"
+      (at 190.5 48.26 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "MCU VIN FREIGABE"
+      (at 190.5 55.88 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Footprint" "DryingOven:JLC_PinHeader_1x02_P2.54mm_Vertical"
+      (at 190.5 50.8 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" "~"
+      (at 190.5 50.8 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+      (at 190.5 50.8 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid 5a4a84a3-556d-4151-bfff-d288530c32f3)
+    )
+    (pin "2"
+      (uuid e64d94af-fcd2-48a7-b30d-92c27dff0f9c)
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "JP1")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x03")
+    (at 238.76 50.8 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 22d265d8-82a5-4281-883d-3df12a017996)
+    (property "Reference" "JP2"
+      (at 238.76 45.72 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "REG: 1-2 PSU / 2-3 USB"
+      (at 238.76 55.88 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Footprint" "DryingOven:JLC_PinHeader_1x03_P2.54mm_Vertical"
+      (at 238.76 50.8 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" "~"
+      (at 238.76 50.8 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+      (at 238.76 50.8 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid ecd35f9b-01e1-4cc1-92e2-02e168936dac)
+    )
+    (pin "2"
+      (uuid b364b946-fe3b-481d-b21f-e24d980b1a51)
+    )
+    (pin "3"
+      (uuid 57e1dda1-04ed-4ead-9a0a-9cfb3886c049)
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "JP2")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "DryingOven:AMS1117_3V3_Module_3Pin")
+    (at 294.64 50.8 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 2e619d0c-fbf3-41fe-b1a7-9c195e125956)
+    (property "Reference" "U5"
+      (at 294.64 38.1 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+      )
+    )
+    (property "Value" "AMS1117 Modul / 3.3V"
+      (at 294.64 40.64 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+      )
+    )
+    (property "Footprint" "DryingOven:AMS1117_Module_3Pin_DRAFT"
+      (at 294.64 50.8 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" ""
+      (at 294.64 50.8 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (property "Description" "Small 8.6 x 12.33mm AMS1117 module, photo GND OUT IN. Pin pitch/body placement to verify."
+      (at 294.64 50.8 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (pin "3"
+      (uuid 609f81e7-f763-4b9b-bea8-6672fce92c69)
+    )
+    (pin "1"
+      (uuid 4e320546-8b8b-4fd0-bb06-3a1f19948bbc)
+    )
+    (pin "2"
+      (uuid 82bd5502-53ca-4b38-9323-7b2e4b6b1698)
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "U5")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x02")
+    (at 358.14 50.8 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 44816b2f-fed1-49d0-a0c9-86cf5f8209f7)
+    (property "Reference" "JP3"
+      (at 358.14 48.26 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "5V NUR FET / OFFEN BEI DIREKT"
+      (at 358.14 55.88 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Footprint" "DryingOven:JLC_PinHeader_1x02_P2.54mm_Vertical"
+      (at 358.14 50.8 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" "~"
+      (at 358.14 50.8 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+      (at 358.14 50.8 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid ad6f15da-3827-4248-83b1-c54c2ed47aba)
+    )
+    (pin "2"
+      (uuid ad0fa5bd-a874-4c4b-ae84-7b06aa169eed)
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "JP3")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:C")
+    (at 144.78 86.36 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid c5ee0488-ef48-4203-93e0-6718b027e573)
+    (property "Reference" "C1"
+      (at 149.86 85.09 0)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "10u / 10V"
+      (at 149.86 87.63 0)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "DryingOven:JLC_C_0805_2012Metric"
+      (at 145.7452 90.17 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" "~"
+      (at 144.78 86.36 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Description" "Unpolarized capacitor"
+      (at 144.78 86.36 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid 08611cb7-2ee5-4485-be8a-d1c1d5b9e1df)
+    )
+    (pin "2"
+      (uuid 9c29790e-2704-453e-9ff6-a42faa2a5465)
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "C1")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:C")
+    (at 190.5 86.36 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 4072b5da-1073-495f-9f37-067cd222b9d2)
+    (property "Reference" "C2"
+      (at 195.58 85.09 0)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "10u / 10V"
+      (at 195.58 87.63 0)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "DryingOven:JLC_C_0805_2012Metric"
+      (at 191.4652 90.17 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" "~"
+      (at 190.5 86.36 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Description" "Unpolarized capacitor"
+      (at 190.5 86.36 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid 1398ac69-3690-4558-bcba-9ccc6e0d8ed0)
+    )
+    (pin "2"
+      (uuid 7dc8a7f1-dfad-4dd2-bbc6-21072bb3f315)
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "C2")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:C")
+    (at 238.76 86.36 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 0abbdc60-84f5-4129-a820-f1c027f40459)
+    (property "Reference" "C3"
+      (at 243.84 85.09 0)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "10u / 10V"
+      (at 243.84 87.63 0)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "DryingOven:JLC_C_0805_2012Metric"
+      (at 239.7252 90.17 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" "~"
+      (at 238.76 86.36 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Description" "Unpolarized capacitor"
+      (at 238.76 86.36 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid b4e63d7c-d17d-41ca-b013-8a06bf701d77)
+    )
+    (pin "2"
+      (uuid c62f061a-edcb-4688-9251-f9fdf1dd7847)
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "C3")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "DryingOven:S10_5_Mechanical_Mount")
+    (at 53.34 99.06 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid 4440d019-29a7-44a7-8e36-f59b629a2972)
+    (property "Reference" "M1"
+      (at 53.34 88.9 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+      )
+    )
+    (property "Value" "PS1 Montageflaeche / DRAFT"
+      (at 53.34 91.44 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+      )
+    )
+    (property "Footprint" "DryingOven:JLC_S10_5_Mounting_Area_70x40_DRAFT"
+      (at 53.34 99.06 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" ""
+      (at 53.34 99.06 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (property "Description" "Mechanical placement reserve for chassis supply on carrier; electrical connection by cable."
+      (at 53.34 99.06 0)
+      (effects
+        (font
+          (size 1.0 1.0)
+        )
+        (hide yes)
+      )
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "M1")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "power:PWR_FLAG")
+    (at 90.17 101.6 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board no)
+    (dnp no)
+    (uuid 40f0fe09-e009-467a-91f3-15ed303d2951)
+    (property "Reference" "#FLG01"
+      (at 90.17 99.695 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Value" "PWR_FLAG"
+      (at 90.17 97.79 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Footprint" ""
+      (at 90.17 101.6 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" "~"
+      (at 90.17 101.6 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Description" "Special symbol for telling ERC where power comes from"
+      (at 90.17 101.6 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid 5f6fc4f6-9240-4d69-bbde-56dde286b778)
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "#FLG01")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "power:PWR_FLAG")
+    (at 124.46 101.6 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board no)
+    (dnp no)
+    (uuid 8e94648a-bd8f-42d3-9b25-145f5f51ea9c)
+    (property "Reference" "#FLG02"
+      (at 124.46 99.695 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Value" "PWR_FLAG"
+      (at 124.46 97.79 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Footprint" ""
+      (at 124.46 101.6 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" "~"
+      (at 124.46 101.6 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Description" "Special symbol for telling ERC where power comes from"
+      (at 124.46 101.6 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid c824469a-88cb-42b1-b45f-d1a19683a3f9)
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "#FLG02")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "power:PWR_FLAG")
+    (at 309.88 88.9 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board no)
+    (dnp no)
+    (uuid a8a3928b-4791-4f11-b920-ec28fb1f18ee)
+    (property "Reference" "#FLG03"
+      (at 309.88 86.995 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Value" "PWR_FLAG"
+      (at 309.88 85.09 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Footprint" ""
+      (at 309.88 88.9 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" "~"
+      (at 309.88 88.9 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Description" "Special symbol for telling ERC where power comes from"
+      (at 309.88 88.9 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid 6b2af3dc-c2b0-465c-8a5f-9ee5713b091c)
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "#FLG03")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "power:PWR_FLAG")
+    (at 332.74 88.9 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board no)
+    (dnp no)
+    (uuid 854649ff-8bf4-44ef-b6e2-8c0264cd0c1a)
+    (property "Reference" "#FLG04"
+      (at 332.74 86.995 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Value" "PWR_FLAG"
+      (at 332.74 85.09 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Footprint" ""
+      (at 332.74 88.9 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" "~"
+      (at 332.74 88.9 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Description" "Special symbol for telling ERC where power comes from"
+      (at 332.74 88.9 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid 7911e358-d45d-4e1b-a061-4805c7671882)
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "#FLG04")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "power:PWR_FLAG")
+    (at 355.6 88.9 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board no)
+    (dnp no)
+    (uuid 96294601-a8ea-4b76-a241-c26c139c0da2)
+    (property "Reference" "#FLG05"
+      (at 355.6 86.995 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Value" "PWR_FLAG"
+      (at 355.6 85.09 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Footprint" ""
+      (at 355.6 88.9 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" "~"
+      (at 355.6 88.9 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Description" "Special symbol for telling ERC where power comes from"
+      (at 355.6 88.9 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid c2e3858e-7898-43cd-9ce1-f0da0ea0830b)
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "#FLG05")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "DryingOven:RP2040_USB_C_16M_40Pin")
+    (at 63.5 175.26 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 5085d233-8340-4e2d-8374-502fd6338b9a)
+    (property "Reference" "U1"
+      (at 63.5 143.51 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "RP2040 USB-C / 16MiB"
+      (at 63.5 146.05 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Footprint" "DryingOven:JLC_YD_RP2040_40Pin_Socket"
+      (at 63.5 180.34 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" "https://github.com/initdc/YD-RP2040"
+      (at 63.5 182.88 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Description" "YD-RP2040 style USB-C module, confirmed 16 MiB flash. 40 edge pins from archived product pinout. Bottom debug header excluded. Vin/Vout power path requires board-revision verification."
+      (at 63.5 185.42 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid f55b7e2c-d593-4952-aaf7-aa26d9e9bb5b)
+    )
+    (pin "2"
+      (uuid 1e2cd89f-f277-4a7e-874d-591987cc0505)
+    )
+    (pin "3"
+      (uuid 57aa3d32-3c85-4f31-b8c8-ca085ad0e6e8)
+    )
+    (pin "4"
+      (uuid 3e8f301a-2c00-4702-b1a6-c680953aa04c)
+    )
+    (pin "5"
+      (uuid 6597147f-5dfc-4aa9-902c-1280c2b33e27)
+    )
+    (pin "6"
+      (uuid ce9a04cc-da0e-445f-9e56-e7af443af4bd)
+    )
+    (pin "7"
+      (uuid f354ffdf-8ed6-4a2b-98e7-8f8b789ebd71)
+    )
+    (pin "8"
+      (uuid 228a4090-a56b-4c3d-bead-3a2059bdc1ac)
+    )
+    (pin "9"
+      (uuid f6a58710-9f2e-403c-832d-316b44764a78)
+    )
+    (pin "10"
+      (uuid 57518274-2f40-4954-bf1a-1bf2b7c27632)
+    )
+    (pin "11"
+      (uuid e7ea7dc5-a160-4e30-ab80-5f2abc75c777)
+    )
+    (pin "12"
+      (uuid 90446e53-f791-446d-a888-a34cd403f8e3)
+    )
+    (pin "13"
+      (uuid c45b01a5-6b71-4766-abe0-fc81e220a1de)
+    )
+    (pin "14"
+      (uuid 30cf123a-c79e-471d-b543-b2c1dc762a1b)
+    )
+    (pin "15"
+      (uuid 3e0f80ac-d263-4290-8e01-a66581429d9d)
+    )
+    (pin "16"
+      (uuid e1da0e14-20c8-4b2a-8caa-e1dfab3b196a)
+    )
+    (pin "17"
+      (uuid 13aac3b9-aa64-4dc2-bcfa-fd982b3e35d2)
+    )
+    (pin "18"
+      (uuid 7ba35347-dac3-4d1e-8d4c-f8a579972847)
+    )
+    (pin "19"
+      (uuid d90eaa37-5c34-4cd1-b06b-fa7bc28c23c5)
+    )
+    (pin "20"
+      (uuid cfeb91dd-f969-4472-a10b-175922e4c292)
+    )
+    (pin "40"
+      (uuid 1261f4b9-b938-4090-be73-178358235dea)
+    )
+    (pin "39"
+      (uuid 3bc23715-31f3-4600-84e1-b36d1e22a74d)
+    )
+    (pin "38"
+      (uuid 560e0f11-5b71-4318-a2b0-04c6e4a9111a)
+    )
+    (pin "37"
+      (uuid feafcc3f-7f88-4d29-b1fe-a56df2549b54)
+    )
+    (pin "36"
+      (uuid 9db65536-ba50-480d-9d27-61f15a826d6d)
+    )
+    (pin "35"
+      (uuid ce5a23f4-a72a-440d-8653-7206b10cc030)
+    )
+    (pin "34"
+      (uuid 14ae9b6c-e3fc-479b-978d-5dd32eada1ac)
+    )
+    (pin "33"
+      (uuid 84c7bfca-cb4d-42d8-976f-1f650046bc55)
+    )
+    (pin "32"
+      (uuid 49022442-bd97-402d-9db5-4e2bd0b25d7a)
+    )
+    (pin "31"
+      (uuid 859700db-3c5e-4be5-8f49-7fbb5daee41f)
+    )
+    (pin "30"
+      (uuid f93fccf3-9c23-449d-96d8-7dce13ed2ee4)
+    )
+    (pin "29"
+      (uuid 88a771d6-c00d-4fe9-9e44-e9468605b88a)
+    )
+    (pin "28"
+      (uuid c0c24b45-dd6e-4a63-b316-29f2e1701bfe)
+    )
+    (pin "27"
+      (uuid 7d88801d-a068-4842-a04d-5cf38e63cd4c)
+    )
+    (pin "26"
+      (uuid 36cfea78-c71d-4a6a-9b57-15a6e4e248a0)
+    )
+    (pin "25"
+      (uuid 2556d23d-0e41-4ce0-b29c-9a59e592f781)
+    )
+    (pin "24"
+      (uuid c9662ca4-a3da-4ec8-9365-e53dfd709d3f)
+    )
+    (pin "23"
+      (uuid f4433dc2-225f-46a0-8008-7be6e3008523)
+    )
+    (pin "22"
+      (uuid 18f7ed0c-80f0-46e4-8073-b334579364a5)
+    )
+    (pin "21"
+      (uuid f09a4f46-59c0-4806-b9af-b03dcd14c5dc)
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "U1")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "DryingOven:MAX31856_Breakout_8Pin")
+    (at 170.18 160.02 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid ce505f48-4442-4ac7-91dc-97cc0ec93a77)
+    (property "Reference" "U2"
+      (at 170.18 142.24 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "MAX31856 / T1"
+      (at 170.18 144.78 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Footprint" "DryingOven:JLC_MAX31856_D25_W23_8Pin_Socket_DRAFT"
+      (at 170.18 165.1 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/MAX31856.pdf"
+      (at 170.18 167.64 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Description" "Purple MAX31856/CJMCU style breakout, 8-pin host interface in photo order VIN GND SDI SDO SCK CS FAU DRD. Thermocouple connects directly to module and is not a carrier pad. Not the Adafruit 9-pin board. Mechanics provisional."
+      (at 170.18 170.18 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid d10fd215-6217-42e7-aebb-4527360b8628)
+    )
+    (pin "2"
+      (uuid f2b2fb5d-71a6-408c-b3c5-b92c48fb534d)
+    )
+    (pin "3"
+      (uuid 1f5d58be-c1ae-4ca0-a4c4-f64b1bc6c8a4)
+    )
+    (pin "4"
+      (uuid 731ca48f-e5ef-4d45-a1ec-5b2e9dc7daeb)
+    )
+    (pin "5"
+      (uuid a0d7f63d-f3bc-4979-b980-6bcc508891e5)
+    )
+    (pin "6"
+      (uuid e0577a72-b491-4fd7-9ac1-75f725998647)
+    )
+    (pin "7"
+      (uuid f1a08e14-19c5-4625-92b8-e095f1046136)
+    )
+    (pin "8"
+      (uuid 3a68cac4-b7ce-4c5f-9ea6-5793c9a8ef8c)
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "U2")
+          (unit 1)
+        )
+      )
+    )
+    (property "ConfirmedModulePinout" "1 VIN; 2 GND; 3 SDI; 4 SDO; 5 SCK; 6 CS; 7 FAU; 8 DRO (DRD in connection-plan PNG)"
+      (at 170.18 160.02 0)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+        (hide yes)
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:C")
+    (at 200.66 187.96 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 833811c6-a375-4054-b9a1-b4143130dd81)
+    (property "Reference" "C4"
+      (at 205.74 186.69 0)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "100n / 10V"
+      (at 205.74 189.23000000000002 0)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "DryingOven:JLC_C_0805_2012Metric"
+      (at 201.6252 191.77 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" "~"
+      (at 200.66 187.96 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Description" "Unpolarized capacitor"
+      (at 200.66 187.96 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid a96e6ee6-c1a8-41dc-8615-770219b80e8c)
+    )
+    (pin "2"
+      (uuid 2dedc64e-d1fc-45c8-a7ff-5c41ab55abe2)
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "C4")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "DryingOven:MAX31856_Breakout_8Pin")
+    (at 251.46 160.02 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 972b3583-03fb-4cb2-a11c-9f9060867ab5)
+    (property "Reference" "U3"
+      (at 251.46 142.24 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "MAX31856 / T2"
+      (at 251.46 144.78 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Footprint" "DryingOven:JLC_MAX31856_D25_W23_8Pin_Socket_DRAFT"
+      (at 251.46 165.1 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/MAX31856.pdf"
+      (at 251.46 167.64 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Description" "Purple MAX31856/CJMCU style breakout, 8-pin host interface in photo order VIN GND SDI SDO SCK CS FAU DRD. Thermocouple connects directly to module and is not a carrier pad. Not the Adafruit 9-pin board. Mechanics provisional."
+      (at 251.46 170.18 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid 81237915-92f3-4fdd-8ba3-6b1dc2f88c03)
+    )
+    (pin "2"
+      (uuid d2b21d05-33ba-4528-adb9-9c45c104ca1a)
+    )
+    (pin "3"
+      (uuid a7ef487e-c7b7-45a7-ba07-b108fd54b092)
+    )
+    (pin "4"
+      (uuid 45248e64-db33-4da0-9b86-ca8d0c6fc38e)
+    )
+    (pin "5"
+      (uuid e638c315-7bec-4400-a15d-2e68c14a8d36)
+    )
+    (pin "6"
+      (uuid 79088db9-6313-49ea-bacf-da2432c4acfa)
+    )
+    (pin "7"
+      (uuid 6439b093-3406-4333-ad62-4f52312be598)
+    )
+    (pin "8"
+      (uuid cee2a2ab-51ef-4271-ac3a-4836623b08d8)
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "U3")
+          (unit 1)
+        )
+      )
+    )
+    (property "ConfirmedModulePinout" "1 VIN; 2 GND; 3 SDI; 4 SDO; 5 SCK; 6 CS; 7 FAU; 8 DRO (DRD in connection-plan PNG)"
+      (at 251.46 160.02 0)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+        (hide yes)
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:C")
+    (at 281.94 187.96 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 31dd1823-6355-47dd-bd0e-ebd0ff939c78)
+    (property "Reference" "C5"
+      (at 287.02 186.69 0)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "100n / 10V"
+      (at 287.02 189.23000000000002 0)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "DryingOven:JLC_C_0805_2012Metric"
+      (at 282.9052 191.77 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" "~"
+      (at 281.94 187.96 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Description" "Unpolarized capacitor"
+      (at 281.94 187.96 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid 7dd805d5-2f56-45f0-a109-fdfc2ff9fe1f)
+    )
+    (pin "2"
+      (uuid c8c6bcc6-b202-4539-9002-02a077b79992)
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "C5")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "DryingOven:MAX31856_Breakout_8Pin")
+    (at 332.74 160.02 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid ee052cea-af8d-44cf-9896-4e738fd2d5a9)
+    (property "Reference" "U4"
+      (at 332.74 142.24 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "MAX31856 / T3"
+      (at 332.74 144.78 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Footprint" "DryingOven:JLC_MAX31856_D25_W23_8Pin_Socket_DRAFT"
+      (at 332.74 165.1 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/MAX31856.pdf"
+      (at 332.74 167.64 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Description" "Purple MAX31856/CJMCU style breakout, 8-pin host interface in photo order VIN GND SDI SDO SCK CS FAU DRD. Thermocouple connects directly to module and is not a carrier pad. Not the Adafruit 9-pin board. Mechanics provisional."
+      (at 332.74 170.18 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid d834de6d-053f-4159-ae91-3023483ed1b7)
+    )
+    (pin "2"
+      (uuid b33b329f-c255-4234-9d86-121d2b8327e7)
+    )
+    (pin "3"
+      (uuid b876ed46-352f-4fed-aa43-eb245cef1a7c)
+    )
+    (pin "4"
+      (uuid 16e1b211-4616-444b-a1ef-4a868d6f17b3)
+    )
+    (pin "5"
+      (uuid 811990eb-d895-42d2-8bfa-7949ee0f2a9e)
+    )
+    (pin "6"
+      (uuid e8b2ae7d-c5e9-41c7-a01a-0b3fd91aefe2)
+    )
+    (pin "7"
+      (uuid 00194e1c-0888-4e67-9d52-cfe0607218a4)
+    )
+    (pin "8"
+      (uuid 1d6534b2-7acf-4235-aca5-31ec38e63aef)
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "U4")
+          (unit 1)
+        )
+      )
+    )
+    (property "ConfirmedModulePinout" "1 VIN; 2 GND; 3 SDI; 4 SDO; 5 SCK; 6 CS; 7 FAU; 8 DRO (DRD in connection-plan PNG)"
+      (at 332.74 160.02 0)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+        (hide yes)
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:C")
+    (at 363.22 187.96 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid dfffccd1-8745-4c2a-89f4-5dc710a69825)
+    (property "Reference" "C6"
+      (at 368.3 186.69 0)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "100n / 10V"
+      (at 368.3 189.23000000000002 0)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "DryingOven:JLC_C_0805_2012Metric"
+      (at 364.1852 191.77 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" "~"
+      (at 363.22 187.96 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Description" "Unpolarized capacitor"
+      (at 363.22 187.96 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid 0c172c24-56cf-49d8-b82b-d38d9c1fe172)
+    )
+    (pin "2"
+      (uuid c747d683-6c21-44a9-8e64-829661061baa)
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "C6")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:R")
+    (at 43.18 248.92 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid f0394cf9-e8c6-42ff-ba21-78069e2d70a7)
+    (property "Reference" "R4"
+      (at 48.26 247.64999999999998 0)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "100R"
+      (at 48.26 250.19 0)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "DryingOven:JLC_R_0805_2012Metric"
+      (at 41.402 248.92 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" "~"
+      (at 43.18 248.92 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Description" "Resistor"
+      (at 43.18 248.92 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid 22aba4ed-197f-46b2-8fce-159d68b3822c)
+    )
+    (pin "2"
+      (uuid d16b7d5e-5728-4dc7-8579-d1574ac96b85)
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "R4")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Transistor_FET:AO3400A")
+    (at 86.36 248.92 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 29bda58c-72b1-4fb3-83bf-9033342bdcf0)
+    (property "Reference" "Q1"
+      (at 91.44 247.015 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "AO3400A"
+      (at 91.44 248.92 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "DryingOven:JLC_SOT-23"
+      (at 91.44 250.825 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+          (italic yes)
+        )
+        (justify left)
+        (hide yes)
+      )
+    )
+    (property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
+      (at 91.44 252.73 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (justify left)
+        (hide yes)
+      )
+    )
+    (property "Description" "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"
+      (at 86.36 248.92 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid 93a3cff5-f184-49b8-8b3c-658d80f59c3e)
+    )
+    (pin "3"
+      (uuid a153f1fb-a252-4904-ace4-dff84347db8d)
+    )
+    (pin "2"
+      (uuid 12be56f9-a0c5-4778-8c27-46262ad9702f)
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "Q1")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:R")
+    (at 124.46 248.92 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 9822e07f-5c80-4bcf-8d68-dace36e0ba8f)
+    (property "Reference" "R5"
+      (at 129.54 247.64999999999998 0)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "100k / AUS BEI RESET"
+      (at 129.54 250.19 0)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "DryingOven:JLC_R_0805_2012Metric"
+      (at 122.682 248.92 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" "~"
+      (at 124.46 248.92 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Description" "Resistor"
+      (at 124.46 248.92 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid e516fb63-7920-4851-8d0d-8f2e5eb0033b)
+    )
+    (pin "2"
+      (uuid 2a92a121-70e0-4e2d-8169-019245aa7643)
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "R5")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x02")
+    (at 180.34 241.3 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 00eba1d2-66b5-43dd-a027-d2c939db7270)
+    (property "Reference" "J2"
+      (at 180.34 238.76 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "SSR STEUERKABEL"
+      (at 180.34 246.38 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Footprint" "DryingOven:TerminalBlock_1x02_P5.08_SilkClear"
+      (at 180.34 241.3 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" "~"
+      (at 180.34 241.3 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+      (at 180.34 241.3 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid 8b7494a6-7f4b-4093-a397-8360ed844434)
+    )
+    (pin "2"
+      (uuid 9281b7ac-d18e-408d-adcb-8b766cfe764c)
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "J2")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "DryingOven:SSR_25DA_External")
+    (at 223.52 246.38 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board no)
+    (dnp no)
+    (uuid 941c2e59-9ed1-439f-84ca-54f6e0fb2602)
+    (property "Reference" "K1"
+      (at 223.52 233.68 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "SSR-25DA / EXTERN"
+      (at 223.52 236.22 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Footprint" ""
+      (at 223.52 251.46 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" "~"
+      (at 223.52 254.0 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Description" "External chassis-mounted SSR-25DA: 1/2 AC load, 3 positive DC control, 4 negative DC control. Actual manufacturer/rating and mechanical dimensions require matching. No carrier PCB footprint."
+      (at 223.52 256.54 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "3"
+      (uuid ddaff868-79b0-489b-a4ab-7945820c1cdf)
+    )
+    (pin "4"
+      (uuid eb0f96e8-7241-4333-8b7d-f3e762baf017)
+    )
+    (pin "1"
+      (uuid 3f0605ca-e44f-4782-a478-02eaa9644f8f)
+    )
+    (pin "2"
+      (uuid e9012791-3d2f-45e3-bc64-4df3b4614806)
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "K1")
+          (unit 1)
+        )
+      )
+    )
+    (property "BodyDimensions" "65 x 45 mm (L x B); Nutzer 2026-10-27"
+      (at 223.52 246.38 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+  )
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x02")
+    (at 276.86 246.38 0)
+    (unit 1)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (uuid 71ae226b-aa59-4de7-802d-1694cc8511cf)
+    (property "Reference" "J8"
+      (at 276.86 243.84 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "SSR LASTKLEMMEN EXTERN"
+      (at 276.86 251.46 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Footprint" ""
+      (at 276.86 246.38 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" "~"
+      (at 276.86 246.38 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+      (at 276.86 246.38 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid 2da4d27e-715b-4364-9c97-7ca4ba9a16c6)
+    )
+    (pin "2"
+      (uuid 35cde32b-7eb9-40fa-8a5c-b69f56775236)
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "J8")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x07")
+    (at 350.52 232.41 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid bba592dc-3fc0-41d5-9c9a-af2c768e726d)
+    (property "Reference" "J3"
+      (at 350.52 222.25 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "DISPLAY-LOETPADS"
+      (at 350.52 242.57 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Footprint" "DryingOven:Display_Wire_SolderPads_1x07"
+      (at 350.52 232.41 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" "~"
+      (at 350.52 232.41 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Description" "Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)"
+      (at 350.52 232.41 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid 801f3f88-4234-4f23-a34a-118c06d25111)
+    )
+    (pin "2"
+      (uuid a45593c7-e06d-4df4-8632-0979fac164e8)
+    )
+    (pin "3"
+      (uuid c6226a72-3b70-45f4-9e54-ed12f042366e)
+    )
+    (pin "4"
+      (uuid ec744595-a19a-4234-94ad-66c5ee0ff2f6)
+    )
+    (pin "5"
+      (uuid 39ec5ae1-10fa-4842-87c5-f65aa9a9006a)
+    )
+    (pin "6"
+      (uuid 4e72bd3e-b9e1-4624-87e6-2ddac103477f)
+    )
+    (pin "7"
+      (uuid 9b396d75-e389-4730-8866-9973b19fdf0a)
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "J3")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x07")
+    (at 396.24 232.41 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp yes)
+    (uuid 03af1b5f-6536-425b-811c-d360313fd731)
+    (property "Reference" "J4"
+      (at 396.24 222.25 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "STECKEROPTION VORDERSEITE / DNP"
+      (at 396.24 242.57 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Footprint" "DryingOven:JLC_PinHeader_1x07_P2.54mm_Vertical"
+      (at 396.24 232.41 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" "~"
+      (at 396.24 232.41 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Description" "Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)"
+      (at 396.24 232.41 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid 80e7ec0f-b407-430e-a8c5-609b2adc1ea4)
+    )
+    (pin "2"
+      (uuid bfb7e292-9b03-40c4-a7cf-8210846fa378)
+    )
+    (pin "3"
+      (uuid eb6f5e7a-d221-4e6d-a5cb-95ec7196e373)
+    )
+    (pin "4"
+      (uuid a2e894af-c5c6-474a-a4f2-66eb32f1144c)
+    )
+    (pin "5"
+      (uuid 5e8be5db-0ddb-4042-bb8e-00e3b3efb2f2)
+    )
+    (pin "6"
+      (uuid daf30063-8d23-46fd-8408-a6046bd93e98)
+    )
+    (pin "7"
+      (uuid 0dd159f3-eaa2-4177-a890-d1f98312b190)
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "J4")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Device:C")
+    (at 391.16 193.04 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 52ba8338-2ffa-4d59-831b-cb9143bdb6b2)
+    (property "Reference" "C7"
+      (at 396.24 191.76999999999998 0)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "100n / 10V"
+      (at 396.24 194.31 0)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "DryingOven:JLC_C_0805_2012Metric"
+      (at 392.1252 196.85 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" "~"
+      (at 391.16 193.04 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Description" "Unpolarized capacitor"
+      (at 391.16 193.04 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid a66015fc-9a74-4786-ae5a-a05c08c82177)
+    )
+    (pin "2"
+      (uuid 14e773d9-e333-41ce-9199-f0a521e31f07)
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "C7")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Mechanical:MountingHole")
+    (at 180.34 280.67 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid 99b454c6-7e47-4a98-86ba-6fb5cd59eef3)
+    (property "Reference" "H1"
+      (at 180.34 275.59 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "M3"
+      (at 180.34 277.495 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+      (at 180.34 280.67 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" "~"
+      (at 180.34 280.67 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Description" "Mounting Hole without connection"
+      (at 180.34 280.67 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "H1")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Mechanical:MountingHole")
+    (at 210.82 280.67 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid 1d6507d7-3535-43dc-946c-b19b9717cd1b)
+    (property "Reference" "H2"
+      (at 210.82 275.59 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "M3"
+      (at 210.82 277.495 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+      (at 210.82 280.67 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" "~"
+      (at 210.82 280.67 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Description" "Mounting Hole without connection"
+      (at 210.82 280.67 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "H2")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Mechanical:MountingHole")
+    (at 241.3 280.67 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid 2ba71a23-b490-4dc9-a6ca-723341fe53c1)
+    (property "Reference" "H3"
+      (at 241.3 275.59 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "M3"
+      (at 241.3 277.495 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+      (at 241.3 280.67 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" "~"
+      (at 241.3 280.67 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Description" "Mounting Hole without connection"
+      (at 241.3 280.67 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "H3")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Mechanical:MountingHole")
+    (at 271.78 280.67 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid 790bf05b-c730-472f-97e9-9ddaa7b467fc)
+    (property "Reference" "H4"
+      (at 271.78 275.59 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "M3"
+      (at 271.78 277.495 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+      (at 271.78 280.67 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" "~"
+      (at 271.78 280.67 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Description" "Mounting Hole without connection"
+      (at 271.78 280.67 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "H4")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 287.02 107.95 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid a46a2733-8803-4624-a80a-202d304da282)
+    (property "Reference" "TP1"
+      (at 287.02 101.092 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "+5V_MAIN"
+      (at 287.02 102.87 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Footprint" "DryingOven:JLC_TestPoint_Pad_D2.0mm"
+      (at 292.1 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" "~"
+      (at 292.1 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Description" "test point"
+      (at 287.02 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid fd22cb58-2533-4d86-b269-d42a1172473a)
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "TP1")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 320.04 107.95 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid 0e4749c6-a477-4603-b684-ccf8448cf1ca)
+    (property "Reference" "TP2"
+      (at 320.04 101.092 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "+3V3_EXT"
+      (at 320.04 102.87 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Footprint" "DryingOven:JLC_TestPoint_Pad_D2.0mm"
+      (at 325.12 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" "~"
+      (at 325.12 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Description" "test point"
+      (at 320.04 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid e29e3497-bd21-4150-8c24-26a169c71914)
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "TP2")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 353.06 107.95 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid 2bcd7e9e-640a-47ad-9df5-8119c7d3e6a9)
+    (property "Reference" "TP3"
+      (at 353.06 101.092 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "GND"
+      (at 353.06 102.87 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Footprint" "DryingOven:JLC_TestPoint_Pad_D2.0mm"
+      (at 358.14 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" "~"
+      (at 358.14 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Description" "test point"
+      (at 353.06 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid cb371762-5cc9-46f6-8af9-9b5f9de2ee3a)
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "TP3")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (sheet_instances
+    (path "/"
+      (page "1")
+    )
+  )
+  (no_connect
+    (at 78.74 161.29)
+    (uuid bf2caddb-098f-4b08-aa20-bde79bf9bc28)
+  )
+  (symbol
+    (lib_id "Device:R")
+    (at 109.22 190.5 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 320648c5-0af0-4737-8e29-fdf2418560ea)
+    (property "Reference" "R11"
+      (at 114.3 189.23 0)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "0R / NUR DIREKT"
+      (at 114.3 191.77 0)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "DryingOven:JLC_R_0805_2012Metric"
+      (at 107.442 190.5 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" "~"
+      (at 109.22 190.5 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Description" "Resistor"
+      (at 109.22 190.5 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid bb1b502f-c10d-4bad-baf1-95c7eaafa209)
+    )
+    (pin "2"
+      (uuid 4a3e2a7d-ee1f-45fc-9bfe-4761105fdb4e)
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "R11")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (wire
+    (pts
+      (xy 109.22 186.69)
+      (xy 109.22 181.61)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 823b6396-e8ea-432f-ba11-78f69543f7bd)
+  )
+  (label "SSR_CMD"
+    (at 109.22 181.61 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid 3593480e-4b9d-4817-8690-ad0e0512ca54)
+  )
+  (wire
+    (pts
+      (xy 109.22 194.31)
+      (xy 109.22 199.39)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 1a8c3a91-fdee-43d3-b292-32270da4089b)
+  )
+  (label "SSR_POS"
+    (at 109.22 199.39 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid dbd9036e-ebe0-4f77-985d-43580e877fe6)
+  )
+  (symbol
+    (lib_id "Device:R")
+    (at 134.62 190.5 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid 6a2e6f90-822a-4677-bfd5-e88680346ec9)
+    (property "Reference" "R12"
+      (at 139.7 189.23 0)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "0R / NUR DIREKT"
+      (at 139.7 191.77 0)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "DryingOven:JLC_R_0805_2012Metric"
+      (at 132.842 190.5 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" "~"
+      (at 134.62 190.5 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Description" "Resistor"
+      (at 134.62 190.5 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid a33bb8c4-b6f0-4ce5-abf1-71a500fd2da6)
+    )
+    (pin "2"
+      (uuid 336e64a6-5665-4e76-adf0-a23d6b9379b8)
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "R12")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (wire
+    (pts
+      (xy 134.62 186.69)
+      (xy 134.62 181.61)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 7b377190-ef97-42d0-98e6-9697de1a368d)
+  )
+  (label "SSR_NEG"
+    (at 134.62 181.61 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid cb5c469f-30dd-4424-b9d0-4b145a680ee2)
+  )
+  (wire
+    (pts
+      (xy 134.62 194.31)
+      (xy 134.62 199.39)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 4a991195-5597-4873-ac68-a878ed5dd037)
+  )
+  (label "GND"
+    (at 134.62 199.39 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid 6902983e-3a1b-45ca-8726-63a8dc9ecc82)
+  )
+  (text "SSR-DIREKTBRUECKEN (NUR BEI OFFENEM JP3)"
+    (at 99.06 174 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left)
+    )
+    (uuid 4e2c55ce-6615-4708-af9d-5861e989afd9)
+  )
+  (symbol
+    (lib_id "Device:R")
+    (at 175.26 190.5 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp yes)
+    (uuid 6392a19c-c5a7-4d5f-a8dd-6095756a5168)
+    (property "Reference" "R13"
+      (at 180.34 189.23 0)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+        (justify left)
+      )
+    )
+    (property "Value" "10k / OPTIONAL DNP"
+      (at 180.34 191.77 0)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+        (justify left)
+      )
+    )
+    (property "Footprint" "DryingOven:JLC_R_0805_2012Metric"
+      (at 173.482 190.5 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" "~"
+      (at 175.26 190.5 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Description" "Resistor"
+      (at 175.26 190.5 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (pin "1"
+      (uuid ed21dcce-b408-4a61-b5b0-3de957406d91)
+    )
+    (pin "2"
+      (uuid 13a3886a-b1cb-45b7-a4ca-d367f085dbed)
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "R13")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (wire
+    (pts
+      (xy 175.26 186.69)
+      (xy 175.26 181.61)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 4f483269-1289-47ab-8269-3ac5a637f259)
+  )
+  (label "SSR_POS"
+    (at 175.26 181.61 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid 958e0720-3de6-4ede-85ab-c2ca18b2e425)
+  )
+  (wire
+    (pts
+      (xy 175.26 194.31)
+      (xy 175.26 199.39)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid 840e6aa0-7401-45b7-a80d-d659eb22d9b9)
+  )
+  (label "GND"
+    (at 175.26 199.39 0)
+    (effects
+      (font
+        (size 0.95 0.95)
+      )
+      (justify left bottom)
+    )
+    (uuid 3bd9278f-f7bb-409b-9ebf-a7995eeebca3)
+  )
+  (symbol
+    (lib_id "Mechanical:MountingHole")
+    (at 109.22 282.0 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid b90aa89b-dc95-4e84-ae5a-63b7e453a8a1)
+    (property "Reference" "H5"
+      (at 109.22 276.92 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "6mm NPTH"
+      (at 109.22 278.825 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Footprint" "MountingHole:MountingHole_6mm"
+      (at 109.22 282.0 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" "~"
+      (at 109.22 282.0 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Description" "Mounting Hole without connection"
+      (at 109.22 282.0 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "H5")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Mechanical:MountingHole")
+    (at 139.7 282.0 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid ef3be55a-320a-4007-a9c4-622379eacd17)
+    (property "Reference" "H6"
+      (at 139.7 276.92 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "6mm NPTH"
+      (at 139.7 278.825 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Footprint" "MountingHole:MountingHole_6mm"
+      (at 139.7 282.0 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Datasheet" "~"
+      (at 139.7 282.0 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (property "Description" "Mounting Hole without connection"
+      (at 139.7 282.0 0)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+        (hide yes)
+      )
+    )
+    (instances
+      (project "drying-oven-compact"
+        (path "/b2da4eaa-4eb0-4587-9e59-d96611b77673"
+          (reference "H6")
+          (unit 1)
+        )
+      )
+    )
+  )
+)

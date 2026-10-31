@@ -1,0 +1,165 @@
+{
+  "version": "0.1.0",
+  "status": "validated routing candidate; DRAFT hardware",
+  "source_sha256": {
+    "drying-fridge.kicad_pcb": "970e8a69bdd5caf33ab3556be829a2112fdc93acb879f5d6858a2918275a05d4",
+    "drying-fridge.kicad_pro": "edf607d3deb31c1ff3d3aa43d042851e14f0851267a8b4f065dfbb332ddcf190",
+    "drying-fridge.kicad_sch": "b181d65cf8d932aac74a6a3fdcc7b1f80bd4c4841424cc1b775013b785ce81ca",
+    "drying-fridge.kicad_dru": "8c1354580113dfb4f46b83432b896484539046e4ee2e93299b08d5a7b49c1a51"
+  },
+  "kicad_version": "10.0.8",
+  "copper": {
+    "passed": true,
+    "arcs": 1064,
+    "segments": 1577,
+    "vias": 45,
+    "track_length_mm": 2841.7651060112257,
+    "unconnected_components": 0,
+    "minimum_extra_clearance_mm": 0.011518359726654936
+  },
+  "kicad_drc": {
+    "passed": true,
+    "unconnected_items": 0,
+    "baseline_violation_count": 24,
+    "routed_violation_count": 24,
+    "new_violations": [],
+    "routed_violation_types": {
+      "text_height": 8,
+      "lib_footprint_issues": 16
+    }
+  },
+  "project_audit": {
+    "passed": true,
+    "footprints": 58,
+    "pads": 189,
+    "checked_pad_nets": 165,
+    "placement_unchanged": true,
+    "outline_unchanged": true,
+    "holes_unchanged": true,
+    "rule_areas_unchanged": true,
+    "rule_areas": 10,
+    "schematic_pad_mapping": true
+  },
+  "tangency": {
+    "free_joints": 2047,
+    "free_kinks": 10,
+    "threshold_deg": 1.0,
+    "findings": [
+      {
+        "net": "/+12V_AUX",
+        "layer": 0,
+        "point": [
+          30.8719,
+          85.4656
+        ],
+        "angle_deg": 1.4683914236533073
+      },
+      {
+        "net": "/+12V_AUX",
+        "layer": 0,
+        "point": [
+          30.4719,
+          85.4656
+        ],
+        "angle_deg": 44.99999999999965
+      },
+      {
+        "net": "/+12V_IN",
+        "layer": 0,
+        "point": [
+          25.070757,
+          86.894143
+        ],
+        "angle_deg": 8.591517883729445
+      },
+      {
+        "net": "/+12V_IN",
+        "layer": 0,
+        "point": [
+          25.3536,
+          86.6113
+        ],
+        "angle_deg": 45.00000000000001
+      },
+      {
+        "net": "/FAN_EN",
+        "layer": 0,
+        "point": [
+          86.5292,
+          62.4417
+        ],
+        "angle_deg": 45.00000000000001
+      },
+      {
+        "net": "/+5V_MIST",
+        "layer": 0,
+        "point": [
+          99.5432,
+          87.5193
+        ],
+        "angle_deg": 90.0
+      },
+      {
+        "net": "/+5V_MIST",
+        "layer": 0,
+        "point": [
+          99.826043,
+          87.802143
+        ],
+        "angle_deg": 40.94883379768096
+      },
+      {
+        "net": "/RELAY_IN2",
+        "layer": 0,
+        "point": [
+          99.8572,
+          43.0647
+        ],
+        "angle_deg": 45.00000000000001
+      },
+      {
+        "net": "/RELAY_IN2",
+        "layer": 0,
+        "point": [
+          100.140043,
+          43.347543
+        ],
+        "angle_deg": 11.176757333112398
+      },
+      {
+        "net": "/RELAY_IN2",
+        "layer": 0,
+        "point": [
+          99.4572,
+          43.0647
+        ],
+        "angle_deg": 27.513465270097274
+      }
+    ],
+    "scope": "G1 tangency at degree-two free joints; terminals and branches excluded"
+  },
+  "via_policy": {
+    "mode": "courtyards",
+    "allowed_module_interiors": [],
+    "pad_hole_and_mechanical_keepouts": "always enforced"
+  },
+  "schematic_parity": {
+    "inherited_metadata_findings": 44,
+    "new_findings": 0
+  },
+  "erc_library_findings": {
+    "lib_symbol_issues": 46,
+    "footprint_link_issues": 16
+  },
+  "artifact_sha256": {
+    "drying-fridge.kicad_dru": "8c1354580113dfb4f46b83432b896484539046e4ee2e93299b08d5a7b49c1a51",
+    "drying-fridge.kicad_pro": "a0bb1427be6de067f4e44534bbef2a2b362fb47b78ff047979162907b8bba762",
+    "comparison.png": "000bea73122c3aedbb6f244342ffa8ce92ea0320a3c2cd3f5cc42a15c5ee0aad",
+    "routed.svg": "060726933d0d034c702aad162f07977d19efcbe45ecd29fe373f5c39c5e90c6c",
+    "drying-fridge.kicad_sch": "b181d65cf8d932aac74a6a3fdcc7b1f80bd4c4841424cc1b775013b785ce81ca",
+    "drying-fridge.kicad_pcb": "bcb7a339a48b5e6c1f0da45885ffd03295458508e8f94e4d4b0cc32896351196",
+    "comparison.svg": "46f9d5634487ef02a4818cebf3bf398927c6b8c742d6fee3fac39db83a0d9ab4",
+    "routed.png": "cbbc8230e9cb28df82cbafc513d853c34bcd91d0b9543a8f731574fbcd565b56",
+    ".auto-hand-router": "e9dd8507f4bf0c6f42458e41aea833ad0bd3f6127272335eee9bf4d58541ed67"
+  }
+}

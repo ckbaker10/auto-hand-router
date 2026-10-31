@@ -1,0 +1,7 @@
+# Native fixtures retain exact input spans and accepted artifact checksums.
+# Removed copper leaves whitespace-only lines intentionally.
+*.kicad_pcb -whitespace
+examples/** linguist-generated=true
+comparison/results/** linguist-generated=true
+docs/images/** linguist-generated=true
+benchmarks/sources/** linguist-vendored=true

@@ -1,0 +1,861 @@
+{
+  "own": {
+    "independent": {
+      "passed": true,
+      "geometry_errors": [],
+      "unconnected_components": 0,
+      "connectivity": [
+        {
+          "net": "Net-(U1-DISCH)",
+          "pads": 4,
+          "components": 1
+        },
+        {
+          "net": "GND",
+          "pads": 8,
+          "components": 1
+        },
+        {
+          "net": "Net-(U1-CONT)",
+          "pads": 2,
+          "components": 1
+        },
+        {
+          "net": "Net-(D1-K)",
+          "pads": 2,
+          "components": 1
+        },
+        {
+          "net": "/+5V",
+          "pads": 5,
+          "components": 1
+        },
+        {
+          "net": "/Trigger",
+          "pads": 3,
+          "components": 1
+        },
+        {
+          "net": "/RST",
+          "pads": 3,
+          "components": 1
+        },
+        {
+          "net": "/CLK_Out",
+          "pads": 3,
+          "components": 1
+        }
+      ],
+      "minimum_extra_clearance_mm": 0.13518911952561324,
+      "segments": 166,
+      "arcs": 133,
+      "vias": 10,
+      "track_length_mm": 210.51547035556067,
+      "layers_used": {
+        "0": 215,
+        "1": 84
+      },
+      "spacing_samples": {
+        "count": 107,
+        "mean_gap_mm": 2.6800404390916013
+      },
+      "geometry_error_counts": {}
+    },
+    "kicad": {
+      "passed": true,
+      "unconnected_items": 0,
+      "baseline_violation_count": 21,
+      "routed_violation_count": 21,
+      "new_violations": [],
+      "routed_violation_types": {
+        "silk_overlap": 2,
+        "text_thickness": 3,
+        "lib_footprint_issues": 16
+      }
+    },
+    "uniform_spacing": {
+      "mean_gap_mm": 2.30748221535559,
+      "sampled_length_mm": 140.8005443750299,
+      "sample_count": 569,
+      "pitch_mm": 0.25,
+      "pad_escape_exclusion_mm": 0.35
+    },
+    "engine_elapsed_seconds": null
+  },
+  "kreisel": {
+    "independent": {
+      "passed": true,
+      "geometry_errors": [],
+      "unconnected_components": 0,
+      "connectivity": [
+        {
+          "net": "Net-(U1-DISCH)",
+          "pads": 4,
+          "components": 1
+        },
+        {
+          "net": "GND",
+          "pads": 8,
+          "components": 1
+        },
+        {
+          "net": "Net-(U1-CONT)",
+          "pads": 2,
+          "components": 1
+        },
+        {
+          "net": "Net-(D1-K)",
+          "pads": 2,
+          "components": 1
+        },
+        {
+          "net": "/+5V",
+          "pads": 5,
+          "components": 1
+        },
+        {
+          "net": "/Trigger",
+          "pads": 3,
+          "components": 1
+        },
+        {
+          "net": "/RST",
+          "pads": 3,
+          "components": 1
+        },
+        {
+          "net": "/CLK_Out",
+          "pads": 3,
+          "components": 1
+        }
+      ],
+      "minimum_extra_clearance_mm": 0.017150503787927263,
+      "segments": 115,
+      "arcs": 0,
+      "vias": 10,
+      "track_length_mm": 236.132090467538,
+      "layers_used": {
+        "0": 92,
+        "1": 23
+      },
+      "spacing_samples": {
+        "count": 134,
+        "mean_gap_mm": 1.4724917588779158
+      },
+      "geometry_error_counts": {}
+    },
+    "kicad": {
+      "passed": true,
+      "unconnected_items": 0,
+      "baseline_violation_count": 21,
+      "routed_violation_count": 21,
+      "new_violations": [],
+      "routed_violation_types": {
+        "silk_overlap": 2,
+        "text_thickness": 3,
+        "lib_footprint_issues": 16
+      }
+    },
+    "uniform_spacing": {
+      "mean_gap_mm": 1.53779622994347,
+      "sampled_length_mm": 165.66404878664605,
+      "sample_count": 670,
+      "pitch_mm": 0.25,
+      "pad_escape_exclusion_mm": 0.35
+    },
+    "engine_elapsed_seconds": 1.254988670349121
+  },
+  "freerouting": {
+    "independent": {
+      "passed": true,
+      "geometry_errors": [],
+      "unconnected_components": 0,
+      "connectivity": [
+        {
+          "net": "Net-(U1-DISCH)",
+          "pads": 4,
+          "components": 1
+        },
+        {
+          "net": "GND",
+          "pads": 8,
+          "components": 1
+        },
+        {
+          "net": "Net-(U1-CONT)",
+          "pads": 2,
+          "components": 1
+        },
+        {
+          "net": "Net-(D1-K)",
+          "pads": 2,
+          "components": 1
+        },
+        {
+          "net": "/+5V",
+          "pads": 5,
+          "components": 1
+        },
+        {
+          "net": "/Trigger",
+          "pads": 3,
+          "components": 1
+        },
+        {
+          "net": "/RST",
+          "pads": 3,
+          "components": 1
+        },
+        {
+          "net": "/CLK_Out",
+          "pads": 3,
+          "components": 1
+        }
+      ],
+      "minimum_extra_clearance_mm": 0.0011680794836847475,
+      "segments": 73,
+      "arcs": 0,
+      "vias": 4,
+      "track_length_mm": 217.5196251589678,
+      "layers_used": {
+        "0": 59,
+        "1": 14
+      },
+      "spacing_samples": {
+        "count": 120,
+        "mean_gap_mm": 1.6305374687066723
+      },
+      "geometry_error_counts": {}
+    },
+    "kicad": {
+      "passed": true,
+      "unconnected_items": 0,
+      "baseline_violation_count": 21,
+      "routed_violation_count": 21,
+      "new_violations": [],
+      "routed_violation_types": {
+        "silk_overlap": 2,
+        "text_thickness": 3,
+        "lib_footprint_issues": 16
+      }
+    },
+    "uniform_spacing": {
+      "mean_gap_mm": 1.8392728687507145,
+      "sampled_length_mm": 164.60173985603453,
+      "sample_count": 666,
+      "pitch_mm": 0.25,
+      "pad_escape_exclusion_mm": 0.35
+    },
+    "engine_elapsed_seconds": null
+  },
+  "freerouting-rounded": {
+    "independent": {
+      "passed": false,
+      "geometry_errors": [
+        {
+          "type": "copper_clearance",
+          "a": "track-88",
+          "b": "C2.1",
+          "gap_mm": 0.10397901879455852,
+          "required_mm": 0.254
+        },
+        {
+          "type": "copper_clearance",
+          "a": "track-92",
+          "b": "J2.1",
+          "gap_mm": 0.16265432268373045,
+          "required_mm": 0.254
+        },
+        {
+          "type": "copper_clearance",
+          "a": "track-95",
+          "b": "U1.1",
+          "gap_mm": 0.25391858966708936,
+          "required_mm": 0.254
+        },
+        {
+          "type": "copper_clearance",
+          "a": "track-100",
+          "b": "D1.2",
+          "gap_mm": 0.0642867316259047,
+          "required_mm": 0.127
+        },
+        {
+          "type": "copper_clearance",
+          "a": "track-109",
+          "b": "U1.4",
+          "gap_mm": 0.09444602082174798,
+          "required_mm": 0.127
+        }
+      ],
+      "unconnected_components": 0,
+      "connectivity": [
+        {
+          "net": "Net-(U1-DISCH)",
+          "pads": 4,
+          "components": 1
+        },
+        {
+          "net": "GND",
+          "pads": 8,
+          "components": 1
+        },
+        {
+          "net": "Net-(U1-CONT)",
+          "pads": 2,
+          "components": 1
+        },
+        {
+          "net": "Net-(D1-K)",
+          "pads": 2,
+          "components": 1
+        },
+        {
+          "net": "/+5V",
+          "pads": 5,
+          "components": 1
+        },
+        {
+          "net": "/Trigger",
+          "pads": 3,
+          "components": 1
+        },
+        {
+          "net": "/RST",
+          "pads": 3,
+          "components": 1
+        },
+        {
+          "net": "/CLK_Out",
+          "pads": 3,
+          "components": 1
+        }
+      ],
+      "minimum_extra_clearance_mm": -0.1500209812054415,
+      "segments": 65,
+      "arcs": 55,
+      "vias": 4,
+      "track_length_mm": 216.01728472543326,
+      "layers_used": {
+        "0": 98,
+        "1": 22
+      },
+      "spacing_samples": {
+        "count": 155,
+        "mean_gap_mm": 1.6310058164144563
+      },
+      "geometry_error_counts": {
+        "copper_clearance": 5
+      }
+    },
+    "kicad": {
+      "passed": false,
+      "unconnected_items": 0,
+      "baseline_violation_count": 21,
+      "routed_violation_count": 25,
+      "new_violations": [
+        {
+          "type": "clearance",
+          "severity": "error",
+          "description": "Clearance violation ( clearance 0.1270 mm; actual 0.0651 mm)",
+          "count": 1
+        },
+        {
+          "type": "clearance",
+          "severity": "error",
+          "description": "Clearance violation ( clearance 0.1270 mm; actual 0.0953 mm)",
+          "count": 1
+        },
+        {
+          "type": "clearance",
+          "severity": "error",
+          "description": "Clearance violation ( clearance 0.2540 mm; actual 0.1048 mm)",
+          "count": 1
+        },
+        {
+          "type": "clearance",
+          "severity": "error",
+          "description": "Clearance violation ( clearance 0.2540 mm; actual 0.1634 mm)",
+          "count": 1
+        }
+      ],
+      "routed_violation_types": {
+        "clearance": 4,
+        "silk_overlap": 2,
+        "text_thickness": 3,
+        "lib_footprint_issues": 16
+      }
+    },
+    "uniform_spacing": {
+      "mean_gap_mm": 1.843567637914007,
+      "sampled_length_mm": 161.76462879225562,
+      "sample_count": 658,
+      "pitch_mm": 0.25,
+      "pad_escape_exclusion_mm": 0.35
+    },
+    "engine_elapsed_seconds": null
+  },
+  "freerouting-rounded-0.5": {
+    "independent": {
+      "passed": false,
+      "geometry_errors": [
+        {
+          "type": "copper_clearance",
+          "a": "track-84",
+          "b": "C2.1",
+          "gap_mm": 0.2482166439594682,
+          "required_mm": 0.254
+        },
+        {
+          "type": "copper_clearance",
+          "a": "track-92",
+          "b": "J2.1",
+          "gap_mm": 0.24465676892081936,
+          "required_mm": 0.254
+        },
+        {
+          "type": "copper_clearance",
+          "a": "track-98",
+          "b": "U1.1",
+          "gap_mm": 0.25391858966708936,
+          "required_mm": 0.254
+        },
+        {
+          "type": "copper_clearance",
+          "a": "track-110",
+          "b": "U1.4",
+          "gap_mm": 0.10468665311707855,
+          "required_mm": 0.127
+        }
+      ],
+      "unconnected_components": 0,
+      "connectivity": [
+        {
+          "net": "Net-(U1-DISCH)",
+          "pads": 4,
+          "components": 1
+        },
+        {
+          "net": "GND",
+          "pads": 8,
+          "components": 1
+        },
+        {
+          "net": "Net-(U1-CONT)",
+          "pads": 2,
+          "components": 1
+        },
+        {
+          "net": "Net-(D1-K)",
+          "pads": 2,
+          "components": 1
+        },
+        {
+          "net": "/+5V",
+          "pads": 5,
+          "components": 1
+        },
+        {
+          "net": "/Trigger",
+          "pads": 3,
+          "components": 1
+        },
+        {
+          "net": "/RST",
+          "pads": 3,
+          "components": 1
+        },
+        {
+          "net": "/CLK_Out",
+          "pads": 3,
+          "components": 1
+        }
+      ],
+      "minimum_extra_clearance_mm": -0.022313346882921456,
+      "segments": 70,
+      "arcs": 53,
+      "vias": 4,
+      "track_length_mm": 217.7104142507402,
+      "layers_used": {
+        "0": 101,
+        "1": 22
+      },
+      "spacing_samples": {
+        "count": 172,
+        "mean_gap_mm": 1.6972633839618019
+      },
+      "geometry_error_counts": {
+        "copper_clearance": 4
+      }
+    },
+    "kicad": {
+      "passed": false,
+      "unconnected_items": 0,
+      "baseline_violation_count": 21,
+      "routed_violation_count": 24,
+      "new_violations": [
+        {
+          "type": "clearance",
+          "severity": "error",
+          "description": "Clearance violation ( clearance 0.1270 mm; actual 0.1056 mm)",
+          "count": 1
+        },
+        {
+          "type": "clearance",
+          "severity": "error",
+          "description": "Clearance violation ( clearance 0.2540 mm; actual 0.2454 mm)",
+          "count": 1
+        },
+        {
+          "type": "clearance",
+          "severity": "error",
+          "description": "Clearance violation ( clearance 0.2540 mm; actual 0.2490 mm)",
+          "count": 1
+        }
+      ],
+      "routed_violation_types": {
+        "clearance": 3,
+        "silk_overlap": 2,
+        "text_thickness": 3,
+        "lib_footprint_issues": 16
+      }
+    },
+    "uniform_spacing": {
+      "mean_gap_mm": 1.8478546438247456,
+      "sampled_length_mm": 163.67235314012385,
+      "sample_count": 665,
+      "pitch_mm": 0.25,
+      "pad_escape_exclusion_mm": 0.35
+    },
+    "engine_elapsed_seconds": null
+  },
+  "tscircuit": {
+    "independent": {
+      "passed": false,
+      "geometry_errors": [
+        {
+          "type": "copper_clearance",
+          "a": "via-4",
+          "b": "track-77",
+          "gap_mm": 0.2535391464002997,
+          "required_mm": 0.254
+        },
+        {
+          "type": "copper_clearance",
+          "a": "via-5",
+          "b": "track-77",
+          "gap_mm": 0.2535397535043108,
+          "required_mm": 0.254
+        },
+        {
+          "type": "copper_clearance",
+          "a": "via-5",
+          "b": "track-79",
+          "gap_mm": 0.25349998103146304,
+          "required_mm": 0.254
+        },
+        {
+          "type": "via_in_footprint",
+          "via": 1,
+          "footprint": "R3"
+        },
+        {
+          "type": "via_in_footprint",
+          "via": 2,
+          "footprint": "U1"
+        },
+        {
+          "type": "via_in_footprint",
+          "via": 4,
+          "footprint": "R2"
+        },
+        {
+          "type": "via_in_footprint",
+          "via": 5,
+          "footprint": "R4"
+        },
+        {
+          "type": "via_in_footprint",
+          "via": 7,
+          "footprint": "J2"
+        },
+        {
+          "type": "via_in_footprint",
+          "via": 8,
+          "footprint": "U1"
+        },
+        {
+          "type": "via_in_footprint",
+          "via": 9,
+          "footprint": "R4"
+        },
+        {
+          "type": "via_in_footprint",
+          "via": 10,
+          "footprint": "U1"
+        },
+        {
+          "type": "via_in_footprint",
+          "via": 10,
+          "footprint": "C2"
+        },
+        {
+          "type": "track_width",
+          "track": 36
+        },
+        {
+          "type": "track_width",
+          "track": 37
+        },
+        {
+          "type": "track_width",
+          "track": 38
+        },
+        {
+          "type": "track_width",
+          "track": 39
+        },
+        {
+          "type": "track_width",
+          "track": 72
+        },
+        {
+          "type": "track_width",
+          "track": 73
+        },
+        {
+          "type": "track_width",
+          "track": 74
+        },
+        {
+          "type": "track_width",
+          "track": 75
+        },
+        {
+          "type": "track_width",
+          "track": 76
+        },
+        {
+          "type": "track_width",
+          "track": 77
+        },
+        {
+          "type": "track_width",
+          "track": 78
+        },
+        {
+          "type": "track_width",
+          "track": 79
+        },
+        {
+          "type": "track_width",
+          "track": 80
+        },
+        {
+          "type": "track_width",
+          "track": 81
+        },
+        {
+          "type": "track_width",
+          "track": 82
+        },
+        {
+          "type": "track_width",
+          "track": 83
+        },
+        {
+          "type": "track_width",
+          "track": 84
+        },
+        {
+          "type": "track_width",
+          "track": 93
+        },
+        {
+          "type": "track_width",
+          "track": 94
+        },
+        {
+          "type": "track_width",
+          "track": 95
+        },
+        {
+          "type": "track_width",
+          "track": 96
+        }
+      ],
+      "unconnected_components": 0,
+      "connectivity": [
+        {
+          "net": "Net-(U1-DISCH)",
+          "pads": 4,
+          "components": 1
+        },
+        {
+          "net": "GND",
+          "pads": 8,
+          "components": 1
+        },
+        {
+          "net": "Net-(U1-CONT)",
+          "pads": 2,
+          "components": 1
+        },
+        {
+          "net": "Net-(D1-K)",
+          "pads": 2,
+          "components": 1
+        },
+        {
+          "net": "/+5V",
+          "pads": 5,
+          "components": 1
+        },
+        {
+          "net": "/Trigger",
+          "pads": 3,
+          "components": 1
+        },
+        {
+          "net": "/RST",
+          "pads": 3,
+          "components": 1
+        },
+        {
+          "net": "/CLK_Out",
+          "pads": 3,
+          "components": 1
+        }
+      ],
+      "minimum_extra_clearance_mm": -0.0005000189685369638,
+      "segments": 109,
+      "arcs": 0,
+      "vias": 11,
+      "track_length_mm": 215.6112397030628,
+      "layers_used": {
+        "0": 75,
+        "1": 34
+      },
+      "spacing_samples": {
+        "count": 119,
+        "mean_gap_mm": 1.5746131596642385
+      },
+      "geometry_error_counts": {
+        "copper_clearance": 3,
+        "via_in_footprint": 9,
+        "track_width": 21
+      }
+    },
+    "kicad": {
+      "passed": true,
+      "unconnected_items": 0,
+      "baseline_violation_count": 21,
+      "routed_violation_count": 21,
+      "new_violations": [],
+      "routed_violation_types": {
+        "silk_overlap": 2,
+        "text_thickness": 3,
+        "lib_footprint_issues": 16
+      }
+    },
+    "uniform_spacing": {
+      "mean_gap_mm": 1.7104301147369636,
+      "sampled_length_mm": 156.7411698876625,
+      "sample_count": 636,
+      "pitch_mm": 0.25,
+      "pad_escape_exclusion_mm": 0.35
+    },
+    "engine_elapsed_seconds": 6.086
+  },
+  "freerouting-no-keepouts": {
+    "independent": {
+      "passed": false,
+      "geometry_errors": [
+        {
+          "type": "via_in_footprint",
+          "via": 0,
+          "footprint": "D1"
+        }
+      ],
+      "unconnected_components": 0,
+      "connectivity": [
+        {
+          "net": "Net-(U1-DISCH)",
+          "pads": 4,
+          "components": 1
+        },
+        {
+          "net": "GND",
+          "pads": 8,
+          "components": 1
+        },
+        {
+          "net": "Net-(U1-CONT)",
+          "pads": 2,
+          "components": 1
+        },
+        {
+          "net": "Net-(D1-K)",
+          "pads": 2,
+          "components": 1
+        },
+        {
+          "net": "/+5V",
+          "pads": 5,
+          "components": 1
+        },
+        {
+          "net": "/Trigger",
+          "pads": 3,
+          "components": 1
+        },
+        {
+          "net": "/RST",
+          "pads": 3,
+          "components": 1
+        },
+        {
+          "net": "/CLK_Out",
+          "pads": 3,
+          "components": 1
+        }
+      ],
+      "minimum_extra_clearance_mm": 0.004653507068851204,
+      "segments": 74,
+      "arcs": 0,
+      "vias": 1,
+      "track_length_mm": 246.3936883653543,
+      "layers_used": {
+        "0": 56,
+        "1": 18
+      },
+      "spacing_samples": {
+        "count": 121,
+        "mean_gap_mm": 1.436415691671174
+      },
+      "geometry_error_counts": {
+        "via_in_footprint": 1
+      }
+    },
+    "kicad": {
+      "passed": true,
+      "unconnected_items": 0,
+      "baseline_violation_count": 21,
+      "routed_violation_count": 21,
+      "new_violations": [],
+      "routed_violation_types": {
+        "silk_overlap": 2,
+        "text_thickness": 3,
+        "lib_footprint_issues": 16
+      }
+    },
+    "uniform_spacing": {
+      "mean_gap_mm": 1.8253023624463425,
+      "sampled_length_mm": 193.03043089846523,
+      "sample_count": 779,
+      "pitch_mm": 0.25,
+      "pad_escape_exclusion_mm": 0.35
+    },
+    "engine_elapsed_seconds": null
+  }
+}

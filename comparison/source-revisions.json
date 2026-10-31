@@ -1,0 +1,252 @@
+[
+  {
+    "id": "topola",
+    "repo": "topola/topola",
+    "host": "codeberg",
+    "revision": "666e06cfd7ba1f1e5daf700288acb9e0a4f84ceb",
+    "license": "MIT (assets and individual files have additional notices)",
+    "files": [
+      "README.md",
+      "Cargo.toml",
+      "src/router/thetastar.rs",
+      "src/specctra/design.rs",
+      "src/autorouter/multilayer_autoroute.rs",
+      "src/geometry/primitive.rs"
+    ],
+    "url": "https://codeberg.org/topola/topola",
+    "inspected_files": [
+      {
+        "path": "README.md",
+        "url": "https://codeberg.org/topola/topola/raw/commit/666e06cfd7ba1f1e5daf700288acb9e0a4f84ceb/README.md",
+        "sha256": "02112100944dffa2e7bb179c38cd93a2abaaf0c695f131c290e04e1fa4e1d9f3",
+        "snapshot_path": "/opt/paseo-development/ai-repo-plans/Auto-Hand-Router/work/research-sources-20261031/topola/README.md"
+      },
+      {
+        "path": "Cargo.toml",
+        "url": "https://codeberg.org/topola/topola/raw/commit/666e06cfd7ba1f1e5daf700288acb9e0a4f84ceb/Cargo.toml",
+        "sha256": "b3e85af003e61e6835697e98f301dbce729d97a8dce8f79aeaf13322e2ac8ecf",
+        "snapshot_path": "/opt/paseo-development/ai-repo-plans/Auto-Hand-Router/work/research-sources-20261031/topola/Cargo.toml"
+      },
+      {
+        "path": "src/router/thetastar.rs",
+        "url": "https://codeberg.org/topola/topola/raw/commit/666e06cfd7ba1f1e5daf700288acb9e0a4f84ceb/src/router/thetastar.rs",
+        "sha256": "4d27e06b57c7842e9d59b2206344afffa451a9dd8f38571da6c05ffea5d6348d",
+        "snapshot_path": "/opt/paseo-development/ai-repo-plans/Auto-Hand-Router/work/research-sources-20261031/topola/src/router/thetastar.rs"
+      },
+      {
+        "path": "src/specctra/design.rs",
+        "url": "https://codeberg.org/topola/topola/raw/commit/666e06cfd7ba1f1e5daf700288acb9e0a4f84ceb/src/specctra/design.rs",
+        "sha256": "d9b7a30dbe58cc06a1ec5b0b8da2f1cc74149f77f6d58460f0d455a5f771d0c7",
+        "snapshot_path": "/opt/paseo-development/ai-repo-plans/Auto-Hand-Router/work/research-sources-20261031/topola/src/specctra/design.rs"
+      },
+      {
+        "path": "src/autorouter/multilayer_autoroute.rs",
+        "url": "https://codeberg.org/topola/topola/raw/commit/666e06cfd7ba1f1e5daf700288acb9e0a4f84ceb/src/autorouter/multilayer_autoroute.rs",
+        "sha256": "1e675fbe5c209fda5f25db18fa0d17a6a141f3ff435ea8348dce74f34f988dad",
+        "snapshot_path": "/opt/paseo-development/ai-repo-plans/Auto-Hand-Router/work/research-sources-20261031/topola/src/autorouter/multilayer_autoroute.rs"
+      },
+      {
+        "path": "src/geometry/primitive.rs",
+        "url": "https://codeberg.org/topola/topola/raw/commit/666e06cfd7ba1f1e5daf700288acb9e0a4f84ceb/src/geometry/primitive.rs",
+        "sha256": "3289cd99a5c513b8367ea594b9886fb41dd1a64ba4ff68f90845c54674a93542",
+        "snapshot_path": "/opt/paseo-development/ai-repo-plans/Auto-Hand-Router/work/research-sources-20261031/topola/src/geometry/primitive.rs"
+      }
+    ]
+  },
+  {
+    "id": "kicad-autorouter",
+    "repo": "J-Kreisel/kicad-autorouter",
+    "host": "github",
+    "revision": "efd7f8e065f9bff88cd878aa2afd2ef12d23d678",
+    "license": "MIT",
+    "files": [
+      "README.md",
+      "docs/validation.md",
+      "src/kicad_autorouter/kipy_adapter.py",
+      "src/kicad_autorouter/router.py"
+    ],
+    "url": "https://github.com/J-Kreisel/kicad-autorouter",
+    "inspected_files": [
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/J-Kreisel/kicad-autorouter/efd7f8e065f9bff88cd878aa2afd2ef12d23d678/README.md",
+        "sha256": "f8d41302af23609aaab5cde0f7fbc490e33e1b7fcaa49db084570d5b7f01deca",
+        "snapshot_path": "/opt/paseo-development/ai-repo-plans/Auto-Hand-Router/work/research-sources-20261031/kicad-autorouter/README.md"
+      },
+      {
+        "path": "docs/validation.md",
+        "url": "https://raw.githubusercontent.com/J-Kreisel/kicad-autorouter/efd7f8e065f9bff88cd878aa2afd2ef12d23d678/docs/validation.md",
+        "sha256": "2278cd385d5149bbb0239e35baf0b35785acf762f6ce6e0033b0b9c21e96b0ca",
+        "snapshot_path": "/opt/paseo-development/ai-repo-plans/Auto-Hand-Router/work/research-sources-20261031/kicad-autorouter/docs/validation.md"
+      },
+      {
+        "path": "src/kicad_autorouter/kipy_adapter.py",
+        "url": "https://raw.githubusercontent.com/J-Kreisel/kicad-autorouter/efd7f8e065f9bff88cd878aa2afd2ef12d23d678/src/kicad_autorouter/kipy_adapter.py",
+        "sha256": "9aa3bb5536f754c0c65014faa6530cdb66b2ad22dbc6e216fc8f76b4767423ff",
+        "snapshot_path": "/opt/paseo-development/ai-repo-plans/Auto-Hand-Router/work/research-sources-20261031/kicad-autorouter/src/kicad_autorouter/kipy_adapter.py"
+      },
+      {
+        "path": "src/kicad_autorouter/router.py",
+        "url": "https://raw.githubusercontent.com/J-Kreisel/kicad-autorouter/efd7f8e065f9bff88cd878aa2afd2ef12d23d678/src/kicad_autorouter/router.py",
+        "sha256": "28370f5cc6a5664f110e7f73c4fd9b89fae4e289e04aca127385d0722dee1034",
+        "snapshot_path": "/opt/paseo-development/ai-repo-plans/Auto-Hand-Router/work/research-sources-20261031/kicad-autorouter/src/kicad_autorouter/router.py"
+      }
+    ]
+  },
+  {
+    "id": "round-tracks",
+    "repo": "mitxela/kicad-round-tracks",
+    "host": "github",
+    "revision": "50374f8f418e57b53683dd18171bb9cf1f9392f8",
+    "license": "Apache-2.0",
+    "files": [
+      "README.md",
+      "round_tracks_action.py",
+      "round_tracks_utils.py"
+    ],
+    "url": "https://github.com/mitxela/kicad-round-tracks",
+    "inspected_files": [
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/mitxela/kicad-round-tracks/50374f8f418e57b53683dd18171bb9cf1f9392f8/README.md",
+        "sha256": "c7ba42da2d8e4c6ac4a4c9ec7708d955d057f0bcf35814e57096e48b05b31ef0",
+        "snapshot_path": "/opt/paseo-development/ai-repo-plans/Auto-Hand-Router/work/research-sources-20261031/round-tracks/README.md"
+      },
+      {
+        "path": "round_tracks_action.py",
+        "url": "https://raw.githubusercontent.com/mitxela/kicad-round-tracks/50374f8f418e57b53683dd18171bb9cf1f9392f8/round_tracks_action.py",
+        "sha256": "46a2f29f29f086d0e775df4dbe9070159451216460ec9b83b77492e2e97a8720",
+        "snapshot_path": "/opt/paseo-development/ai-repo-plans/Auto-Hand-Router/work/research-sources-20261031/round-tracks/round_tracks_action.py"
+      },
+      {
+        "path": "round_tracks_utils.py",
+        "url": "https://raw.githubusercontent.com/mitxela/kicad-round-tracks/50374f8f418e57b53683dd18171bb9cf1f9392f8/round_tracks_utils.py",
+        "sha256": "88659cb5d45270cf5f1fa1afec9e282f163c479cb0508af5010eccafc8de91a7",
+        "snapshot_path": "/opt/paseo-development/ai-repo-plans/Auto-Hand-Router/work/research-sources-20261031/round-tracks/round_tracks_utils.py"
+      }
+    ]
+  },
+  {
+    "id": "tscircuit-autorouter",
+    "repo": "tscircuit/tscircuit-autorouter",
+    "host": "github",
+    "revision": "67497a16129f5d4b69d7cfe1ed54a719d5e597b5",
+    "license": "MIT",
+    "files": [
+      "README.md"
+    ],
+    "url": "https://github.com/tscircuit/tscircuit-autorouter",
+    "inspected_files": [
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/tscircuit/tscircuit-autorouter/67497a16129f5d4b69d7cfe1ed54a719d5e597b5/README.md",
+        "sha256": "e66731345e221f0113f8f90eb34991d850c58356bc8f1c890e29f497bf99856f",
+        "snapshot_path": "/opt/paseo-development/ai-repo-plans/Auto-Hand-Router/work/research-sources-20261031/tscircuit-autorouter/README.md"
+      }
+    ]
+  },
+  {
+    "id": "freerouting-java",
+    "repo": "freerouting/freerouting",
+    "host": "github",
+    "revision": "2eba6f7fbf7c0ca7b5aa5f8cba7136d066fb4d10",
+    "license": "GPL-3.0 (per repository)",
+    "files": [
+      "docs/architecture.md"
+    ],
+    "url": "https://github.com/freerouting/freerouting",
+    "inspected_files": [
+      {
+        "path": "docs/architecture.md",
+        "url": "https://raw.githubusercontent.com/freerouting/freerouting/2eba6f7fbf7c0ca7b5aa5f8cba7136d066fb4d10/docs/architecture.md",
+        "sha256": "a5b85121e46de7e340f0a56cce94e7f88a3ac6be5a4294d41caa2c1a9e239997",
+        "snapshot_path": "/opt/paseo-development/ai-repo-plans/Auto-Hand-Router/work/research-sources-20261031/freerouting-java/docs/architecture.md"
+      }
+    ]
+  },
+  {
+    "id": "cyrk",
+    "repo": "topola/cyrk",
+    "host": "codeberg",
+    "revision": "b7bf49b42007a4c3999ae4bf4f65d646b3fc4f67",
+    "license": "MIT OR Apache-2.0",
+    "files": [
+      "README.md",
+      "Cargo.toml"
+    ],
+    "url": "https://codeberg.org/topola/cyrk",
+    "inspected_files": [
+      {
+        "path": "README.md",
+        "url": "https://codeberg.org/topola/cyrk/raw/commit/b7bf49b42007a4c3999ae4bf4f65d646b3fc4f67/README.md",
+        "sha256": "b7c14ac21725269bd032ae66aa957c5a7f448fc02b0dd87346b3a77c07827f4e",
+        "snapshot_path": "/opt/paseo-development/ai-repo-plans/Auto-Hand-Router/work/research-sources-20261031/cyrk/README.md"
+      },
+      {
+        "path": "Cargo.toml",
+        "url": "https://codeberg.org/topola/cyrk/raw/commit/b7bf49b42007a4c3999ae4bf4f65d646b3fc4f67/Cargo.toml",
+        "sha256": "4f8136463ec25d80704894a4a69481c30ec8e3fd3f0778c5d86e766dccd58f37",
+        "snapshot_path": "/opt/paseo-development/ai-repo-plans/Auto-Hand-Router/work/research-sources-20261031/cyrk/Cargo.toml"
+      }
+    ]
+  },
+  {
+    "id": "cavalier-contours-rust",
+    "repo": "jbuckmccready/cavalier_contours",
+    "host": "github",
+    "revision": "5268bea41b6877ffbffca0de1e71506f470c8d44",
+    "license": "MIT OR Apache-2.0",
+    "files": [
+      "README.md",
+      "Cargo.toml"
+    ],
+    "url": "https://github.com/jbuckmccready/cavalier_contours",
+    "inspected_files": [
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/jbuckmccready/cavalier_contours/5268bea41b6877ffbffca0de1e71506f470c8d44/README.md",
+        "sha256": "4c66bec6b1c083a75ef1b233f2972038901e518ad5abf5a274862d8d63c14ac3",
+        "snapshot_path": "/opt/paseo-development/ai-repo-plans/Auto-Hand-Router/work/research-sources-20261031/cavalier-contours-rust/README.md"
+      },
+      {
+        "path": "Cargo.toml",
+        "url": "https://raw.githubusercontent.com/jbuckmccready/cavalier_contours/5268bea41b6877ffbffca0de1e71506f470c8d44/Cargo.toml",
+        "sha256": "7f4aed8303f543ffdc2f93cfce2a59f7b8bac500c2f3d8e8de136b26fd9d9b8f",
+        "snapshot_path": "/opt/paseo-development/ai-repo-plans/Auto-Hand-Router/work/research-sources-20261031/cavalier-contours-rust/Cargo.toml"
+      }
+    ]
+  },
+  {
+    "id": "clothoids",
+    "repo": "ebertolazzi/Clothoids",
+    "host": "github",
+    "revision": "dafdc29acee5c4f25e777c6cffe56ecb39b0ec11",
+    "license": "BSD-2-Clause (terms read in license.txt)",
+    "files": [
+      "README.md",
+      "license.txt",
+      "src/Biarc.cc"
+    ],
+    "url": "https://github.com/ebertolazzi/Clothoids",
+    "inspected_files": [
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/ebertolazzi/Clothoids/dafdc29acee5c4f25e777c6cffe56ecb39b0ec11/README.md",
+        "sha256": "2c3405a057906b0625286bcbd8dd32cd67cf74d503ab3f3841ee038b23f79fec",
+        "snapshot_path": "/opt/paseo-development/ai-repo-plans/Auto-Hand-Router/work/research-sources-20261031/clothoids/README.md"
+      },
+      {
+        "path": "license.txt",
+        "url": "https://raw.githubusercontent.com/ebertolazzi/Clothoids/dafdc29acee5c4f25e777c6cffe56ecb39b0ec11/license.txt",
+        "sha256": "788e5de0fc9c0c934a52938f107ffde2d355bec127e7a2d842b3f53fcb1c598f",
+        "snapshot_path": "/opt/paseo-development/ai-repo-plans/Auto-Hand-Router/work/research-sources-20261031/clothoids/license.txt"
+      },
+      {
+        "path": "src/Biarc.cc",
+        "url": "https://raw.githubusercontent.com/ebertolazzi/Clothoids/dafdc29acee5c4f25e777c6cffe56ecb39b0ec11/src/Biarc.cc",
+        "sha256": "2ac858305d964a904e7040ff02e9324717d435ede7ae58f56aa9922d8ee86492",
+        "snapshot_path": "/opt/paseo-development/ai-repo-plans/Auto-Hand-Router/work/research-sources-20261031/clothoids/src/Biarc.cc"
+      }
+    ]
+  }
+]

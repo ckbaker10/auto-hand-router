@@ -1,0 +1,29 @@
+{
+  "name": "jlcpcb-2layer-1oz",
+  "source": "Shared Drying project routing profile, snapshot 2026-10-31",
+  "limits_mm": {
+    "kicad_rules": {
+      "max_error": 0.005,
+      "min_clearance": 0.25,
+      "min_copper_edge_clearance": 0.5,
+      "min_hole_clearance": 0.3,
+      "min_hole_to_hole": 0.45,
+      "min_through_hole_diameter": 0.3,
+      "min_track_width": 0.25,
+      "min_via_annular_width": 0.2,
+      "min_via_diameter": 0.8,
+      "min_silk_clearance": 0.15,
+      "min_text_height": 1.0,
+      "min_text_thickness": 0.15
+    }
+  },
+  "routing": {
+    "signal_width_mm": 0.35,
+    "power_width_mm": 0.6,
+    "clearance_mm": 0.25,
+    "preferred_track_spacing_mm": 0.5,
+    "via_diameter_mm": 0.8,
+    "via_drill_mm": 0.4
+  },
+  "status": "Conservative routing assumptions for the examples; not a manufacturing approval."
+}
