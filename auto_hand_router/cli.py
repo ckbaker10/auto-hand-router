@@ -72,6 +72,9 @@ def main(argv=None):
     if argv and argv[0] == "route":
         from .release import main as route_main
         return route_main(argv[1:])
+    if argv and argv[0] == "teardrops":
+        from .teardrop_cli import main as teardrop_main
+        return teardrop_main(argv[1:])
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--version", action="version", version=__version__)
     parser.add_argument("--board", type=Path, default=DEFAULT_BOARD)

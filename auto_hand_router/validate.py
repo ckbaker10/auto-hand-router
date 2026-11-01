@@ -8,6 +8,7 @@ from shapely.geometry import Point
 from shapely.strtree import STRtree
 
 from .model import ARC_ERROR, read_copper
+from .teardrops import read_teardrops
 
 
 @dataclass
@@ -30,6 +31,9 @@ def check(board, root):
     for i, v in enumerate(vias):
         items.append(Copper(v.net, (0, 1), Point(v.center).buffer(v.diameter / 2, quad_segs=48),
                             f"via-{i}", True))
+    teardrops = read_teardrops(root, board.nets)
+    for i, drop in enumerate(teardrops):
+        items.append(Copper(drop.net, (drop.layer,), drop.shape, f"teardrop-{i}", True))
     errors, minimum_gap = [], math.inf
     parent = list(range(len(items)))
 
@@ -161,7 +165,7 @@ def check(board, root):
             "connectivity": connectivity,
             "minimum_extra_clearance_mm": None if math.isinf(minimum_gap) else minimum_gap,
             "segments": sum(p.mid is None for p in primitives),
-            "arcs": sum(p.mid is not None for p in primitives), "vias": len(vias),
+            "arcs": sum(p.mid is not None for p in primitives), "vias": len(vias), "teardrops": len(teardrops),
             "track_length_mm": sum(p.line().length for p in primitives),
             "layers_used": dict(Counter(p.layer for p in primitives)),
             "spacing_samples": {"count": len(gap_samples),

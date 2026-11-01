@@ -13,6 +13,7 @@
     "arcs": 2568,
     "segments": 1935,
     "vias": 45,
+    "teardrops": 233,
     "track_length_mm": 2831.618112061756,
     "unconnected_components": 0,
     "minimum_extra_clearance_mm": 0.012686699209161933
@@ -81,11 +82,34 @@
     "drying-fridge.kicad_dru": "8c1354580113dfb4f46b83432b896484539046e4ee2e93299b08d5a7b49c1a51",
     "drying-fridge.kicad_pro": "bb7af18b474f459c268e15aa718d7e1be29782b078df95e8e4496c5cf1a72903",
     "comparison.png": "24b232d48b352e46ec50587af834c5e0bd36c0a3d467b9be4620567f3a5505f2",
-    "routed.svg": "03a43f4362d701b4250fbba0e19081723352345b187e924165b0636f65e7b48d",
+    "routed.svg": "ee98176806a79976f18e3df8a1b95e4842c1ceea54ff62567536e14bf17328c0",
     "drying-fridge.kicad_sch": "b181d65cf8d932aac74a6a3fdcc7b1f80bd4c4841424cc1b775013b785ce81ca",
-    "drying-fridge.kicad_pcb": "7816fad64f8726be0e8b2406856ee4ceb74410cb7db660a7b2ef815226e28590",
+    "drying-fridge.kicad_pcb": "c1fc39c2f37c785b7f58ca371f823fbe0ed438bf25fce5283c0667d93ab2cb9b",
     "comparison.svg": "427dbd010b74eeb9044710c3b6463838d2486500117f1a7a75e19ea1b9470674",
-    "routed.png": "a76920a091dfe3413edaedddc21d9c1966da65746b7f2e833971cf152449ece4",
+    "routed.png": "7da6601100d4be0e77eccd7be408060f5ef45896572a642d4c8291eaf5475aff",
     ".auto-hand-router": "e9dd8507f4bf0c6f42458e41aea833ad0bd3f6127272335eee9bf4d58541ed67"
+  },
+  "teardrops": {
+    "candidates": 288,
+    "generated": 233,
+    "shoulders": 274,
+    "shortened": 1,
+    "skipped": 14,
+    "length_ratio": 1.0,
+    "max_length_mm": 3.0,
+    "size": 0.875,
+    "kicad_version": "10.0.8",
+    "native_drc": {
+      "passed": true,
+      "unconnected_items": 0,
+      "baseline_violation_count": 24,
+      "routed_violation_count": 24,
+      "new_violations": [],
+      "routed_violation_types": {
+        "text_height": 8,
+        "lib_footprint_issues": 16
+      }
+    },
+    "new_schematic_parity": 0
   }
 }

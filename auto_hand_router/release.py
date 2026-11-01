@@ -23,6 +23,7 @@ from .repair import repair, ripup_repair
 from .router import Options
 from .sexpr import parse
 from .validate import check
+from .teardrops import TeardropOptions, generate as generate_teardrops, read_teardrops
 
 
 def digest(path):
@@ -125,7 +126,8 @@ class Native:
 
     def drc(self, board, label):
         output = self.work / (label + ".json")
-        self.run([self.cli, "pcb", "drc", "--schematic-parity", "--all-track-errors",
+        parity = ["--schematic-parity"] if Path(board).with_suffix(".kicad_sch").exists() else []
+        self.run([self.cli, "pcb", "drc", *parity, "--all-track-errors",
                   "--severity-all", "--exit-code-violations", "--format", "json", "-o", output, board],
                  label, accepted=(0, 5))
         return json.loads(output.read_text())
@@ -173,6 +175,10 @@ def main(argv=None):
     parser.add_argument("--routing-config", type=Path)
     parser.add_argument("--spacing", type=float, default=1.2)
     parser.add_argument("--radius", type=float, default=2.5)
+    parser.add_argument("--no-teardrops", action="store_true", help="Leave pad/via shoulders unchanged")
+    parser.add_argument("--teardrop-length-ratio", type=float, default=1.0)
+    parser.add_argument("--teardrop-max-length", type=float, default=3.0, help="Maximum shoulder length outside the pad, mm")
+    parser.add_argument("--teardrop-size", type=float, default=.875, help="Shoulder size, 0 < size <= 1")
     parser.add_argument("--relax-steps", type=int, default=30)
     parser.add_argument("--route-timeout", type=int, default=600)
     parser.add_argument("--seed-session", type=Path, help="Validate and continue an existing Specctra session")
@@ -185,6 +191,7 @@ def main(argv=None):
     try:
         if args.spacing < 0 or args.radius <= 0 or args.relax_steps < 0:
             raise ValueError("Spacing/relaxation must be nonnegative and radius positive")
+        drop_options = TeardropOptions(args.teardrop_length_ratio, args.teardrop_max_length,args.teardrop_size)
         source = args.board.resolve()
         destination = args.output_dir.resolve()
         if destination == source.parent or destination in source.parents:
@@ -290,7 +297,9 @@ def main(argv=None):
         options = Options(spacing=args.spacing, radius=args.radius, relax_steps=args.relax_steps)
         primitives, vias, shaping = finish(board, seed_primitives, vias, options,
                                            progress=lambda msg: print(msg, flush=True))
-        candidate.write_text(board_text(board, primitives, vias))
+        drops, drop_stats = ([], dict(generated=0, disabled=True)) if args.no_teardrops else generate_teardrops(
+            board, primitives, vias, drop_options)
+        candidate.write_text(board_text(board, primitives, vias, drops))
         shaped_validation = check(board, parse(candidate.read_text()))
         if not shaped_validation["passed"]:
             (native.work / "shaping-validation.json").write_text(json.dumps(shaped_validation, indent=2))
@@ -324,9 +333,10 @@ def main(argv=None):
         added_parity = after_parity - before_parity
         if not validation["passed"] or not native_comparison["passed"] or added_parity:
             raise RuntimeError("Final KiCad/physical/parity validation failed; see " + str(native.work))
+        final_drops = read_teardrops(final.expression, final.nets)
         svg(board, [("Freerouting seed", seed_primitives, vias),
-                    ("Spacious curved 0.1.0", final.original_primitives, final.original_vias)], stage / "comparison.svg", labels=True)
-        svg(final, [("Spacious curved 0.1.0", final.original_primitives, final.original_vias)], stage / "routed.svg", labels=True)
+                    ("Spacious curved 0.1.0", final.original_primitives, final.original_vias, final_drops)], stage / "comparison.svg", labels=True)
+        svg(final, [("Spacious curved 0.1.0", final.original_primitives, final.original_vias, final_drops)], stage / "routed.svg", labels=True)
         import cairosvg
         for name in ("comparison", "routed"):
             path = stage / (name + ".svg")
@@ -342,7 +352,7 @@ def main(argv=None):
                       backend=backend,
                       profile=profile, effective_rules={board.nets[n]:vars(r) for n,r in board.rules.items()},
                       seed_validation=seed_validation, validation=validation, shaping=shaping,
-                      repairs=repairs,
+                      repairs=repairs, teardrops=drop_stats,
                       project_audit=project_checks, tangency=tangency,
                       pruned_dangling=pruned,
                       via_policy=dict(mode=args.via_policy, allowed_module_interiors=allowed_modules,

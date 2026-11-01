@@ -13,6 +13,7 @@
     "arcs": 2771,
     "segments": 1605,
     "vias": 53,
+    "teardrops": 200,
     "track_length_mm": 2113.822900605122,
     "unconnected_components": 0,
     "minimum_extra_clearance_mm": 0.012710737479327383
@@ -85,12 +86,34 @@
   "artifact_sha256": {
     "comparison.png": "ca73c07126514bb2a3acfbebb25966cb402dc63da6acf51f497b910c8e266f2c",
     "drying-oven-compact.kicad_dru": "8c1354580113dfb4f46b83432b896484539046e4ee2e93299b08d5a7b49c1a51",
-    "routed.svg": "1366799640fcd2a7820d16b4b9d6df67370b8f008f5a8156ebc5430802c56247",
-    "drying-oven-compact.kicad_pcb": "8530cd0e32dc151b598575a1f9ff2c6cc90648d922cffbc20bac8747d76e205f",
+    "routed.svg": "3eb48cba07f63aecd8d32413c78e912de52eb8c10f38d4120333a7a6dcc23dc5",
+    "drying-oven-compact.kicad_pcb": "e7dcf0159290384b636a4f8e194926a14ada1d466d2bff7115aafa8dcceaecdb",
     "drying-oven-compact.kicad_sch": "632c51264e3ea3ed8ab64e00b30740c08667e1a9d7ed96f0836ee693e6f96c9c",
     "comparison.svg": "d558306ceb9a3dc06228c9492d5455114172981d02c3043d2158f20b11de991c",
-    "routed.png": "415f2377479625abec3c629c1a7d404a25cd56cac8834ccf7c3aae5bf3c2300c",
+    "routed.png": "3649ed820ccf484efbdf80ba40c24e8d35da86abfce1ab968c39b2a1feb929d4",
     ".auto-hand-router": "e9dd8507f4bf0c6f42458e41aea833ad0bd3f6127272335eee9bf4d58541ed67",
     "drying-oven-compact.kicad_pro": "7c0b53c8c341c4f9638701c4e863099464fc068003594fc01bf6fa2885a75310"
+  },
+  "teardrops": {
+    "candidates": 267,
+    "generated": 200,
+    "shoulders": 245,
+    "shortened": 0,
+    "skipped": 22,
+    "length_ratio": 1.0,
+    "max_length_mm": 3.0,
+    "size": 0.875,
+    "kicad_version": "10.0.8",
+    "native_drc": {
+      "passed": true,
+      "unconnected_items": 0,
+      "baseline_violation_count": 6,
+      "routed_violation_count": 6,
+      "new_violations": [],
+      "routed_violation_types": {
+        "lib_footprint_issues": 6
+      }
+    },
+    "new_schematic_parity": 0
   }
 }

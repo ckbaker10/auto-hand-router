@@ -1,0 +1,41 @@
+{
+  "teardrops": {
+    "candidates": 64,
+    "generated": 47,
+    "shoulders": 62,
+    "shortened": 1,
+    "skipped": 2,
+    "length_ratio": 1.0,
+    "max_length_mm": 3.0,
+    "size": 0.875,
+    "kicad_version": "10.0.8",
+    "native_drc": {
+      "passed": true,
+      "unconnected_items": 0,
+      "baseline_violation_count": 21,
+      "routed_violation_count": 21,
+      "new_violations": [],
+      "routed_violation_types": {
+        "silk_overlap": 2,
+        "text_thickness": 3,
+        "lib_footprint_issues": 16
+      }
+    },
+    "new_schematic_parity": 0
+  },
+  "copper": {
+    "passed": true,
+    "arcs": 291,
+    "segments": 163,
+    "vias": 10,
+    "teardrops": 47,
+    "track_length_mm": 208.1647267945176,
+    "unconnected_components": 0,
+    "minimum_extra_clearance_mm": 0.13518911952561324
+  },
+  "artifact_sha256": {
+    "routed.kicad_pcb": "902a71fcfd9eb27db237637af1c1bd1be1a72eb48bd9c207d8bc773dfda00cd9",
+    "routed.svg": "81d4172870fcc7da558efa87958194dd73db9e846ca7f00c151b0b98b2fc1cf3",
+    "routed.png": "77ff8cbbd4f33282d38d51f2e129a2e3f0a8f0f3bfbdc77da11609e5ae170184"
+  }
+}

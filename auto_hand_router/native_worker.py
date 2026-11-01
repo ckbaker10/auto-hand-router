@@ -49,7 +49,8 @@ def main():
         pcb.SaveBoard(args.output, board)
     else:
         if any(not z.GetIsRuleArea() for z in board.Zones()):
-            pcb.ZONE_FILLER(board).Fill(board.Zones())
+            if not pcb.ZONE_FILLER(board).Fill(board.Zones()):
+                raise RuntimeError("KiCad zone filling failed")
         pcb.SaveBoard(args.output, board)
 
 

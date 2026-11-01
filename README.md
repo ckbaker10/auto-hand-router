@@ -37,6 +37,27 @@ ueber dem Kupfer.
 
 ![Gemeinsamer Padanschluss vorher und nachher](docs/images/joins-before-after.png)
 
+### Weiche Pad- und Via-Uebergaenge
+
+Tangentiale Teardrops verbreitern die Anschluesse weich. Sie folgen auch
+versetzten Zufuehrungen und mehreren kurzen nativen Bogenstuecken. An
+Verzweigungen endet die Verfolgung; enge Stellen bekommen kuerzere Formen
+oder bleiben unveraendert. Die Mittellinien bleiben erhalten.
+Die Standardgroesse ist `0.875`: Laengsausdehnung und Schulteransatz sind
+gegenueber der ersten Form um 12,5 % reduziert; Pads und Bohrungen bleiben gleich.
+
+![Teardrop-Details vorher und nachher](docs/images/teardrop-details.png)
+
+Die drei Beispielplatinen wurden mit KiCad 10.0.8 geprueft: 555 mit 62,
+Drying Oven mit 245 und Drying Fridge mit 274 Teardrop-Schultern. Keine neuen
+DRC-Befunde, keine offenen Verbindungen. Die zusaetzlichen Kupferflaechen
+werden auch unabhaengig und in der Vorschau beruecksichtigt.
+
+[555: erste Form und 12,5 % kleinere Schultern](docs/images/555-reference-teardrops.png)
+
+[Analyse beider Melting-KiCad-Artikel](research/MELTING-KICAD.md) ·
+[Alle 41 Originalillustrationen mit Vollbildlinks](research/melting-kicad-gallery.html)
+
 ### Unser Router im Vergleich
 
 Gleiche Platzierung und Netzliste. Oben F.Cu, unten B.Cu. Die Adapter und
@@ -210,6 +231,29 @@ Alternativ die Variablen `AUTO_HAND_ROUTER_KICAD_CLI`,
 `AUTO_HAND_ROUTER_KICAD_PYTHON`, `AUTO_HAND_ROUTER_JAVA` und
 `AUTO_HAND_ROUTER_FREEROUTING_JAR` setzen.
 
+### Teardrops an einem bereits gerouteten Board
+
+```sh
+uv run --locked auto-hand-router teardrops \
+  --board /pfad/zum/controller.kicad_pcb \
+  --output-dir output/controller-teardrops \
+  --work-dir work/controller-teardrops \
+  --length-ratio 1.0 --max-length 3.0 --size 0.875
+```
+
+Der Befehl erstellt einen neuen Kandidaten samt Vorher-/Nachher-Bildern,
+fuellt die Kupferzonen und prueft Geometrie, native DRC und vorhandenen
+Schaltplanabgleich. Ausgabe- und Arbeitsordner muessen neu sein.
+`--via-policy module-interiors` ist wie beim Routing explizit waehlbar.
+
+Beim Befehl `route` sind Teardrops standardmaessig aktiv. Dort steuern
+`--teardrop-length-ratio` und `--teardrop-max-length` die Groesse;
+`--teardrop-size` skaliert Laenge und Schulteransatz gemeinsam.
+`--no-teardrops` schaltet die Erzeugung aus. Die Ausgabe sind benannte,
+voll angeschlossene Kupferzonen, keine aktivierten nativen Pad-Parameter.
+Nach manuellen Track-Aenderungen erneut erzeugen; der Befehl ersetzt dabei
+nur seine eigenen Zonen. Details und Grenzen stehen in der Analyse.
+
 ## 555 Referenzlauf und Entwicklung
 
 ```sh
@@ -240,7 +284,8 @@ Kupferverbindungen zusaetzlich unabhaengig.
 ## Quellen und Bildrechte
 
 Alle eingebetteten Bilder sind aus den dokumentierten Layouts erzeugt.
-Externe historische Referenzbilder werden nicht eingecheckt oder eingebettet.
+Externe historische Referenzbilder werden nicht im Repository gespeichert.
+Die verlinkte Recherchegalerie laedt ihre Bilder von den Originalquellen.
 Die 555-Eingabe stammt aus
 [Adrian-dre/KiCad_555_Timer_Clock_demo](https://github.com/Adrian-dre/KiCad_555_Timer_Clock_demo)
 und ist MIT-lizenziert; der Copyright-/Lizenztext liegt bei den Dateien.
