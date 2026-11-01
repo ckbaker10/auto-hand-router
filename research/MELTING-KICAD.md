@@ -181,10 +181,10 @@ wird der Kandidat uebernommen. Nach manuellen Track-Aenderungen neu erzeugen.
 | Vorhandenes geroutetes Beispiel | Kandidaten | Schultern | Verkuerzt | Ausgelassen | Neue DRC-Befunde | Offene Verbindungen |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | 555 | 64 | 62 | 1 | 2 | 0 | 0 |
-| Drying Oven Compact | 267 | 245 | 0 | 22 | 0 | 0 |
+| Drying Oven Compact Rev. 1.4, 70 × 90 mm | 244 | 229 | 1 | 15 | 0 | 0 |
 | Drying Fridge | 288 | 274 | 1 | 14 | 0 | 0 |
 
-Die vereinigten Schultern ergeben 47 Kupferzonen beim 555, 200 beim Ofen und
+Die vereinigten Schultern ergeben 47 Kupferzonen beim 555, 186 beim Ofen und
 233 beim Fridge. Ungeeignete Konturen oder sehr kurze Zufuehrungen bleiben
 gezielt ohne zusaetzliche Schulter.
 
@@ -193,12 +193,22 @@ jeweiligen Ausgangsstand verglichen und nicht als neue Routingfehler gewertet.
 Die bereits bestehende Modul-Via-Freigabe des Ofen-Beispiels bleibt erhalten.
 Es handelt sich weiterhin um Routing-Kandidaten fuer die bisherigen Projekte.
 
-Die Standardgroesse dieser Ergebnisse ist `0.875`. 73 Tests bestehen, darunter
+Die Drying-Beispiele stammen jetzt aus KiCad-Projektcommit `a05fa00`.
+Beim Compact wurde der inzwischen aktuelle Rev.-1.4-Stand mit 70 × 90 mm
+und vier Ø3,2-mm-Montagebohrungen verwendet; die fruehere 70-×-120-mm-
+Beispieldatei wurde ersetzt. Native Dateien und Bilder werden ueber
+`tools.sync_project_examples` mit Audit-, Quellen- und Dimensionskontrolle
+uebernommen. Die neue Uebernahme wurde unabhaengig von der ersten
+Plugin-Recherche erneut nativ und elektrisch geprueft.
+
+Die Standardgroesse dieser Ergebnisse ist `0.875`. 84 Tests bestehen, darunter
 30 Regressionen fuer die Uebergaenge, Skalierung, Zonenvereinigung und
 Innenkonturen. Ruff sowie Wheel-/SDist-Bau bestehen. Der vollstaendige
 Produktionsbefehl `route` wurde zusaetzlich an einem gueltigen geraden
 555-Kupfercheckpoint ausgefuehrt und besteht Geometrie, native DRC und
-Schaltplanabgleich. Der alte Original-Kupferstand ist als Seed wegen seiner
+Schaltplanabgleich. Weitere elf Regressionen sichern den Beispielimport
+gegen veraltete Audits, unpassende Abmessungen und Quellenaenderungen
+waehrend des Renderns. Der alte Original-Kupferstand ist als Seed wegen seiner
 bisherigen Abstands-/Via-Regelabweichungen ungeeignet; er wurde nicht als
 erfolgreicher Routingnachweis gewertet.
 

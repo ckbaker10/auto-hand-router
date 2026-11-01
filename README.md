@@ -49,7 +49,7 @@ gegenueber der ersten Form um 12,5 % reduziert; Pads und Bohrungen bleiben gleic
 ![Teardrop-Details vorher und nachher](docs/images/teardrop-details.png)
 
 Die drei Beispielplatinen wurden mit KiCad 10.0.8 geprueft: 555 mit 62,
-Drying Oven mit 245 und Drying Fridge mit 274 Teardrop-Schultern. Keine neuen
+Drying Oven mit 229 und Drying Fridge mit 274 Teardrop-Schultern. Keine neuen
 DRC-Befunde, keine offenen Verbindungen. Die zusaetzlichen Kupferflaechen
 werden auch unabhaengig und in der Vorschau beruecksichtigt.
 
@@ -74,9 +74,13 @@ Formgebung. Die getesteten mitxela-Varianten erzeugten neue Abstandsfehler:
 
 ### Drying Oven Compact
 
-70 × 120 mm, gleiche Platzierung, zwei Kupferlagen. Die Netzteil-Montageflaeche
-und Schraubenreserven bleiben kupferfrei. Vias unter aufgesteckten Modulen
-sind erlaubt; Pad-, Bohrungs- und mechanische Sperrabstaende bleiben aktiv.
+**Rev. 1.4 DRAFT, 70 × 90 mm**, zwei Kupferlagen, vier NPTH-Bohrungen
+mit 3,2 mm Durchmesser. Die alte Netzteil-Montageflaeche M1 ist entfernt.
+Der aktuelle KiCad-Projektstand `a05fa00` enthaelt 2.287 native Boegen,
+43 Vias und 229 Teardrop-Schultern in 186 Kupferzonen. Die vorhandene
+J-Kreisel-Bahnfuehrung und Bauteilplatzierung bleiben erhalten.
+Keine ERC-, DRC- oder Paritaetsmeldungen. Pad-, Bohrungs- und mechanische
+Sperrabstaende bleiben aktiv, auch bei erlaubten Vias unter Modulen.
 
 ![Drying Oven Compact routed](docs/images/drying-oven-compact.png)
 
@@ -89,16 +93,18 @@ sind erlaubt; Pad-, Bohrungs- und mechanische Sperrabstaende bleiben aktiv.
 2.568 native Boegen und 45 Vias; keine neuen Routingfehler. Dieses Ergebnis
 erfuellt sogar die strengere Regel ohne Vias in Bauteilumrissen.
 Kabelbinderschlitze und ihre Sperrflaechen bleiben erhalten.
+Aktueller KiCad-Projektstand `a05fa00`, mit 274 Teardrop-Schultern in
+233 Kupferzonen. Die native Bahn- und Via-Geometrie bleibt unveraendert.
 
 ![Drying Fridge routed](docs/images/drying-fridge.png)
 
 [KiCad-Projekt](examples/drying-fridge/drying-fridge.kicad_pro) ·
 [Messwerte und Pruefstatus](examples/drying-fridge/summary.json)
 
-Die Drying-Boards sind **Routing-Kandidaten fuer DRAFT-Hardware**. KiCad 10
-meldet schon am Ausgangsstand Bibliotheks- und Symbolfeldwarnungen. Das
-strengere Fridge-Profil meldet zudem acht Schrifthoehenwarnungen. Die Berichte
-weisen diese aus; sie werden nicht als neue Routingfehler ausgegeben.
+Die Drying-Boards sind **Routing-Kandidaten fuer DRAFT-Hardware**. Beim
+aktuellen Compact bestehen ERC, DRC und Paritaet ohne Meldungen. Beim Fridge
+bleiben vorhandene Bibliotheks-/Symbolfeldmeldungen und acht Schrifthoehen-
+warnungen ausgewiesen; sie werden nicht als neue Routingfehler ausgegeben.
 Modulmechanik und Laststromauslegung sind damit nicht freigegeben.
 
 ## Einrichtung
@@ -265,6 +271,25 @@ uv build
 
 Der 555-Lauf nutzt den eigenen A*-Referenzrouter. Fuer zusaetzliche native
 Pruefung `--kicad-cli /pfad/zu/kicad-cli --evidence-dir work/555-drc` ergaenzen.
+
+### Beispiele aus geprueften KiCad-Projekten aktualisieren
+
+```sh
+uv run --locked python -m tools.sync_project_examples \
+  --project /pfad/zum/drying-oven-compact.kicad_pro \
+  --source-revision a05fa00
+```
+
+Der Import verlangt `verification/auto-hand-router-audit.json` mit
+bestandenen Kupfer-, DRC-, Paritaets-, Projekt- und Tangentenpruefungen.
+Pruefsummen aller vier nativen Dateien, Abmessungen und Kupferzahlen muessen
+zum Audit passen. Die Beispiele werden aus einem festen Dateisnapshot
+gerendert und erst nach erneuter Quellenkontrolle ersetzt. Lokale
+Bibliothekstabellen und Konfiguration werden nicht kopiert.
+`--before-board /pfad/zum/gesicherten/board.kicad_pcb` ergaenzt einen
+Vorher-/Nachher-Vergleich; auch dessen native Dateien muessen dem
+protokollierten Ausgangsstand entsprechen. Die Zusammenfassung nennt
+Quellcommit, Audit-Pruefsumme und Exporthashes.
 
 ## Unterstuetzung und Grenzen von 0.1.0
 
