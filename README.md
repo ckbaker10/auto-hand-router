@@ -1,323 +1,183 @@
-# Auto-Hand-Router 0.1.0
+# Auto-Hand-Router
 
-Ein CLI-Router fuer **KiCad 10**, der Zweilagenplatinen mit grosszuegig
-verteilten, geschwungenen Leiterbahnen erzeugt. Vorbild ist die ruhige
-Linienfuehrung handgezeichneter Leiterplatten. Die Kurven sind echte native
-KiCad-Kupferboegen.
+Curved tracks and teardrops for two-layer KiCad 10 boards.
 
-Freerouting plant Verbindungen und Lagenwechsel. Unsere eigene Verarbeitung
-erkennt getrennte Kupfergruppen, ergaenzt fehlende Verbindungen, verteilt
-Leiterzuege und rundet sie unter Abstandskontrolle. Optional kann der gepinnte
-J-Kreisel-Kern den Routingplan erzeugen. Ergebnisse werden erst nach
-Geometriepruefung, KiCad-DRC und Schaltplanabgleich uebernommen.
+Freerouting or J-Kreisel handles the connections. Auto-Hand-Router spreads and
+smooths the tracks, adds teardrops and checks the result.
 
-## Ergebnisse
+## Demos
 
-Alle Bilder unten wurden aus Routing-Ergebnissen erzeugt. Heruntergeladene
-historische PCB-Fotos und andere externe Referenzbilder sind nicht enthalten.
+### 555 timer
 
-### 555 Referenz
+Eight nets, 291 native arcs and ten vias. Uses the built-in reference router.
 
-Spacious / curved: acht Netze, 22 geschlossene Verbindungen, zehn Vias und
-291 native Boegen. Keine offenen Verbindungen oder neuen KiCad-DRC-Befunde.
-Der kleine Referenzlauf funktioniert ohne externen Routingkern.
+![555 timer](examples/555-reference/routed.png)
 
-![555 Spacious curved](examples/555-reference/routed.png)
-
-Die Formgebung folgt einer durchgehend glatten kubischen Spline-Zielkurve.
-Fuer KiCad wird sie adaptiv durch native Kreisboegen und kurze Geraden
-angenaehert. Jeder ausgegebene Abschnitt wird auf Freiraum geprueft;
-in engen Korridoren bleibt die sichere lokale Rundung erhalten.
-
-Gleichnamige Leiterbahnen derselben Lage koennen vor einem Pad zu einem
-breiteren gemeinsamen Stamm zusammenlaufen, sofern der Platz ausreicht.
-Padkanten und ueberfluessige Vias erzeugen dabei keine kuenstlichen
-Kurvenanker. Beschriftungen stehen in freien Bereichen ohne weisse Halos
-ueber dem Kupfer.
-
-![Gemeinsamer Padanschluss vorher und nachher](docs/images/joins-before-after.png)
-
-### Weiche Pad- und Via-Uebergaenge
-
-Tangentiale Teardrops verbreitern die Anschluesse weich. Sie folgen auch
-versetzten Zufuehrungen und mehreren kurzen nativen Bogenstuecken. An
-Verzweigungen endet die Verfolgung; enge Stellen bekommen kuerzere Formen
-oder bleiben unveraendert. Die Mittellinien bleiben erhalten.
-Die Standardgroesse ist `0.875`: Laengsausdehnung und Schulteransatz sind
-gegenueber der ersten Form um 12,5 % reduziert; Pads und Bohrungen bleiben gleich.
-
-![Teardrop-Details vorher und nachher](docs/images/teardrop-details.png)
-
-Die drei Beispielplatinen wurden mit KiCad 10.0.8 geprueft: 555 mit 62,
-Drying Oven mit 229 und Drying Fridge mit 274 Teardrop-Schultern. Keine neuen
-DRC-Befunde, keine offenen Verbindungen. Die zusaetzlichen Kupferflaechen
-werden auch unabhaengig und in der Vorschau beruecksichtigt.
-
-[555: erste Form und 12,5 % kleinere Schultern](docs/images/555-reference-teardrops.png)
-
-[Analyse beider Melting-KiCad-Artikel](research/MELTING-KICAD.md) ·
-[Alle 41 Originalillustrationen mit Vollbildlinks](research/melting-kicad-gallery.html)
-
-### Unser Router im Vergleich
-
-Gleiche Platzierung und Netzliste. Oben F.Cu, unten B.Cu. Die Adapter und
-Regeln sind im [Vergleichsbericht](comparison/README.md) dokumentiert.
-Freerouting braucht hier vier Vias, unsere Stilreferenz zehn; die eigene
-Ausgabe nutzt den freien Raum grosszuegiger.
-
-![Auto-Hand-Router versus existing routers](comparison/results/comparison.png)
-
-Einfaches Nachrunden eines anderen Routers ersetzt keine abstandsbewusste
-Formgebung. Die getesteten mitxela-Varianten erzeugten neue Abstandsfehler:
-
-![Freerouting and actual mitxela rounding](comparison/results/rounding.png)
+[KiCad project](examples/555-reference/routed.kicad_pro) ·
+[Board source and license](examples/555-reference/SOURCE-LICENSE.txt)
 
 ### Drying Oven Compact
 
-**Rev. 1.4 DRAFT, 70 × 90 mm**, zwei Kupferlagen, vier NPTH-Bohrungen
-mit 3,2 mm Durchmesser. Die alte Netzteil-Montageflaeche M1 ist entfernt.
-Der aktuelle KiCad-Projektstand `a05fa00` enthaelt 2.287 native Boegen,
-43 Vias und 229 Teardrop-Schultern in 186 Kupferzonen. Die vorhandene
-J-Kreisel-Bahnfuehrung und Bauteilplatzierung bleiben erhalten.
-Keine ERC-, DRC- oder Paritaetsmeldungen. Pad-, Bohrungs- und mechanische
-Sperrabstaende bleiben aktiv, auch bei erlaubten Vias unter Modulen.
+70 × 90 mm, 2,287 arcs, 43 vias and 229 teardrop shoulders.
+No ERC, DRC or schematic parity findings.
 
-![Drying Oven Compact routed](docs/images/drying-oven-compact.png)
+![Drying Oven Compact](docs/images/drying-oven-compact.png)
 
-[KiCad-Projekt](examples/drying-oven-compact/drying-oven-compact.kicad_pro) ·
-[Messwerte und Pruefstatus](examples/drying-oven-compact/summary.json)
+[KiCad project](examples/drying-oven-compact/drying-oven-compact.kicad_pro) ·
+[Results](examples/drying-oven-compact/summary.json)
 
 ### Drying Fridge
 
-120 × 100 mm, 58 Footprints und 189 Pads. Alle Verbindungen sind geschlossen.
-2.568 native Boegen und 45 Vias; keine neuen Routingfehler. Dieses Ergebnis
-erfuellt sogar die strengere Regel ohne Vias in Bauteilumrissen.
-Kabelbinderschlitze und ihre Sperrflaechen bleiben erhalten.
-Aktueller KiCad-Projektstand `a05fa00`, mit 274 Teardrop-Schultern in
-233 Kupferzonen. Die native Bahn- und Via-Geometrie bleibt unveraendert.
+120 × 100 mm, 2,568 arcs, 45 vias and 274 teardrop shoulders.
+All connections closed. Existing library and metadata warnings are listed in the results.
 
-![Drying Fridge routed](docs/images/drying-fridge.png)
+![Drying Fridge](docs/images/drying-fridge.png)
 
-[KiCad-Projekt](examples/drying-fridge/drying-fridge.kicad_pro) ·
-[Messwerte und Pruefstatus](examples/drying-fridge/summary.json)
+[KiCad project](examples/drying-fridge/drying-fridge.kicad_pro) ·
+[Results](examples/drying-fridge/summary.json)
 
-Die Drying-Boards sind **Routing-Kandidaten fuer DRAFT-Hardware**. Beim
-aktuellen Compact bestehen ERC, DRC und Paritaet ohne Meldungen. Beim Fridge
-bleiben vorhandene Bibliotheks-/Symbolfeldmeldungen und acht Schrifthoehen-
-warnungen ausgewiesen; sie werden nicht als neue Routingfehler ausgegeben.
-Modulmechanik und Laststromauslegung sind damit nicht freigegeben.
+### Pad and via transitions
 
-## Einrichtung
+Teardrops follow straight tracks and native arcs, including offset entries and
+short connected pieces. Default size: 0.875.
 
-Getesteter Weg: Linux, Python 3.12+, [uv](https://docs.astral.sh/uv/),
-**KiCad 10 mit CLI und `pcbnew`-Pythonmodul**. Der Interpreter fuer `pcbnew`
-muss zur KiCad-Installation passen; er ist vom uv-Interpreter getrennt.
-Fuer Freerouting wird **Java 25** benoetigt.
+![Teardrop details](docs/images/teardrop-details.png)
+
+## Setup
+
+Linux, Python 3.12+, [uv](https://docs.astral.sh/uv/) and KiCad 10 with its
+`pcbnew` Python module. Components must be on the front side.
 
 ```sh
 git clone https://github.com/ckbaker10/auto-hand-router.git
 cd auto-hand-router
 uv sync --locked
-uv run --locked auto-hand-router --version
+
 kicad-cli version
-java -version
+/usr/bin/python3 -c 'import pcbnew; print(pcbnew.Version())'
 ```
 
-Das offizielle Freerouting-2.5.0-JAR separat herunterladen:
+If KiCad uses a different interpreter or is outside your PATH:
+
+```sh
+export AUTO_HAND_ROUTER_KICAD_CLI=/path/to/kicad-cli
+export AUTO_HAND_ROUTER_KICAD_PYTHON=/path/to/python3
+```
+
+For the `route` command, choose one backend.
+
+### Freerouting
+
+Requires Java 25. Download the pinned 2.5.0 JAR:
 
 ```sh
 mkdir -p "$HOME/.local/share/auto-hand-router"
 curl -fL https://github.com/freerouting/freerouting/releases/download/v2.5.0/freerouting-2.5.0.jar \
   -o "$HOME/.local/share/auto-hand-router/freerouting-2.5.0.jar"
-sha256sum "$HOME/.local/share/auto-hand-router/freerouting-2.5.0.jar"
+
 export AUTO_HAND_ROUTER_FREEROUTING_JAR="$HOME/.local/share/auto-hand-router/freerouting-2.5.0.jar"
 ```
 
-Erwartete SHA-256:
-`f6f51bb02245e8e717f9359bd260cc9c5c0b1bc0acc8b7cb2cd5b8ffeb5de3c7`.
-Der Router prueft diesen Hash. Getestet ist das Java-JAR, nicht die native
-Freerouting-Distribution.
+The router checks the JAR checksum.
 
-## Eigenes Board per CLI routen
+### J-Kreisel
 
-PCB, Projekt und Schaltplan muessen denselben Dateistamm haben, etwa
+```sh
+uv sync --locked --extra kreisel
+```
+
+A Rust toolchain may be needed to build it. Use
+`uv run --locked --extra kreisel auto-hand-router route --backend kreisel`
+with the board, output and work options below.
+
+## Route a board
+
+Keep the PCB, project and schematic together with the same filename stem:
 `controller.kicad_pcb`, `controller.kicad_pro`, `controller.kicad_sch`.
-Vorhandene `.kicad_dru` und Bibliothekstabellen werden uebernommen.
+Existing project rules and library tables are used.
 
 ```sh
 uv run --locked auto-hand-router route \
-  --board /pfad/zum/controller.kicad_pcb \
+  --board /path/to/controller.kicad_pcb \
   --output-dir output/controller \
   --work-dir work/controller-001 \
-  --via-policy module-interiors \
   --spacing 1.2 \
-  --radius 2.5
+  --teardrop-size 0.875
 ```
 
-Das Quellprojekt bleibt erhalten. Vorhandene Leiterbahnen werden nur in der
-Arbeitskopie entfernt. `--work-dir` muss fuer jeden Lauf neu sein; dort liegen
-DSN/SES, Checkpoints und rohe Pruefberichte. Das Ausgabeverzeichnis enthaelt
-das native KiCad-Projekt, SVG/PNG und `report.json`. Fehlerhafte Laeufe
-ersetzen kein vorher erfolgreiches Ergebnis.
+This uses Freerouting. The source project stays unchanged.
+The output contains the KiCad project, SVG/PNG previews and `report.json`.
+Use a new work directory for each run.
 
-| Option | Bedeutung |
-|---|---|
-| `--via-policy courtyards` | Standard: gesamte Bauteilumrisse fuer Vias sperren. |
-| `--via-policy module-interiors` | Vias unter grossen bedrahteten Modulen erlauben; Pads, Bohrungen und mechanische Sperren bleiben geschuetzt. |
-| `--spacing 1.2` | Zusaetzlicher weicher Freiraumwunsch in mm; keine Abschwaechung der Mindestabstaende. |
-| `--radius 2.5` | Maximaler Radius der lokalen Ersatzrundung in mm, falls die Spline-Formgebung im Korridor keinen Platz findet. |
-| `--relax-steps 30` | Zahl der Schritte zur freien Verteilung der Leiterzuege. |
-| `--route-timeout 600` | Zeitlimit des Freerouting-Aufrufs in Sekunden. |
+| Option | Effect |
+| --- | --- |
+| `--spacing 1.2` | Preferred extra clearance in mm. Minimum project clearances still apply. |
+| `--via-policy courtyards` | Default. Keeps vias outside component courtyards. |
+| `--via-policy module-interiors` | Allows vias under large through-hole modules. Pad, drill and keepout clearances still apply. |
+| `--radius 2.5` | Maximum radius for local fallback fillets, in mm. |
+| `--teardrop-size 0.875` | Scales teardrop length and shoulders. |
+| `--no-teardrops` | Disables teardrops. |
 
-Die Modulerkennung verlangt mindestens drei durchkontaktierte Pads, eine
-Koerperflaeche ab 50 mm² und einen U-Referenznamen oder Modul-Footprintnamen.
-Die erkannten Referenzen stehen im Report. Kleine SMD-Gehaeuse und reine
-Montage-Footprints werden nicht pauschal freigegeben. Verzweigungen,
-Padkontakte und Vias bleiben feste Anker der Formgebung.
-
-### Routingprofil und Versorgungsnetze
-
-Ohne `--profile` gelten die Projektregeln. Das konservative
-[Beispielprofil](profiles/jlcpcb-2layer-1oz.json) setzt unter anderem
-0,35-mm-Signale, 0,60-mm-Versorgungswege, 0,25-mm-Kupferabstand und
-0,80/0,40-mm-Vias. Staerkere vorhandene Mindestregeln werden nicht abgesenkt.
-
-```sh
-uv run --locked auto-hand-router route \
-  --board /pfad/zum/controller.kicad_pcb \
-  --output-dir output/controller-profile \
-  --work-dir work/controller-002 \
-  --profile profiles/jlcpcb-2layer-1oz.json \
-  --routing-config /pfad/zum/kicad-workflow.json \
-  --via-policy module-interiors
-```
-
-Beispiel fuer `kicad-workflow.json`:
+Project netclasses are used by default. Add
+`--profile profiles/jlcpcb-2layer-1oz.json` to apply the included profile.
+For this profile, put your power nets in `kicad-workflow.json` next to the board:
 
 ```json
 {"routing": {"power_net_patterns": ["/+5V", "/+3V3", "/GND"]}}
 ```
 
-Liegt diese Datei neben dem Quellprojekt, wird sie automatisch gelesen.
-Profil und Netzklassen werden nur an der Kandidatenkopie angepasst. Die
-Beispielbreiten sind keine Stromtragfaehigkeitsberechnung.
-
-### Optionaler Routingkern
-
-Der J-Kreisel-Kern ist an einen festen Quellcommit gebunden. Fuer seinen Build
-kann eine Rust-Toolchain erforderlich sein; Java wird fuer diesen Kern nicht
-benoetigt.
-
-```sh
-uv sync --locked --extra kreisel
-uv run --locked --extra kreisel auto-hand-router route \
-  --backend kreisel \
-  --board /pfad/zum/controller.kicad_pcb \
-  --output-dir output/controller-kreisel \
-  --work-dir work/controller-003 \
-  --via-policy module-interiors
-```
-
-Gespeicherte Kupfer-Checkpoints lassen sich mit `--seed-board <datei.kicad_pcb>`
-fortsetzen, Specctra-Sessions mit `--seed-session <datei.ses>`. Physische
-Geometrie und Netze werden dabei erneut geprueft.
-
-### Eigene KiCad-Installation
-
-Bei einer Installation ausserhalb des Suchpfads diese Optionen ergaenzen:
-
-```sh
-  --kicad-cli /pfad/zu/kicad-cli \
-  --kicad-python /pfad/zum/passenden/python3 \
-  --java /pfad/zu/java \
-  --freerouting-jar /pfad/zu/freerouting-2.5.0.jar
-```
-
-Alternativ die Variablen `AUTO_HAND_ROUTER_KICAD_CLI`,
-`AUTO_HAND_ROUTER_KICAD_PYTHON`, `AUTO_HAND_ROUTER_JAVA` und
-`AUTO_HAND_ROUTER_FREEROUTING_JAR` setzen.
-
-### Teardrops an einem bereits gerouteten Board
+## Add teardrops to an existing board
 
 ```sh
 uv run --locked auto-hand-router teardrops \
-  --board /pfad/zum/controller.kicad_pcb \
+  --board /path/to/controller.kicad_pcb \
   --output-dir output/controller-teardrops \
-  --work-dir work/controller-teardrops \
-  --length-ratio 1.0 --max-length 3.0 --size 0.875
+  --work-dir work/controller-teardrops-001 \
+  --size 0.875
 ```
 
-Der Befehl erstellt einen neuen Kandidaten samt Vorher-/Nachher-Bildern,
-fuellt die Kupferzonen und prueft Geometrie, native DRC und vorhandenen
-Schaltplanabgleich. Ausgabe- und Arbeitsordner muessen neu sein.
-`--via-policy module-interiors` ist wie beim Routing explizit waehlbar.
+This keeps the existing tracks and adds copper zones at pads and vias.
+Both directories must be new. Use `--length-ratio` and `--max-length` to
+adjust the shape. Add `--via-policy module-interiors` if the board already
+uses vias under modules.
 
-Beim Befehl `route` sind Teardrops standardmaessig aktiv. Dort steuern
-`--teardrop-length-ratio` und `--teardrop-max-length` die Groesse;
-`--teardrop-size` skaliert Laenge und Schulteransatz gemeinsam.
-`--no-teardrops` schaltet die Erzeugung aus. Die Ausgabe sind benannte,
-voll angeschlossene Kupferzonen, keine aktivierten nativen Pad-Parameter.
-Nach manuellen Track-Aenderungen erneut erzeugen; der Befehl ersetzt dabei
-nur seine eigenen Zonen. Details und Grenzen stehen in der Analyse.
+## Reproduce the demos
 
-## 555 Referenzlauf und Entwicklung
+The routed projects shown above are included in `examples/`.
+
+Generate the 555 routing and then add teardrops. No external routing backend is needed:
 
 ```sh
 uv run --locked auto-hand-router --comparison --output-dir output/555
-uv run --locked pytest -q
-uv run --locked ruff check auto_hand_router comparison tests
-uv build
+
+uv run --locked auto-hand-router teardrops \
+  --board output/555/routed.kicad_pcb \
+  --output-dir output/555-teardrops \
+  --work-dir work/555-teardrops-001
 ```
 
-Der 555-Lauf nutzt den eigenen A*-Referenzrouter. Fuer zusaetzliche native
-Pruefung `--kicad-cli /pfad/zu/kicad-cli --evidence-dir work/555-drc` ergaenzen.
-
-### Beispiele aus geprueften KiCad-Projekten aktualisieren
+Rebuild teardrops and previews for the two larger demos:
 
 ```sh
-uv run --locked python -m tools.sync_project_examples \
-  --project /pfad/zum/drying-oven-compact.kicad_pro \
-  --source-revision a05fa00
+uv run --locked auto-hand-router teardrops \
+  --board examples/drying-oven-compact/drying-oven-compact.kicad_pcb \
+  --output-dir output/oven-teardrops \
+  --work-dir work/oven-teardrops-001 \
+  --via-policy module-interiors
+
+uv run --locked auto-hand-router teardrops \
+  --board examples/drying-fridge/drying-fridge.kicad_pcb \
+  --output-dir output/fridge-teardrops \
+  --work-dir work/fridge-teardrops-001
 ```
 
-Der Import verlangt `verification/auto-hand-router-audit.json` mit
-bestandenen Kupfer-, DRC-, Paritaets-, Projekt- und Tangentenpruefungen.
-Pruefsummen aller vier nativen Dateien, Abmessungen und Kupferzahlen muessen
-zum Audit passen. Die Beispiele werden aus einem festen Dateisnapshot
-gerendert und erst nach erneuter Quellenkontrolle ersetzt. Lokale
-Bibliothekstabellen und Konfiguration werden nicht kopiert.
-`--before-board /pfad/zum/gesicherten/board.kicad_pcb` ergaenzt einen
-Vorher-/Nachher-Vergleich; auch dessen native Dateien muessen dem
-protokollierten Ausgangsstand entsprechen. Die Zusammenfassung nennt
-Quellcommit, Audit-Pruefsumme und Exporthashes.
+To reroute either project, use its PCB with the `route` command.
+The Compact uses J-Kreisel; the Fridge uses Freerouting.
 
-## Unterstuetzung und Grenzen von 0.1.0
+Run the checks and build the package:
 
-Zwei Kupferlagen, Bauteile vorne, numerische und neue benannte KiCad-Netze,
-Kreise/Rechtecke/Ovale/Roundrect-Pads, runde Bohrungen und Langloecher,
-polygonale Rule Areas und vorhandene Kupferzonen. Zonen werden fuer die
-Verbindungsplanung ausgeblendet und danach neu gefuellt. Unterstuetzte
-Custom Rules betreffen Pad-Restringe und Bohrungsmindestmasse; unbekannte
-elektrische Bedingungen werden ausdruecklich abgelehnt.
-
-Beliebige Mehrlagenplatinen, komplexe Padformen, Rueckseitenbestueckung und
-beliebige Custom Rules sind nicht abgedeckt. Eine Loesung fuer jede routbare
-Platzierung wird nicht garantiert. Die Pruefungen vergleichen neue Befunde
-mit dem Ausgangsstand unter denselben Regeln und kontrollieren die
-Kupferverbindungen zusaetzlich unabhaengig.
-
-## Quellen und Bildrechte
-
-Alle eingebetteten Bilder sind aus den dokumentierten Layouts erzeugt.
-Externe historische Referenzbilder werden nicht im Repository gespeichert.
-Die verlinkte Recherchegalerie laedt ihre Bilder von den Originalquellen.
-Die 555-Eingabe stammt aus
-[Adrian-dre/KiCad_555_Timer_Clock_demo](https://github.com/Adrian-dre/KiCad_555_Timer_Clock_demo)
-und ist MIT-lizenziert; der Copyright-/Lizenztext liegt bei den Dateien.
-Die Drying-Ergebnisbilder stammen aus den eigenen KiCad-Projekten.
-
-[Freerouting](https://github.com/freerouting/freerouting) ist ein separat
-aufgerufener GPL-3.0-Router, der optionale
-[J-Kreisel-Kern](https://github.com/J-Kreisel/kicad-autorouter) ist MIT-lizenziert.
-Weitere Quellen und Adapter: [comparison/](comparison/README.md).
-Fremdbinaerdateien und lokale KiCad-Konfiguration werden nicht mitgeliefert.
+```sh
+uv run --locked pytest -q
+uv run --locked ruff check auto_hand_router comparison tests tools/sync_project_examples.py
+uv build
+```
